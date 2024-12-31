@@ -9,6 +9,7 @@
     "@mui/material": "^6.3.0",
     "cra-template": "1.2.0",
     "leaflet": "^1.9.4",
+    "maplibre-gl": "^4.7.1",
     "papaparse": "^5.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
