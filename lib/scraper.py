@@ -1,14 +1,26 @@
 # lib/scraper.py
+import json
 import requests
 from bs4 import BeautifulSoup
 import time
 import re
+import urllib.parse  # Add this import at the top of your file
+from urllib.parse import urljoin, unquote
 from urllib.parse import urljoin
 import random
 from .logger import get_logger
 from .config import Config
-
 logger = get_logger()
+
+def calculate_polygon_centroid(coordinates):
+    """Calculate the centroid of a polygon from coordinates."""
+    x_coords = [point[0] for point in coordinates]
+    y_coords = [point[1] for point in coordinates]
+
+    x_centroid = sum(x_coords) / len(x_coords)
+    y_centroid = sum(y_coords) / len(y_coords)
+
+    return x_centroid, y_centroid
 
 class WebScraper:
     def __init__(self):
@@ -23,7 +35,6 @@ class WebScraper:
         self.base_url = "https://www.immowelt.de"
 
     def _make_request(self, url, retries=Config.RETRY_ATTEMPTS, delay=Config.REQUEST_DELAY):
-        """Make HTTP request with retries and random delay"""
         for attempt in range(retries):
             try:
                 time.sleep(delay)
@@ -37,6 +48,67 @@ class WebScraper:
                 else:
                     logger.error(f"Failed to get HTML after {retries} attempts: {url}")
                     return None
+    def get_detail_page_info(self, url):
+        html = self._make_request(url)
+        if not html:
+            return None
+
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        features = []
+        features_section = soup.find("section", {"data-testid": "aviv.CDP.Sections.Features"})
+        if features_section:
+            feature_items = features_section.find_all("div", {"data-testid": "aviv.CDP.Sections.Features.Feature"})
+            for item in feature_items:
+                feature_text = item.find("span", class_="css-1az3ztj")
+                if feature_text:
+                    features.append(feature_text.text.strip())
+
+        latitude = longitude = None
+        centroid = None
+
+        map_button = soup.find("button", {"aria-label": "Adresse auf Karte ansehen"})
+        if map_button and map_button.find("img"):
+            img_src = map_button.find("img")["src"]
+            if "geojson" in img_src:
+                geojson_match = re.search(r'geojson\((.*?)\)', img_src)
+                if geojson_match:
+                    geojson_string = geojson_match.group(1)
+                    if geojson_string:  # Ensure the string is not empty
+                        try:
+                            # Decode the URL-encoded GeoJSON string
+                            decoded_geojson_string = unquote(geojson_string)
+                            
+                            # Parse the decoded string as JSON
+                            geojson_data = json.loads(decoded_geojson_string)
+                            
+                            if geojson_data.get("geometry", {}).get("type") == "Polygon":
+                                polygon_coords = geojson_data["geometry"]["coordinates"][0]
+                                centroid = calculate_polygon_centroid(polygon_coords)
+                        except json.JSONDecodeError as e:
+                            logger.error(f"Error decoding GeoJSON: {str(e)}, {decoded_geojson_string}")
+                        except KeyError as e:
+                            logger.error(f"Missing expected keys in GeoJSON: {str(e)}")
+                    else:
+                        logger.error("GeoJSON string is empty or invalid.")
+            else:
+                coordinates_match = re.search(r'/(-?\d+\.\d+),(-?\d+\.\d+),', img_src)
+                if coordinates_match:
+                    longitude = float(coordinates_match.group(1))
+                    latitude = float(coordinates_match.group(2))
+
+        address_div = soup.find("div", {"data-testid": "aviv.CDP.Location.Address"})
+        full_address = address_div.text.strip() if address_div else "Keine Adresse gefunden"
+
+        return {
+            "features": features,
+            "full_address": full_address,
+            "latitude": latitude,
+            "longitude": longitude,
+            "centroid": centroid
+        }
+
+
 
     def get_total_pages(self, html):
         """Extract total number of pages from search results"""
@@ -107,43 +179,6 @@ class WebScraper:
 
         return listings
 
-    def get_detail_page_info(self, url):
-        """Get detailed information from a property page"""
-        html = self._make_request(url)
-        if not html:
-            return None
-
-        soup = BeautifulSoup(html, 'html.parser')
-        
-        features = []
-        features_section = soup.find("section", {"data-testid": "aviv.CDP.Sections.Features"})
-        if features_section:
-            feature_items = features_section.find_all("div", {"data-testid": "aviv.CDP.Sections.Features.Feature"})
-            for item in feature_items:
-                feature_text = item.find("span", class_="css-1az3ztj")
-                if feature_text:
-                    features.append(feature_text.text.strip())
-
-        # Extract location data
-        map_button = soup.find("button", {"aria-label": "Adresse auf Karte ansehen"})
-        latitude = longitude = None
-
-        if map_button and map_button.find("img"):
-            img_src = map_button.find("img")["src"]
-            coordinates_match = re.search(r'/(\d+\.\d+),(\d+\.\d+),', img_src)
-            if coordinates_match:
-                longitude = float(coordinates_match.group(1))
-                latitude = float(coordinates_match.group(2))
-
-        address_div = soup.find("div", {"data-testid": "aviv.CDP.Location.Address"})
-        full_address = address_div.text.strip() if address_div else "Keine Adresse gefunden"
-
-        return {
-            "features": features,
-            "full_address": full_address,
-            "latitude": latitude,
-            "longitude": longitude
-        }
 
     def scrape_all_listings(self, base_url=None):
         """Scrape all listings from all pages"""

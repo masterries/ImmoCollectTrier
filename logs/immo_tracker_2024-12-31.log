@@ -3081,3 +3081,1092 @@ Final Statistics:
 2024-12-31 02:15:00 - INFO - [701/1624] Detail scraping new listing: https://www.immowelt.de/expose/09701e4e-ac79-42da-8e88-1913b888ae8f
 2024-12-31 02:15:01 - INFO - 
 Script interrupted by user
+2024-12-31 02:17:25 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:17:25 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:17:25 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:17:25 - INFO - Loaded 641 existing records
+2024-12-31 02:17:25 - INFO - Starting web scraping...
+2024-12-31 02:17:25 - INFO - Starting to scrape all listings...
+2024-12-31 02:17:27 - INFO - Found 77 pages to scrape
+2024-12-31 02:17:27 - INFO - Scraping page 1/77
+2024-12-31 02:17:27 - INFO - Found 30 listings on page 1
+2024-12-31 02:17:27 - INFO - Scraping page 2/77
+2024-12-31 02:17:28 - INFO - Found 30 listings on page 2
+2024-12-31 02:17:28 - INFO - Scraping page 3/77
+2024-12-31 02:17:30 - INFO - Found 30 listings on page 3
+2024-12-31 02:17:30 - INFO - Scraping page 4/77
+2024-12-31 02:17:31 - INFO - Found 30 listings on page 4
+2024-12-31 02:17:31 - INFO - Scraping page 5/77
+2024-12-31 02:17:32 - INFO - Found 30 listings on page 5
+2024-12-31 02:17:32 - INFO - Scraping page 6/77
+2024-12-31 02:17:33 - INFO - Found 30 listings on page 6
+2024-12-31 02:17:33 - INFO - Scraping page 7/77
+2024-12-31 02:17:34 - INFO - Found 30 listings on page 7
+2024-12-31 02:17:34 - INFO - Scraping page 8/77
+2024-12-31 02:17:35 - INFO - Found 30 listings on page 8
+2024-12-31 02:17:35 - INFO - Scraping page 9/77
+2024-12-31 02:17:36 - INFO - Found 30 listings on page 9
+2024-12-31 02:17:36 - INFO - Scraping page 10/77
+2024-12-31 02:17:38 - INFO - Found 30 listings on page 10
+2024-12-31 02:17:38 - INFO - Scraping page 11/77
+2024-12-31 02:17:39 - INFO - Found 30 listings on page 11
+2024-12-31 02:17:39 - INFO - Scraping page 12/77
+2024-12-31 02:17:40 - INFO - Found 30 listings on page 12
+2024-12-31 02:17:40 - INFO - Scraping page 13/77
+2024-12-31 02:17:41 - INFO - Found 30 listings on page 13
+2024-12-31 02:17:41 - INFO - Scraping page 14/77
+2024-12-31 02:17:42 - INFO - Found 30 listings on page 14
+2024-12-31 02:17:42 - INFO - Scraping page 15/77
+2024-12-31 02:17:43 - INFO - Found 30 listings on page 15
+2024-12-31 02:17:43 - INFO - Scraping page 16/77
+2024-12-31 02:17:45 - INFO - Found 30 listings on page 16
+2024-12-31 02:17:45 - INFO - Scraping page 17/77
+2024-12-31 02:17:46 - INFO - Found 30 listings on page 17
+2024-12-31 02:17:46 - INFO - Scraping page 18/77
+2024-12-31 02:17:47 - INFO - Found 30 listings on page 18
+2024-12-31 02:17:47 - INFO - Scraping page 19/77
+2024-12-31 02:17:48 - INFO - Found 30 listings on page 19
+2024-12-31 02:17:48 - INFO - Scraping page 20/77
+2024-12-31 02:17:49 - INFO - Found 30 listings on page 20
+2024-12-31 02:17:49 - INFO - Scraping page 21/77
+2024-12-31 02:17:50 - INFO - Found 30 listings on page 21
+2024-12-31 02:17:50 - INFO - Scraping page 22/77
+2024-12-31 02:17:51 - INFO - Found 30 listings on page 22
+2024-12-31 02:17:51 - INFO - Scraping page 23/77
+2024-12-31 02:17:52 - INFO - Found 30 listings on page 23
+2024-12-31 02:17:52 - INFO - Scraping page 24/77
+2024-12-31 02:17:53 - INFO - Found 30 listings on page 24
+2024-12-31 02:17:53 - INFO - Scraping page 25/77
+2024-12-31 02:17:54 - INFO - Found 30 listings on page 25
+2024-12-31 02:17:54 - INFO - Scraping page 26/77
+2024-12-31 02:17:56 - INFO - Found 30 listings on page 26
+2024-12-31 02:17:56 - INFO - Scraping page 27/77
+2024-12-31 02:17:57 - INFO - Found 30 listings on page 27
+2024-12-31 02:17:57 - INFO - Scraping page 28/77
+2024-12-31 02:17:58 - INFO - Found 30 listings on page 28
+2024-12-31 02:17:58 - INFO - Scraping page 29/77
+2024-12-31 02:17:59 - INFO - Found 30 listings on page 29
+2024-12-31 02:17:59 - INFO - Scraping page 30/77
+2024-12-31 02:18:00 - INFO - Found 30 listings on page 30
+2024-12-31 02:18:00 - INFO - Scraping page 31/77
+2024-12-31 02:18:01 - INFO - Found 30 listings on page 31
+2024-12-31 02:18:01 - INFO - Scraping page 32/77
+2024-12-31 02:18:03 - INFO - Found 30 listings on page 32
+2024-12-31 02:18:03 - INFO - Scraping page 33/77
+2024-12-31 02:18:04 - INFO - Found 30 listings on page 33
+2024-12-31 02:18:04 - INFO - Scraping page 34/77
+2024-12-31 02:18:05 - INFO - Found 30 listings on page 34
+2024-12-31 02:18:05 - INFO - Scraping page 35/77
+2024-12-31 02:18:07 - INFO - Found 30 listings on page 35
+2024-12-31 02:18:07 - INFO - Scraping page 36/77
+2024-12-31 02:18:08 - INFO - Found 30 listings on page 36
+2024-12-31 02:18:08 - INFO - Scraping page 37/77
+2024-12-31 02:18:10 - INFO - Found 30 listings on page 37
+2024-12-31 02:18:10 - INFO - Scraping page 38/77
+2024-12-31 02:18:11 - INFO - Found 30 listings on page 38
+2024-12-31 02:18:11 - INFO - Scraping page 39/77
+2024-12-31 02:18:12 - INFO - Found 30 listings on page 39
+2024-12-31 02:18:12 - INFO - Scraping page 40/77
+2024-12-31 02:18:14 - INFO - Found 30 listings on page 40
+2024-12-31 02:18:14 - INFO - Scraping page 41/77
+2024-12-31 02:18:15 - INFO - Found 30 listings on page 41
+2024-12-31 02:18:15 - INFO - Scraping page 42/77
+2024-12-31 02:18:16 - INFO - Found 30 listings on page 42
+2024-12-31 02:18:16 - INFO - Scraping page 43/77
+2024-12-31 02:18:18 - INFO - Found 30 listings on page 43
+2024-12-31 02:18:18 - INFO - Scraping page 44/77
+2024-12-31 02:18:19 - INFO - Found 30 listings on page 44
+2024-12-31 02:18:19 - INFO - Scraping page 45/77
+2024-12-31 02:18:20 - INFO - Found 30 listings on page 45
+2024-12-31 02:18:20 - INFO - Scraping page 46/77
+2024-12-31 02:18:22 - INFO - Found 30 listings on page 46
+2024-12-31 02:18:22 - INFO - Scraping page 47/77
+2024-12-31 02:18:23 - INFO - Found 30 listings on page 47
+2024-12-31 02:18:23 - INFO - Scraping page 48/77
+2024-12-31 02:18:25 - INFO - Found 30 listings on page 48
+2024-12-31 02:18:25 - INFO - Scraping page 49/77
+2024-12-31 02:18:26 - INFO - Found 30 listings on page 49
+2024-12-31 02:18:26 - INFO - Scraping page 50/77
+2024-12-31 02:18:27 - INFO - Found 30 listings on page 50
+2024-12-31 02:18:27 - INFO - Scraping page 51/77
+2024-12-31 02:18:29 - INFO - Found 30 listings on page 51
+2024-12-31 02:18:29 - INFO - Scraping page 52/77
+2024-12-31 02:18:30 - INFO - Found 30 listings on page 52
+2024-12-31 02:18:30 - INFO - Scraping page 53/77
+2024-12-31 02:18:31 - INFO - Found 30 listings on page 53
+2024-12-31 02:18:31 - INFO - Scraping page 54/77
+2024-12-31 02:18:33 - INFO - Found 30 listings on page 54
+2024-12-31 02:18:33 - INFO - Scraping page 55/77
+2024-12-31 02:18:34 - INFO - Found 30 listings on page 55
+2024-12-31 02:18:34 - INFO - Scraping page 56/77
+2024-12-31 02:18:35 - INFO - Found 30 listings on page 56
+2024-12-31 02:18:35 - INFO - Scraping page 57/77
+2024-12-31 02:18:37 - INFO - Found 30 listings on page 57
+2024-12-31 02:18:37 - INFO - Scraping page 58/77
+2024-12-31 02:18:38 - INFO - Found 30 listings on page 58
+2024-12-31 02:18:38 - INFO - Scraping page 59/77
+2024-12-31 02:18:39 - INFO - Found 30 listings on page 59
+2024-12-31 02:18:39 - INFO - Scraping page 60/77
+2024-12-31 02:18:40 - INFO - Found 30 listings on page 60
+2024-12-31 02:18:40 - INFO - Scraping page 61/77
+2024-12-31 02:18:41 - INFO - Found 30 listings on page 61
+2024-12-31 02:18:41 - INFO - Scraping page 62/77
+2024-12-31 02:18:43 - INFO - Found 30 listings on page 62
+2024-12-31 02:18:43 - INFO - Scraping page 63/77
+2024-12-31 02:18:44 - INFO - Found 30 listings on page 63
+2024-12-31 02:18:44 - INFO - Scraping page 64/77
+2024-12-31 02:18:45 - INFO - Found 30 listings on page 64
+2024-12-31 02:18:45 - INFO - Scraping page 65/77
+2024-12-31 02:18:46 - INFO - Found 30 listings on page 65
+2024-12-31 02:18:46 - INFO - Scraping page 66/77
+2024-12-31 02:18:47 - INFO - Found 30 listings on page 66
+2024-12-31 02:18:47 - INFO - Scraping page 67/77
+2024-12-31 02:18:48 - INFO - Found 30 listings on page 67
+2024-12-31 02:18:48 - INFO - Scraping page 68/77
+2024-12-31 02:18:49 - INFO - Found 30 listings on page 68
+2024-12-31 02:18:49 - INFO - Scraping page 69/77
+2024-12-31 02:18:50 - INFO - Found 30 listings on page 69
+2024-12-31 02:18:50 - INFO - Scraping page 70/77
+2024-12-31 02:18:52 - INFO - Found 30 listings on page 70
+2024-12-31 02:18:52 - INFO - Scraping page 71/77
+2024-12-31 02:18:53 - INFO - Found 30 listings on page 71
+2024-12-31 02:18:53 - INFO - Scraping page 72/77
+2024-12-31 02:18:54 - INFO - Found 30 listings on page 72
+2024-12-31 02:18:54 - INFO - Scraping page 73/77
+2024-12-31 02:18:55 - INFO - Found 30 listings on page 73
+2024-12-31 02:18:55 - INFO - Scraping page 74/77
+2024-12-31 02:18:56 - INFO - Found 30 listings on page 74
+2024-12-31 02:18:56 - INFO - Scraping page 75/77
+2024-12-31 02:18:57 - INFO - Found 30 listings on page 75
+2024-12-31 02:18:57 - INFO - Scraping page 76/77
+2024-12-31 02:18:58 - INFO - Found 30 listings on page 76
+2024-12-31 02:18:58 - INFO - Scraping page 77/77
+2024-12-31 02:18:59 - INFO - Found 4 listings on page 77
+2024-12-31 02:18:59 - INFO - Completed scraping. Total listings found: 2284
+2024-12-31 02:18:59 - INFO - Converting listings to DataFrame...
+2024-12-31 02:18:59 - INFO - Processing scraped data...
+2024-12-31 02:18:59 - INFO - Processing new data...
+2024-12-31 02:18:59 - DEBUG - Added missing column: Features
+2024-12-31 02:18:59 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:18:59 - DEBUG - Added missing column: Latitude
+2024-12-31 02:18:59 - DEBUG - Added missing column: Longitude
+2024-12-31 02:18:59 - DEBUG - Added missing column: created_date
+2024-12-31 02:18:59 - DEBUG - Added missing column: closed_date
+2024-12-31 02:18:59 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:18:59 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:18:59 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:18:59 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:18:59 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:18:59 - INFO - Cleaning data...
+2024-12-31 02:18:59 - INFO - Data processing completed successfully
+2024-12-31 02:18:59 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:18:59 - INFO - DEBUG: new_df shape: (2284, 16)
+2024-12-31 02:18:59 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:18:59 - INFO - Comparison results:
+2024-12-31 02:18:59 - INFO - - New listings: 1624
+2024-12-31 02:18:59 - INFO - - Closed listings: 0
+2024-12-31 02:18:59 - INFO - - Unchanged listings: 604
+2024-12-31 02:18:59 - INFO - Processing 1624 new listings...
+2024-12-31 02:18:59 - INFO - [1/1624] Detail scraping new listing: https://www.immowelt.de/expose/f5091548-a42a-4e1b-8143-c0da4b3944eb
+2024-12-31 02:19:00 - INFO - [2/1624] Detail scraping new listing: https://www.immowelt.de/expose/c175a7b9-13aa-44d9-adb8-d3437dace16c
+2024-12-31 02:19:00 - INFO - [3/1624] Detail scraping new listing: https://www.immowelt.de/expose/07eec999-9aca-4c2c-b939-bf21ed44eaea
+2024-12-31 02:19:01 - INFO - [4/1624] Detail scraping new listing: https://www.immowelt.de/expose/824e503c-c114-4e42-984c-05d12d5aa9f2
+2024-12-31 02:19:02 - INFO - [5/1624] Detail scraping new listing: https://www.immowelt.de/expose/e588f0fb-bbfb-4ae9-88fa-ce25b15d579d
+2024-12-31 02:19:03 - INFO - [6/1624] Detail scraping new listing: https://www.immowelt.de/expose/a358f5fc-cfff-410c-b53f-f9f78ce9d77f
+2024-12-31 02:19:04 - INFO - [7/1624] Detail scraping new listing: https://www.immowelt.de/expose/98cd363b-ef78-4e8a-ad10-a4688c5da3ac
+2024-12-31 02:19:05 - INFO - [8/1624] Detail scraping new listing: https://www.immowelt.de/expose/2679d199-0223-4399-86e3-348ec72f9e2d
+2024-12-31 02:19:06 - INFO - [9/1624] Detail scraping new listing: https://www.immowelt.de/expose/35b51801-b9b1-42d1-9d53-734442d2cd4b
+2024-12-31 02:19:07 - INFO - [10/1624] Detail scraping new listing: https://www.immowelt.de/expose/1524785b-a66a-4208-bb59-3fce1e0c6edf
+2024-12-31 02:19:08 - INFO - [11/1624] Detail scraping new listing: https://www.immowelt.de/expose/4a9adf89-495d-45fa-8155-7c3df2069162
+2024-12-31 02:19:09 - INFO - [12/1624] Detail scraping new listing: https://www.immowelt.de/expose/e5a1d4ce-ec60-4dce-b843-65a76eace6ca
+2024-12-31 02:19:10 - INFO - [13/1624] Detail scraping new listing: https://www.immowelt.de/expose/866abca7-2239-4a93-a7a1-4d772bdde19e
+2024-12-31 02:19:11 - INFO - [14/1624] Detail scraping new listing: https://www.immowelt.de/expose/ec33cb02-2e15-4e8d-9e0f-252be6429372
+2024-12-31 02:19:12 - INFO - [15/1624] Detail scraping new listing: https://www.immowelt.de/expose/c6e920b3-8015-4104-a683-77a85052d585
+2024-12-31 02:19:13 - INFO - [16/1624] Detail scraping new listing: https://www.immowelt.de/expose/5254dda9-2b75-48f1-9fd4-01f37496e275
+2024-12-31 02:19:14 - INFO - [17/1624] Detail scraping new listing: https://www.immowelt.de/expose/82eea953-d488-4805-b5ea-6607de5d9260
+2024-12-31 02:19:15 - INFO - [18/1624] Detail scraping new listing: https://www.immowelt.de/expose/c3f078a0-e6e4-464e-a98b-d643a93e800c
+2024-12-31 02:19:16 - INFO - [19/1624] Detail scraping new listing: https://www.immowelt.de/expose/86f30f5a-ad45-4285-865b-d76cc71003d2
+2024-12-31 02:19:17 - INFO - [20/1624] Detail scraping new listing: https://www.immowelt.de/expose/e58781ee-86b5-48fa-aa32-0077e3ca9094
+2024-12-31 02:19:18 - INFO - [21/1624] Detail scraping new listing: https://www.immowelt.de/expose/d2c32b36-6ed5-47b7-9ab7-d02fcb6bb9a1
+2024-12-31 02:19:19 - INFO - [22/1624] Detail scraping new listing: https://www.immowelt.de/expose/5aa6b6a2-b8c3-4d7d-b5c1-e05de39d2b3f
+2024-12-31 02:19:20 - INFO - [23/1624] Detail scraping new listing: https://www.immowelt.de/expose/75e02222-dfc5-473f-aff2-a41347c95e05
+2024-12-31 02:19:21 - INFO - [24/1624] Detail scraping new listing: https://www.immowelt.de/expose/657ddbee-6ae3-4065-9033-cb87908f9980
+2024-12-31 02:19:22 - INFO - [25/1624] Detail scraping new listing: https://www.immowelt.de/expose/10815217-09d3-43b8-b7da-e2e07c8f60cf
+2024-12-31 02:19:23 - INFO - [26/1624] Detail scraping new listing: https://www.immowelt.de/expose/3e5dd391-1128-4e67-a303-68fb6b000c49
+2024-12-31 02:19:24 - INFO - [27/1624] Detail scraping new listing: https://www.immowelt.de/expose/f0048027-4186-4dc3-baab-48aef3ec7313
+2024-12-31 02:19:25 - INFO - [28/1624] Detail scraping new listing: https://www.immowelt.de/expose/6176a03e-0d16-493e-b065-8a99a7a21f72
+2024-12-31 02:19:26 - INFO - [29/1624] Detail scraping new listing: https://www.immowelt.de/expose/dd6a1e1a-1c4e-4096-a054-c987591fa1e0
+2024-12-31 02:19:27 - INFO - [30/1624] Detail scraping new listing: https://www.immowelt.de/expose/26986040-9c50-4562-a33e-2ae8e3ef2c29
+2024-12-31 02:19:28 - INFO - [31/1624] Detail scraping new listing: https://www.immowelt.de/expose/08f7f737-5ea7-48ee-a2c3-4d8e6a49336d
+2024-12-31 02:19:29 - INFO - [32/1624] Detail scraping new listing: https://www.immowelt.de/expose/eec084e1-af8c-4e6b-bba4-bc8e8c319414
+2024-12-31 02:19:30 - INFO - [33/1624] Detail scraping new listing: https://www.immowelt.de/expose/cce66685-a85b-42f1-8028-bba5ac15dd2f
+2024-12-31 02:19:31 - INFO - [34/1624] Detail scraping new listing: https://www.immowelt.de/expose/95a8f171-3445-4c50-ae1c-7051bcb29990
+2024-12-31 02:19:32 - INFO - [35/1624] Detail scraping new listing: https://www.immowelt.de/expose/f9b4ff5f-cb00-4614-92f3-1e6d951e6940
+2024-12-31 02:19:33 - INFO - [36/1624] Detail scraping new listing: https://www.immowelt.de/expose/1272fa99-a849-40b3-9fc6-bccb57019466
+2024-12-31 02:19:34 - INFO - [37/1624] Detail scraping new listing: https://www.immowelt.de/expose/90c38099-ebce-49e0-92a2-fd09fe5a02f4
+2024-12-31 02:19:35 - INFO - [38/1624] Detail scraping new listing: https://www.immowelt.de/expose/a0c0e125-9cf2-4e99-bed4-a3ced153f03f
+2024-12-31 02:19:36 - INFO - [39/1624] Detail scraping new listing: https://www.immowelt.de/expose/ac2b896e-3e4e-431a-8a08-14f6ac0c4e67
+2024-12-31 02:19:37 - INFO - [40/1624] Detail scraping new listing: https://www.immowelt.de/expose/b626811a-3d2e-4084-8825-c3ee76c76c6e
+2024-12-31 02:19:38 - INFO - [41/1624] Detail scraping new listing: https://www.immowelt.de/expose/df84c204-5725-4a40-bceb-0c3902db3946
+2024-12-31 02:19:39 - INFO - [42/1624] Detail scraping new listing: https://www.immowelt.de/expose/8e191f0a-2f98-4631-b39c-ad1834a780f5
+2024-12-31 02:19:40 - INFO - [43/1624] Detail scraping new listing: https://www.immowelt.de/expose/ead51e97-9c49-4c88-8ed9-758a35587bad
+2024-12-31 02:19:41 - INFO - [44/1624] Detail scraping new listing: https://www.immowelt.de/expose/13bb7414-d480-450f-93eb-f740099e1be2
+2024-12-31 02:19:42 - INFO - [45/1624] Detail scraping new listing: https://www.immowelt.de/expose/6947a9e5-9f05-46ab-a693-9c3397dd968f
+2024-12-31 02:19:43 - INFO - [46/1624] Detail scraping new listing: https://www.immowelt.de/expose/cabe180f-dead-46fb-bf20-600d4961f446
+2024-12-31 02:19:43 - INFO - [47/1624] Detail scraping new listing: https://www.immowelt.de/expose/16760e59-f842-42d6-8eab-8b58e613e065
+2024-12-31 02:19:45 - INFO - [48/1624] Detail scraping new listing: https://www.immowelt.de/expose/84a612da-a535-4fa6-b2bd-251a9f74425c
+2024-12-31 02:19:46 - INFO - [49/1624] Detail scraping new listing: https://www.immowelt.de/expose/c897e07c-72f2-4fef-99e5-f1c9caa36c1c
+2024-12-31 02:19:47 - INFO - [50/1624] Detail scraping new listing: https://www.immowelt.de/expose/0b334447-cbd3-4552-bc69-6dc97c673d69
+2024-12-31 02:19:48 - INFO - [51/1624] Detail scraping new listing: https://www.immowelt.de/expose/bb7423ed-eb67-43b6-bbd7-1d225727fe10
+2024-12-31 02:19:49 - INFO - [52/1624] Detail scraping new listing: https://www.immowelt.de/expose/dcefca7a-a8b9-4864-a221-0d76588c0f29
+2024-12-31 02:19:50 - INFO - [53/1624] Detail scraping new listing: https://www.immowelt.de/expose/b61d1f4f-926c-4376-958d-173673ebd029
+2024-12-31 02:19:51 - INFO - [54/1624] Detail scraping new listing: https://www.immowelt.de/expose/452f25db-1769-4fb7-ad72-932ac266edec
+2024-12-31 02:19:52 - INFO - [55/1624] Detail scraping new listing: https://www.immowelt.de/expose/3c1f6fe6-296f-4080-abb5-432d140b76fc
+2024-12-31 02:19:53 - INFO - [56/1624] Detail scraping new listing: https://www.immowelt.de/expose/a5fb73b0-6a80-47e5-ac2c-6230ca252e6a
+2024-12-31 02:19:54 - INFO - [57/1624] Detail scraping new listing: https://www.immowelt.de/expose/ab2229ab-c164-4327-afc3-3f9b12a2745e
+2024-12-31 02:19:54 - INFO - [58/1624] Detail scraping new listing: https://www.immowelt.de/expose/44433b85-3e87-4f77-8dcd-5365d23505d2
+2024-12-31 02:19:55 - INFO - [59/1624] Detail scraping new listing: https://www.immowelt.de/expose/08e1bc25-fa9c-482d-a08e-80f49646790a
+2024-12-31 02:19:57 - INFO - [60/1624] Detail scraping new listing: https://www.immowelt.de/expose/185b6866-e553-4110-8f0f-7df5b9044b91
+2024-12-31 02:19:58 - INFO - [61/1624] Detail scraping new listing: https://www.immowelt.de/expose/0a668be8-30af-49b7-992b-8c0e33990d67
+2024-12-31 02:19:59 - INFO - [62/1624] Detail scraping new listing: https://www.immowelt.de/expose/b16f0c78-0ca3-472a-815e-a7e52a10fa61
+2024-12-31 02:20:00 - INFO - [63/1624] Detail scraping new listing: https://www.immowelt.de/expose/e6db4cc3-24ad-4654-ac68-e06c674cfea0
+2024-12-31 02:20:01 - INFO - [64/1624] Detail scraping new listing: https://www.immowelt.de/expose/08e0acc3-ea98-4957-8d53-7717365735bd
+2024-12-31 02:20:02 - INFO - [65/1624] Detail scraping new listing: https://www.immowelt.de/expose/50656463-181d-478a-89fb-bece09d1e1d5
+2024-12-31 02:20:03 - INFO - [66/1624] Detail scraping new listing: https://www.immowelt.de/expose/fa3843f6-83e8-43b1-89f1-83510415dde3
+2024-12-31 02:20:03 - INFO - [67/1624] Detail scraping new listing: https://www.immowelt.de/expose/a73dc3d0-baf2-4ef2-8735-a27311fd367c
+2024-12-31 02:20:04 - INFO - [68/1624] Detail scraping new listing: https://www.immowelt.de/expose/452df3b4-a7ae-4b9e-b88e-ac6371c65154
+2024-12-31 02:20:05 - INFO - [69/1624] Detail scraping new listing: https://www.immowelt.de/expose/55c67d2a-25bd-492f-bc75-8122cd7798f9
+2024-12-31 02:20:06 - INFO - [70/1624] Detail scraping new listing: https://www.immowelt.de/expose/f8287537-e350-4b0c-8c3b-822cd098039d
+2024-12-31 02:20:07 - INFO - [71/1624] Detail scraping new listing: https://www.immowelt.de/expose/8469ee50-b501-465f-9d01-c924bae2cce7
+2024-12-31 02:20:08 - INFO - [72/1624] Detail scraping new listing: https://www.immowelt.de/expose/4d5af1f8-0df1-474a-9126-787e6ed41b81
+2024-12-31 02:20:09 - INFO - [73/1624] Detail scraping new listing: https://www.immowelt.de/expose/2d12475d-73ae-42f1-850c-47e147728502
+2024-12-31 02:20:10 - INFO - [74/1624] Detail scraping new listing: https://www.immowelt.de/expose/e1275729-4354-4cf5-a19e-3bb60d44ece6
+2024-12-31 02:20:11 - INFO - [75/1624] Detail scraping new listing: https://www.immowelt.de/expose/5eb3ccbf-410d-4a8b-929a-da081a9d73c7
+2024-12-31 02:20:12 - INFO - [76/1624] Detail scraping new listing: https://www.immowelt.de/expose/ec1b0dc8-fd2e-45ba-8ffe-5c0f26ae1180
+2024-12-31 02:20:13 - INFO - [77/1624] Detail scraping new listing: https://www.immowelt.de/expose/6264b922-fa2d-4653-8d2d-d2bb2a40bbad
+2024-12-31 02:20:14 - INFO - [78/1624] Detail scraping new listing: https://www.immowelt.de/expose/89eae420-3db2-4c9d-9d2b-fe56ff127efd
+2024-12-31 02:20:15 - INFO - [79/1624] Detail scraping new listing: https://www.immowelt.de/expose/9b70832e-0a55-41c1-a013-f12b8981f20d
+2024-12-31 02:20:16 - INFO - [80/1624] Detail scraping new listing: https://www.immowelt.de/expose/2b16c4c0-a7b7-4356-9e6b-14d72009f850
+2024-12-31 02:20:17 - INFO - [81/1624] Detail scraping new listing: https://www.immowelt.de/expose/09d468e1-58cf-4404-aa2a-0237d784cba3
+2024-12-31 02:20:18 - INFO - [82/1624] Detail scraping new listing: https://www.immowelt.de/expose/5b236c5c-4e0c-4702-970c-5dd023cd1694
+2024-12-31 02:20:18 - INFO - [83/1624] Detail scraping new listing: https://www.immowelt.de/expose/769706b8-0d35-4701-b7d4-84b424208000
+2024-12-31 02:20:19 - INFO - [84/1624] Detail scraping new listing: https://www.immowelt.de/expose/b22ba701-dc1c-47d8-be24-a7f3c851030e
+2024-12-31 02:20:20 - INFO - [85/1624] Detail scraping new listing: https://www.immowelt.de/expose/06f9be9d-d12e-4da1-858f-e359f3b6f75c
+2024-12-31 02:20:21 - INFO - [86/1624] Detail scraping new listing: https://www.immowelt.de/expose/581b8d3d-d091-4257-b020-da8e654216b4
+2024-12-31 02:20:22 - INFO - [87/1624] Detail scraping new listing: https://www.immowelt.de/expose/bb5472ad-8603-453f-81e7-11f032881dd4
+2024-12-31 02:20:23 - INFO - [88/1624] Detail scraping new listing: https://www.immowelt.de/expose/1fca2246-a124-4898-8b67-9995fea5b8b6
+2024-12-31 02:20:24 - INFO - [89/1624] Detail scraping new listing: https://www.immowelt.de/expose/06734e3b-0fe0-498a-8181-27b2086cc696
+2024-12-31 02:20:24 - INFO - [90/1624] Detail scraping new listing: https://www.immowelt.de/expose/299de711-6e56-4299-a0c9-3c55c6a21f9f
+2024-12-31 02:20:25 - INFO - [91/1624] Detail scraping new listing: https://www.immowelt.de/expose/3d9ffd89-e9ad-44aa-accd-dc038af04abc
+2024-12-31 02:20:26 - INFO - [92/1624] Detail scraping new listing: https://www.immowelt.de/expose/e8cf792e-8bfc-477d-b2b9-c79eaec17175
+2024-12-31 02:20:27 - INFO - [93/1624] Detail scraping new listing: https://www.immowelt.de/expose/a852b0f2-f7d6-416b-a8f1-e0caf78d8991
+2024-12-31 02:20:28 - INFO - [94/1624] Detail scraping new listing: https://www.immowelt.de/expose/de54d67a-656c-40bf-b646-9fa1ecec3aaf
+2024-12-31 02:20:29 - INFO - [95/1624] Detail scraping new listing: https://www.immowelt.de/expose/c4b600a4-5321-4b67-a4da-9a04532184e2
+2024-12-31 02:20:30 - INFO - [96/1624] Detail scraping new listing: https://www.immowelt.de/expose/e3965bd9-388e-49f4-84f3-c8b722e7c3fc
+2024-12-31 02:20:31 - INFO - [97/1624] Detail scraping new listing: https://www.immowelt.de/expose/3c8b399d-417c-4e0c-9959-007c962ea18b
+2024-12-31 02:20:32 - INFO - [98/1624] Detail scraping new listing: https://www.immowelt.de/expose/69a875d4-cfcb-43e1-9acd-aecee6028e55
+2024-12-31 02:20:33 - INFO - [99/1624] Detail scraping new listing: https://www.immowelt.de/expose/ad44f6e8-ed25-408b-b447-0b4eff84814a
+2024-12-31 02:20:34 - INFO - [100/1624] Detail scraping new listing: https://www.immowelt.de/expose/c9e68cf9-648d-488f-93d7-5610f76ad918
+2024-12-31 02:20:35 - INFO - [101/1624] Detail scraping new listing: https://www.immowelt.de/expose/2bdc1b5e-6ad0-433b-a561-ce78206a7f2f
+2024-12-31 02:20:36 - INFO - [102/1624] Detail scraping new listing: https://www.immowelt.de/expose/eb88cb45-3665-4214-a0be-e94ef4f95fe4
+2024-12-31 02:20:37 - INFO - [103/1624] Detail scraping new listing: https://www.immowelt.de/expose/f0212155-5b0a-4929-b9f8-a1737f02e8c0
+2024-12-31 02:20:37 - INFO - [104/1624] Detail scraping new listing: https://www.immowelt.de/expose/4d28a12c-58b1-4cd3-842f-d28dc42ce9dd
+2024-12-31 02:20:38 - INFO - [105/1624] Detail scraping new listing: https://www.immowelt.de/expose/90366cd3-9677-409a-84b2-0d7d4eecea96
+2024-12-31 02:20:39 - INFO - [106/1624] Detail scraping new listing: https://www.immowelt.de/expose/df33d102-2eb1-43b5-b0ee-0c868891d164
+2024-12-31 02:20:40 - INFO - [107/1624] Detail scraping new listing: https://www.immowelt.de/expose/e8dc0fa0-3765-4e6b-be1f-d28b00a0362d
+2024-12-31 02:20:41 - INFO - [108/1624] Detail scraping new listing: https://www.immowelt.de/expose/5ee0601b-d583-402e-84d3-89d3aa7bf3b2
+2024-12-31 02:20:42 - INFO - [109/1624] Detail scraping new listing: https://www.immowelt.de/expose/cf1c9e31-1f06-42c8-ae0c-3d1a83a2fece
+2024-12-31 02:20:43 - INFO - [110/1624] Detail scraping new listing: https://www.immowelt.de/expose/f27f93bd-7b46-43e6-b7a9-1eff72951dfe
+2024-12-31 02:20:45 - INFO - [111/1624] Detail scraping new listing: https://www.immowelt.de/expose/6ff9d66e-9203-452f-977b-2155b5d32d05
+2024-12-31 02:20:46 - INFO - [112/1624] Detail scraping new listing: https://www.immowelt.de/expose/bc261060-3228-49a6-93fb-0875bbe298db
+2024-12-31 02:20:47 - INFO - [113/1624] Detail scraping new listing: https://www.immowelt.de/expose/311bc04a-edbe-4394-98bc-42aa35df31ef
+2024-12-31 02:20:47 - INFO - [114/1624] Detail scraping new listing: https://www.immowelt.de/expose/fda019a2-e6d7-42b7-be02-530ce6149559
+2024-12-31 02:20:48 - INFO - [115/1624] Detail scraping new listing: https://www.immowelt.de/expose/ae49e547-1628-4dc3-bc77-7d7854a27da6
+2024-12-31 02:20:49 - INFO - [116/1624] Detail scraping new listing: https://www.immowelt.de/expose/653d30e1-b404-4a66-ae23-4bb78de679eb
+2024-12-31 02:20:50 - INFO - [117/1624] Detail scraping new listing: https://www.immowelt.de/expose/d924f2ed-538d-436a-9251-14e904bd7e04
+2024-12-31 02:20:51 - INFO - [118/1624] Detail scraping new listing: https://www.immowelt.de/expose/a0d94381-0ac1-4e49-81ff-fd0124e297f1
+2024-12-31 02:20:52 - INFO - [119/1624] Detail scraping new listing: https://www.immowelt.de/expose/f9ea75a0-b654-4453-97d5-eb71777d684b
+2024-12-31 02:20:53 - INFO - [120/1624] Detail scraping new listing: https://www.immowelt.de/expose/80c66d6a-e292-42de-a1d4-f17be78408d9
+2024-12-31 02:20:54 - INFO - [121/1624] Detail scraping new listing: https://www.immowelt.de/expose/b4b3026a-20b1-476b-87c9-712bf78a61ac
+2024-12-31 02:20:55 - INFO - [122/1624] Detail scraping new listing: https://www.immowelt.de/expose/95ff73df-324d-4ec5-9d7e-334c76437239
+2024-12-31 02:20:55 - INFO - [123/1624] Detail scraping new listing: https://www.immowelt.de/expose/e2927806-746b-4d8f-9733-8089b38e4e42
+2024-12-31 02:20:56 - INFO - [124/1624] Detail scraping new listing: https://www.immowelt.de/expose/5b371ef0-f9a5-4aa3-a4ad-001379b72fad
+2024-12-31 02:20:57 - INFO - [125/1624] Detail scraping new listing: https://www.immowelt.de/expose/a8d563b9-3636-41d6-b103-c9055d8ad0d3
+2024-12-31 02:20:58 - INFO - [126/1624] Detail scraping new listing: https://www.immowelt.de/expose/bfce450f-7393-4cfa-8b2d-e3479cbe1feb
+2024-12-31 02:20:59 - INFO - [127/1624] Detail scraping new listing: https://www.immowelt.de/expose/a312203e-45b3-4f97-8898-853d645af30d
+2024-12-31 02:21:00 - INFO - [128/1624] Detail scraping new listing: https://www.immowelt.de/expose/17eae307-9ffd-4342-8644-4c7516304a99
+2024-12-31 02:21:01 - INFO - [129/1624] Detail scraping new listing: https://www.immowelt.de/expose/e1378dde-e712-4860-b3e5-9292046c77a3
+2024-12-31 02:21:02 - INFO - [130/1624] Detail scraping new listing: https://www.immowelt.de/expose/b93b65c8-536b-4ddd-8756-2bf49a3cb0f5
+2024-12-31 02:21:03 - INFO - [131/1624] Detail scraping new listing: https://www.immowelt.de/expose/a588238b-c69c-4507-997e-0e2bbbf834c1
+2024-12-31 02:21:04 - INFO - [132/1624] Detail scraping new listing: https://www.immowelt.de/expose/cc28c3a3-9b85-4b68-8775-c5b14630ebeb
+2024-12-31 02:21:05 - INFO - [133/1624] Detail scraping new listing: https://www.immowelt.de/expose/54cb85dc-f77e-4089-91ec-8785212b345d
+2024-12-31 02:21:06 - INFO - [134/1624] Detail scraping new listing: https://www.immowelt.de/expose/f05671b4-618d-4ef8-b0a7-c5c156d71f05
+2024-12-31 02:21:07 - INFO - [135/1624] Detail scraping new listing: https://www.immowelt.de/expose/81c2c8c2-5835-4f13-b2c2-74badc1e9703
+2024-12-31 02:21:08 - INFO - [136/1624] Detail scraping new listing: https://www.immowelt.de/expose/d8f126bf-9ff6-40f7-bd5e-c50c624cbfb5
+2024-12-31 02:21:09 - INFO - [137/1624] Detail scraping new listing: https://www.immowelt.de/expose/56cb46be-2be8-4d67-87c8-61e1e978f7ef
+2024-12-31 02:21:10 - INFO - [138/1624] Detail scraping new listing: https://www.immowelt.de/expose/d1164da9-eec6-4a22-ba10-ef26aeb196ec
+2024-12-31 02:21:10 - INFO - [139/1624] Detail scraping new listing: https://www.immowelt.de/expose/ccb59c92-3321-4184-959c-87373a9eac63
+2024-12-31 02:21:11 - INFO - [140/1624] Detail scraping new listing: https://www.immowelt.de/expose/6b81511e-4178-4e8c-8caf-98a4a83360ec
+2024-12-31 02:21:12 - INFO - [141/1624] Detail scraping new listing: https://www.immowelt.de/expose/5ea501bc-44b0-4087-a95d-87ee546fd69c
+2024-12-31 02:21:13 - INFO - [142/1624] Detail scraping new listing: https://www.immowelt.de/expose/c304595a-c029-48d3-abf8-359c6a9f6a80
+2024-12-31 02:21:14 - INFO - [143/1624] Detail scraping new listing: https://www.immowelt.de/expose/c48ce992-a7b1-478a-8022-90aeaf777579
+2024-12-31 02:21:15 - INFO - [144/1624] Detail scraping new listing: https://www.immowelt.de/expose/956e93a4-022d-4983-a779-1a28afe18b91
+2024-12-31 02:21:16 - INFO - [145/1624] Detail scraping new listing: https://www.immowelt.de/expose/9a92ac09-2424-41fb-8074-c30c563090b4
+2024-12-31 02:21:17 - INFO - [146/1624] Detail scraping new listing: https://www.immowelt.de/expose/e3147aa5-ef99-4fec-b80a-0d1d998ced89
+2024-12-31 02:21:18 - INFO - [147/1624] Detail scraping new listing: https://www.immowelt.de/expose/2df11068-003e-43d9-bed8-ab286771982e
+2024-12-31 02:21:19 - INFO - [148/1624] Detail scraping new listing: https://www.immowelt.de/expose/03fe2d59-a1bf-4f30-9dda-027b1655de20
+2024-12-31 02:21:20 - INFO - [149/1624] Detail scraping new listing: https://www.immowelt.de/expose/ccd9c20f-0c55-49a8-a9e7-39da1db8678a
+2024-12-31 02:21:21 - INFO - [150/1624] Detail scraping new listing: https://www.immowelt.de/expose/90e899d2-bd8b-4ad5-b905-fb1a35c2da06
+2024-12-31 02:21:22 - INFO - [151/1624] Detail scraping new listing: https://www.immowelt.de/expose/fe46de66-8300-4103-b2d1-17c63bad30ac
+2024-12-31 02:21:23 - INFO - [152/1624] Detail scraping new listing: https://www.immowelt.de/expose/08ad1259-acf1-42a5-8c3e-4b7c0217202a
+2024-12-31 02:21:24 - INFO - [153/1624] Detail scraping new listing: https://www.immowelt.de/expose/eb982bf4-f61e-4f79-851f-fe2240258428
+2024-12-31 02:21:25 - INFO - [154/1624] Detail scraping new listing: https://www.immowelt.de/expose/ca0b7484-3b50-4150-a07b-5a453c96fdbe
+2024-12-31 02:21:26 - INFO - [155/1624] Detail scraping new listing: https://www.immowelt.de/expose/1bea69c6-3d33-48a3-af5b-673194d271ea
+2024-12-31 02:21:27 - INFO - [156/1624] Detail scraping new listing: https://www.immowelt.de/expose/0701b7ad-51ba-479a-80c4-7db891a6da8c
+2024-12-31 02:21:28 - INFO - [157/1624] Detail scraping new listing: https://www.immowelt.de/expose/6b4bdd41-70da-409f-8e00-83c32be21ed2
+2024-12-31 02:21:29 - INFO - [158/1624] Detail scraping new listing: https://www.immowelt.de/expose/66047a75-bb4f-49c3-873a-0116b87c8a1a
+2024-12-31 02:21:30 - INFO - [159/1624] Detail scraping new listing: https://www.immowelt.de/expose/fd676059-e4af-42b2-adba-295e50e5cc1a
+2024-12-31 02:21:31 - INFO - [160/1624] Detail scraping new listing: https://www.immowelt.de/expose/f24be6b2-4b27-47bc-a3f5-ba4562e12344
+2024-12-31 02:21:33 - INFO - [161/1624] Detail scraping new listing: https://www.immowelt.de/expose/99d934f7-daf7-4ba7-a7c5-b109793261fe
+2024-12-31 02:21:34 - INFO - [162/1624] Detail scraping new listing: https://www.immowelt.de/expose/54778113-e10e-4b83-a92d-f9189fac4b59
+2024-12-31 02:21:35 - INFO - [163/1624] Detail scraping new listing: https://www.immowelt.de/expose/bee12e87-fc0b-492a-bd0c-fa46c86550a6
+2024-12-31 02:21:36 - INFO - [164/1624] Detail scraping new listing: https://www.immowelt.de/expose/35d40591-77b7-4087-9c39-7cc2ec745353
+2024-12-31 02:21:36 - INFO - [165/1624] Detail scraping new listing: https://www.immowelt.de/expose/962a389b-fe04-4428-8ee7-b5a69a80d179
+2024-12-31 02:21:37 - INFO - [166/1624] Detail scraping new listing: https://www.immowelt.de/expose/ca1160d2-eb47-405d-87a0-2d138ef03b83
+2024-12-31 02:21:38 - INFO - [167/1624] Detail scraping new listing: https://www.immowelt.de/expose/16ec88b7-8639-4d67-92a0-8b10ba91f871
+2024-12-31 02:21:39 - INFO - [168/1624] Detail scraping new listing: https://www.immowelt.de/expose/efd227a8-8f07-4cca-b7c2-919847d81f92
+2024-12-31 02:21:41 - INFO - [169/1624] Detail scraping new listing: https://www.immowelt.de/expose/f57dd44d-0a23-454c-987a-3bcb1e555d22
+2024-12-31 02:21:43 - INFO - [170/1624] Detail scraping new listing: https://www.immowelt.de/expose/a34e6898-6ea6-438a-ba4b-a5d9fa5f5cb8
+2024-12-31 02:21:44 - INFO - [171/1624] Detail scraping new listing: https://www.immowelt.de/expose/439172fc-5acf-4b47-ac9d-63ac66763966
+2024-12-31 02:21:45 - INFO - [172/1624] Detail scraping new listing: https://www.immowelt.de/expose/3f776a3a-0d15-4fb5-a92f-06a7a1188602
+2024-12-31 02:21:45 - INFO - [173/1624] Detail scraping new listing: https://www.immowelt.de/expose/573b52dc-7581-4c52-8418-dbfadd12c7e0
+2024-12-31 02:21:46 - INFO - [174/1624] Detail scraping new listing: https://www.immowelt.de/expose/c3ff8e8c-40f8-4191-a4c7-0872e71315bb
+2024-12-31 02:21:47 - INFO - [175/1624] Detail scraping new listing: https://www.immowelt.de/expose/1b75fa53-803a-48e8-a73a-de2949e72840
+2024-12-31 02:21:48 - INFO - [176/1624] Detail scraping new listing: https://www.immowelt.de/expose/bb80e09b-107c-4137-bc31-d31a737104f9
+2024-12-31 02:21:49 - INFO - [177/1624] Detail scraping new listing: https://www.immowelt.de/expose/8df61f68-3b0d-47df-8a69-2e04daa69fd4
+2024-12-31 02:21:50 - INFO - [178/1624] Detail scraping new listing: https://www.immowelt.de/expose/ac71674b-06e0-453a-bc71-d857f8066e1f
+2024-12-31 02:21:51 - INFO - [179/1624] Detail scraping new listing: https://www.immowelt.de/expose/3c0914ba-3aca-4e64-8cff-b4077cafad1e
+2024-12-31 02:21:52 - INFO - [180/1624] Detail scraping new listing: https://www.immowelt.de/expose/81661d8b-7128-426e-8620-459fe4fbc688
+2024-12-31 02:21:53 - INFO - [181/1624] Detail scraping new listing: https://www.immowelt.de/expose/8509491d-5a1a-4909-b761-53d62b74ea0b
+2024-12-31 02:21:54 - INFO - [182/1624] Detail scraping new listing: https://www.immowelt.de/expose/e974379f-5ffa-4914-820f-79dcac675875
+2024-12-31 02:21:54 - INFO - [183/1624] Detail scraping new listing: https://www.immowelt.de/expose/ff7686fc-ed12-4c1e-b9fd-31aef18aa363
+2024-12-31 02:21:55 - INFO - [184/1624] Detail scraping new listing: https://www.immowelt.de/expose/64ef5b43-8dd5-4166-bcd2-bceff417457f
+2024-12-31 02:21:56 - INFO - [185/1624] Detail scraping new listing: https://www.immowelt.de/expose/f94db1b8-7ee0-4962-afe6-f5b367832b0d
+2024-12-31 02:21:57 - INFO - [186/1624] Detail scraping new listing: https://www.immowelt.de/expose/8aafcaad-d595-449c-af6f-6f9e8cdbc299
+2024-12-31 02:21:59 - INFO - [187/1624] Detail scraping new listing: https://www.immowelt.de/expose/cf1128ed-6b08-4852-91b4-98991086fd49
+2024-12-31 02:22:00 - INFO - [188/1624] Detail scraping new listing: https://www.immowelt.de/expose/fe3048c9-d199-44e1-a780-4ecfc49523f6
+2024-12-31 02:22:01 - INFO - [189/1624] Detail scraping new listing: https://www.immowelt.de/expose/3d03516c-ea01-481c-a979-cffb9a464a2b
+2024-12-31 02:22:02 - INFO - [190/1624] Detail scraping new listing: https://www.immowelt.de/expose/41337178-3068-410a-aba0-d57c2fc5b768
+2024-12-31 02:22:03 - INFO - [191/1624] Detail scraping new listing: https://www.immowelt.de/expose/3a77c5c9-4eb8-4479-8e62-5b0c33b9d042
+2024-12-31 02:22:04 - INFO - [192/1624] Detail scraping new listing: https://www.immowelt.de/expose/15eea166-e0c4-4fc2-a97c-752e35553414
+2024-12-31 02:22:04 - INFO - [193/1624] Detail scraping new listing: https://www.immowelt.de/expose/5b3b1844-3b8d-4507-b9d9-b0f2473e5644
+2024-12-31 02:22:05 - INFO - [194/1624] Detail scraping new listing: https://www.immowelt.de/expose/f24ca98d-d680-4335-b30a-bf9ac761d655
+2024-12-31 02:22:06 - INFO - [195/1624] Detail scraping new listing: https://www.immowelt.de/expose/f3931627-aa4e-46f0-8cdd-b3a96d0500cc
+2024-12-31 02:22:07 - INFO - [196/1624] Detail scraping new listing: https://www.immowelt.de/expose/e8dd4c18-e087-406a-ad3e-b2d63387ae09
+2024-12-31 02:22:08 - INFO - [197/1624] Detail scraping new listing: https://www.immowelt.de/expose/2636285e-1a7f-4d2c-aa8c-a6d9e3f7f845
+2024-12-31 02:22:09 - INFO - [198/1624] Detail scraping new listing: https://www.immowelt.de/expose/b611b7a7-c999-455c-8c2b-b940812a410e
+2024-12-31 02:22:10 - INFO - [199/1624] Detail scraping new listing: https://www.immowelt.de/expose/8189ef75-3c38-43cb-95a9-9f6b82b2f233
+2024-12-31 02:22:11 - INFO - [200/1624] Detail scraping new listing: https://www.immowelt.de/expose/f948614b-c796-462d-b29e-f54a6901e56a
+2024-12-31 02:22:11 - INFO - [201/1624] Detail scraping new listing: https://www.immowelt.de/expose/530f74c1-e788-40cf-b1e0-d0307ece7d01
+2024-12-31 02:22:13 - INFO - [202/1624] Detail scraping new listing: https://www.immowelt.de/expose/16a0ddb2-e473-47af-a736-99505007f6c9
+2024-12-31 02:22:14 - INFO - [203/1624] Detail scraping new listing: https://www.immowelt.de/expose/bebca953-fa5a-434d-865c-ed6eb7a9212c
+2024-12-31 02:22:14 - INFO - [204/1624] Detail scraping new listing: https://www.immowelt.de/expose/d7189bb7-bcbc-4474-bc39-ee4bcf659648
+2024-12-31 02:22:15 - INFO - [205/1624] Detail scraping new listing: https://www.immowelt.de/expose/a804c87f-fdb0-423e-80f3-960f2d044144
+2024-12-31 02:22:16 - INFO - [206/1624] Detail scraping new listing: https://www.immowelt.de/expose/d182d9f9-7d38-4356-898a-21da2da5eb53
+2024-12-31 02:22:17 - INFO - [207/1624] Detail scraping new listing: https://www.immowelt.de/expose/c5499bfe-758d-4285-bc55-bb4d0097aa2a
+2024-12-31 02:22:18 - INFO - [208/1624] Detail scraping new listing: https://www.immowelt.de/expose/e66def76-af15-46ff-8266-69a8b2ddfd51
+2024-12-31 02:22:19 - INFO - [209/1624] Detail scraping new listing: https://www.immowelt.de/expose/70ffd903-ffdb-4b7d-94d5-3a523b50ffdc
+2024-12-31 02:22:20 - INFO - [210/1624] Detail scraping new listing: https://www.immowelt.de/expose/863a30c9-ebb4-4bb3-8591-1949356d8e1d
+2024-12-31 02:22:21 - INFO - [211/1624] Detail scraping new listing: https://www.immowelt.de/expose/96757e42-e02d-4345-a64f-43870a1811d3
+2024-12-31 02:22:22 - INFO - [212/1624] Detail scraping new listing: https://www.immowelt.de/expose/0cf85841-8e6e-4367-81b2-f701bb2516b3
+2024-12-31 02:22:23 - INFO - [213/1624] Detail scraping new listing: https://www.immowelt.de/expose/1479d65c-8037-478a-bd79-5e84be536566
+2024-12-31 02:22:24 - INFO - [214/1624] Detail scraping new listing: https://www.immowelt.de/expose/b3d8de46-febc-45cd-b2c0-5002ce1d9a7c
+2024-12-31 02:22:24 - INFO - [215/1624] Detail scraping new listing: https://www.immowelt.de/expose/b36ea6ad-dc1e-4355-aa4b-db302610dc09
+2024-12-31 02:22:25 - INFO - [216/1624] Detail scraping new listing: https://www.immowelt.de/expose/44f19c26-d410-4268-bb5f-e736f1b8098c
+2024-12-31 02:22:26 - INFO - [217/1624] Detail scraping new listing: https://www.immowelt.de/expose/cdb6aada-d0ad-45da-a159-4ddded4085d7
+2024-12-31 02:22:27 - INFO - [218/1624] Detail scraping new listing: https://www.immowelt.de/expose/b95fa3ac-5900-4ce8-8a76-e5fbbf6ff281
+2024-12-31 02:22:28 - INFO - [219/1624] Detail scraping new listing: https://www.immowelt.de/expose/dcedc9df-70e5-4c65-b7d2-9f253e4f91a8
+2024-12-31 02:22:29 - INFO - [220/1624] Detail scraping new listing: https://www.immowelt.de/expose/d541987b-fac8-42ed-9495-0bf2f059d6c6
+2024-12-31 02:22:30 - INFO - [221/1624] Detail scraping new listing: https://www.immowelt.de/expose/0ab6c42e-a02b-4529-be2c-8ed44af0be34
+2024-12-31 02:22:31 - INFO - [222/1624] Detail scraping new listing: https://www.immowelt.de/expose/da8f5f8a-3c1f-4833-b814-187c1d8e7ea1
+2024-12-31 02:22:32 - INFO - [223/1624] Detail scraping new listing: https://www.immowelt.de/expose/607df974-1d3b-4d81-9288-2087fb4094f8
+2024-12-31 02:22:32 - INFO - [224/1624] Detail scraping new listing: https://www.immowelt.de/expose/c82da36c-4fb6-489b-926f-0682a34aef74
+2024-12-31 02:22:33 - INFO - [225/1624] Detail scraping new listing: https://www.immowelt.de/expose/728adca9-f834-47ed-b346-939ea786f3b9
+2024-12-31 02:22:34 - INFO - [226/1624] Detail scraping new listing: https://www.immowelt.de/expose/b98be4fe-17cc-4764-a088-b6fe919c26a8
+2024-12-31 02:22:35 - INFO - [227/1624] Detail scraping new listing: https://www.immowelt.de/expose/eb7ef3bf-a5c2-4f5a-ac32-6a7ce1fc3f22
+2024-12-31 02:22:36 - INFO - [228/1624] Detail scraping new listing: https://www.immowelt.de/expose/36f16469-1384-445a-8252-db43bef559ed
+2024-12-31 02:22:37 - INFO - [229/1624] Detail scraping new listing: https://www.immowelt.de/expose/fe4ef7f3-e484-4b21-a469-64d9faf2eaf4
+2024-12-31 02:22:38 - INFO - [230/1624] Detail scraping new listing: https://www.immowelt.de/expose/588d7dab-99aa-4c4b-97f7-30a0eb2bd80e
+2024-12-31 02:22:39 - INFO - [231/1624] Detail scraping new listing: https://www.immowelt.de/expose/f34e09b7-303f-4452-bc31-6976bf890571
+2024-12-31 02:22:40 - INFO - [232/1624] Detail scraping new listing: https://www.immowelt.de/expose/e363c7ee-11aa-48c2-bdd6-f7ebca09ec6f
+2024-12-31 02:22:41 - INFO - [233/1624] Detail scraping new listing: https://www.immowelt.de/expose/b50c91f8-fb78-406a-9842-686d62753901
+2024-12-31 02:22:42 - INFO - [234/1624] Detail scraping new listing: https://www.immowelt.de/expose/5ed33828-2bc3-408b-b9c3-fedd5a830a5c
+2024-12-31 02:22:43 - INFO - [235/1624] Detail scraping new listing: https://www.immowelt.de/expose/c3d7ba9c-367e-4e37-b6db-e14fdd83a3a1
+2024-12-31 02:22:44 - INFO - [236/1624] Detail scraping new listing: https://www.immowelt.de/expose/a17bf29d-23e1-4974-b3e5-6f860ac2cea3
+2024-12-31 02:22:45 - INFO - [237/1624] Detail scraping new listing: https://www.immowelt.de/expose/4ca7027b-982f-4a60-8cde-604fd15d6009
+2024-12-31 02:22:46 - INFO - [238/1624] Detail scraping new listing: https://www.immowelt.de/expose/87823ca4-d339-4e7e-aa0f-0683cd400702
+2024-12-31 02:22:46 - INFO - [239/1624] Detail scraping new listing: https://www.immowelt.de/expose/0b005ce6-76df-4c39-b470-de977d7584e6
+2024-12-31 02:22:47 - INFO - [240/1624] Detail scraping new listing: https://www.immowelt.de/expose/234437eb-6493-43cc-82df-0ca800f61057
+2024-12-31 02:22:48 - INFO - [241/1624] Detail scraping new listing: https://www.immowelt.de/expose/9e083be3-98e2-4830-b9a7-4f2dce0353b6
+2024-12-31 02:22:49 - INFO - [242/1624] Detail scraping new listing: https://www.immowelt.de/expose/6b22c2db-9589-4cb4-8b7d-916f85b4106b
+2024-12-31 02:22:51 - INFO - [243/1624] Detail scraping new listing: https://www.immowelt.de/expose/7fde0bd3-b77d-4e9c-aeee-3464548de0b1
+2024-12-31 02:22:52 - INFO - [244/1624] Detail scraping new listing: https://www.immowelt.de/expose/551350ad-b76b-44a1-87c6-96f2ae52f7f3
+2024-12-31 02:22:53 - INFO - [245/1624] Detail scraping new listing: https://www.immowelt.de/expose/e8c8eb22-470c-43e9-9ad8-ce96f6daf46c
+2024-12-31 02:22:54 - INFO - 
+Script interrupted by user
+2024-12-31 02:24:45 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:24:45 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:24:45 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:24:45 - INFO - Loaded 641 existing records
+2024-12-31 02:24:45 - INFO - Starting web scraping...
+2024-12-31 02:24:45 - ERROR - An error occurred: 'WebScraper' object has no attribute 'scrape_all_listings'
+Traceback (most recent call last):
+  File "/workspaces/ImmoCollectTrier/main.py", line 65, in main
+    current_listings = scraper.scrape_all_listings()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WebScraper' object has no attribute 'scrape_all_listings'
+2024-12-31 02:25:33 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:25:33 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:25:33 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:25:33 - INFO - Loaded 641 existing records
+2024-12-31 02:25:33 - INFO - Starting web scraping...
+2024-12-31 02:25:33 - INFO - Starting to scrape all listings...
+2024-12-31 02:25:35 - INFO - Found 5 pages to scrape
+2024-12-31 02:25:35 - INFO - Scraping page 1/5
+2024-12-31 02:25:35 - INFO - Found 30 listings on page 1
+2024-12-31 02:25:35 - INFO - Scraping page 2/5
+2024-12-31 02:25:36 - INFO - Found 30 listings on page 2
+2024-12-31 02:25:36 - INFO - Scraping page 3/5
+2024-12-31 02:25:37 - INFO - Found 30 listings on page 3
+2024-12-31 02:25:37 - INFO - Scraping page 4/5
+2024-12-31 02:25:38 - INFO - Found 30 listings on page 4
+2024-12-31 02:25:38 - INFO - Scraping page 5/5
+2024-12-31 02:25:39 - INFO - Found 28 listings on page 5
+2024-12-31 02:25:39 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:25:39 - INFO - Converting listings to DataFrame...
+2024-12-31 02:25:39 - INFO - Processing scraped data...
+2024-12-31 02:25:39 - INFO - Processing new data...
+2024-12-31 02:25:39 - DEBUG - Added missing column: Features
+2024-12-31 02:25:39 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:25:39 - DEBUG - Added missing column: Latitude
+2024-12-31 02:25:39 - DEBUG - Added missing column: Longitude
+2024-12-31 02:25:39 - DEBUG - Added missing column: created_date
+2024-12-31 02:25:39 - DEBUG - Added missing column: closed_date
+2024-12-31 02:25:39 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:25:39 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:25:39 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:25:39 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:25:39 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:25:39 - INFO - Cleaning data...
+2024-12-31 02:25:39 - INFO - Data processing completed successfully
+2024-12-31 02:25:39 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:25:39 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:25:39 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:25:39 - INFO - Comparison results:
+2024-12-31 02:25:39 - INFO - - New listings: 0
+2024-12-31 02:25:39 - INFO - - Closed listings: 473
+2024-12-31 02:25:39 - INFO - - Unchanged listings: 131
+2024-12-31 02:25:39 - INFO - Saving results...
+2024-12-31 02:25:39 - INFO - Saved 641 records to /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:25:39 - INFO - 
+Final Statistics:
+2024-12-31 02:25:39 - INFO - Total listings: 641
+2024-12-31 02:25:39 - INFO - Active listings: 148
+2024-12-31 02:25:39 - INFO - Closed listings: 493
+2024-12-31 02:25:39 - INFO - New listings today: 641
+2024-12-31 02:25:39 - INFO - Listings closed today: 493
+2024-12-31 02:25:39 - INFO - Average Preis_cleaned: 498592.76
+2024-12-31 02:25:39 - INFO - Average Wohnfläche: 156.22
+2024-12-31 02:25:39 - INFO - Average Preis_pro_qm: 6569.50
+2024-12-31 02:25:39 - INFO - Script completed successfully!
+2024-12-31 02:25:47 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:25:47 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:25:47 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:25:47 - INFO - No existing data found, starting fresh
+2024-12-31 02:25:47 - INFO - Starting web scraping...
+2024-12-31 02:25:47 - INFO - Starting to scrape all listings...
+2024-12-31 02:25:49 - INFO - Found 5 pages to scrape
+2024-12-31 02:25:49 - INFO - Scraping page 1/5
+2024-12-31 02:25:49 - INFO - Found 30 listings on page 1
+2024-12-31 02:25:49 - INFO - Scraping page 2/5
+2024-12-31 02:25:50 - INFO - Found 30 listings on page 2
+2024-12-31 02:25:50 - INFO - Scraping page 3/5
+2024-12-31 02:25:51 - INFO - Found 30 listings on page 3
+2024-12-31 02:25:51 - INFO - Scraping page 4/5
+2024-12-31 02:25:52 - INFO - Found 30 listings on page 4
+2024-12-31 02:25:52 - INFO - Scraping page 5/5
+2024-12-31 02:25:53 - INFO - Found 28 listings on page 5
+2024-12-31 02:25:53 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:25:53 - INFO - Converting listings to DataFrame...
+2024-12-31 02:25:53 - INFO - Processing scraped data...
+2024-12-31 02:25:53 - INFO - Processing new data...
+2024-12-31 02:25:53 - DEBUG - Added missing column: Features
+2024-12-31 02:25:53 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:25:53 - DEBUG - Added missing column: Latitude
+2024-12-31 02:25:53 - DEBUG - Added missing column: Longitude
+2024-12-31 02:25:53 - DEBUG - Added missing column: created_date
+2024-12-31 02:25:53 - DEBUG - Added missing column: closed_date
+2024-12-31 02:25:53 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:25:53 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:25:53 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:25:53 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:25:53 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:25:53 - INFO - Cleaning data...
+2024-12-31 02:25:53 - INFO - Data processing completed successfully
+2024-12-31 02:25:53 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:25:53 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:25:53 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:25:53 - INFO - First run - creating new database...
+2024-12-31 02:25:53 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:25:53 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:25:54 - ERROR - Error processing GeoJSON: name 'json' is not defined
+2024-12-31 02:25:54 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:25:55 - ERROR - Error processing GeoJSON: name 'json' is not defined
+2024-12-31 02:25:55 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:25:56 - ERROR - Error processing GeoJSON: name 'json' is not defined
+2024-12-31 02:25:57 - INFO - [4/148] Detail scraping: https://www.immowelt.de/expose/89ee5085-4d92-4b97-aa43-509b2f4aaeb7
+2024-12-31 02:25:58 - ERROR - Error processing GeoJSON: name 'json' is not defined
+2024-12-31 02:25:58 - INFO - 
+Script interrupted by user
+2024-12-31 02:26:18 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:26:18 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:26:18 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:26:18 - INFO - No existing data found, starting fresh
+2024-12-31 02:26:18 - INFO - Starting web scraping...
+2024-12-31 02:26:18 - INFO - Starting to scrape all listings...
+2024-12-31 02:26:20 - INFO - Found 5 pages to scrape
+2024-12-31 02:26:20 - INFO - Scraping page 1/5
+2024-12-31 02:26:20 - INFO - Found 30 listings on page 1
+2024-12-31 02:26:20 - INFO - Scraping page 2/5
+2024-12-31 02:26:21 - INFO - Found 30 listings on page 2
+2024-12-31 02:26:21 - INFO - Scraping page 3/5
+2024-12-31 02:26:22 - INFO - Found 30 listings on page 3
+2024-12-31 02:26:22 - INFO - Scraping page 4/5
+2024-12-31 02:26:23 - INFO - Found 30 listings on page 4
+2024-12-31 02:26:23 - INFO - Scraping page 5/5
+2024-12-31 02:26:24 - INFO - Found 28 listings on page 5
+2024-12-31 02:26:24 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:26:24 - INFO - Converting listings to DataFrame...
+2024-12-31 02:26:24 - INFO - Processing scraped data...
+2024-12-31 02:26:24 - INFO - Processing new data...
+2024-12-31 02:26:24 - DEBUG - Added missing column: Features
+2024-12-31 02:26:24 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:26:24 - DEBUG - Added missing column: Latitude
+2024-12-31 02:26:24 - DEBUG - Added missing column: Longitude
+2024-12-31 02:26:24 - DEBUG - Added missing column: created_date
+2024-12-31 02:26:24 - DEBUG - Added missing column: closed_date
+2024-12-31 02:26:24 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:26:24 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:26:24 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:26:24 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:26:24 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:26:24 - INFO - Cleaning data...
+2024-12-31 02:26:24 - INFO - Data processing completed successfully
+2024-12-31 02:26:24 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:26:24 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:26:24 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:26:24 - INFO - First run - creating new database...
+2024-12-31 02:26:24 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:26:24 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:26:24 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:26:25 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:26:25 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:26:26 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:26:26 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:26:26 - INFO - [4/148] Detail scraping: https://www.immowelt.de/expose/89ee5085-4d92-4b97-aa43-509b2f4aaeb7
+2024-12-31 02:26:27 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:26:27 - INFO - [5/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:26:27 - INFO - 
+Script interrupted by user
+2024-12-31 02:27:44 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:27:44 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:27:44 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:27:44 - INFO - No existing data found, starting fresh
+2024-12-31 02:27:44 - INFO - Starting web scraping...
+2024-12-31 02:27:44 - INFO - Starting to scrape all listings...
+2024-12-31 02:27:45 - INFO - Found 5 pages to scrape
+2024-12-31 02:27:45 - INFO - Scraping page 1/5
+2024-12-31 02:27:45 - INFO - Found 30 listings on page 1
+2024-12-31 02:27:45 - INFO - Scraping page 2/5
+2024-12-31 02:27:46 - INFO - Found 30 listings on page 2
+2024-12-31 02:27:46 - INFO - Scraping page 3/5
+2024-12-31 02:27:47 - INFO - Found 30 listings on page 3
+2024-12-31 02:27:47 - INFO - Scraping page 4/5
+2024-12-31 02:27:48 - INFO - Found 30 listings on page 4
+2024-12-31 02:27:48 - INFO - Scraping page 5/5
+2024-12-31 02:27:49 - INFO - Found 28 listings on page 5
+2024-12-31 02:27:49 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:27:49 - INFO - Converting listings to DataFrame...
+2024-12-31 02:27:49 - INFO - Processing scraped data...
+2024-12-31 02:27:49 - INFO - Processing new data...
+2024-12-31 02:27:49 - DEBUG - Added missing column: Features
+2024-12-31 02:27:49 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:27:49 - DEBUG - Added missing column: Latitude
+2024-12-31 02:27:49 - DEBUG - Added missing column: Longitude
+2024-12-31 02:27:49 - DEBUG - Added missing column: created_date
+2024-12-31 02:27:49 - DEBUG - Added missing column: closed_date
+2024-12-31 02:27:49 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:27:49 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:27:49 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:27:49 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:27:49 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:27:49 - INFO - Cleaning data...
+2024-12-31 02:27:49 - INFO - Data processing completed successfully
+2024-12-31 02:27:49 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:27:49 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:27:49 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:27:49 - INFO - First run - creating new database...
+2024-12-31 02:27:49 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:27:49 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:27:50 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:27:50 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:27:51 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:27:51 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:27:51 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:27:52 - INFO - [4/148] Detail scraping: https://www.immowelt.de/expose/89ee5085-4d92-4b97-aa43-509b2f4aaeb7
+2024-12-31 02:27:52 - INFO - 
+Script interrupted by user
+2024-12-31 02:28:26 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:28:26 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:28:26 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:28:26 - INFO - No existing data found, starting fresh
+2024-12-31 02:28:26 - INFO - Starting web scraping...
+2024-12-31 02:28:26 - INFO - Starting to scrape all listings...
+2024-12-31 02:28:27 - INFO - Found 5 pages to scrape
+2024-12-31 02:28:27 - INFO - Scraping page 1/5
+2024-12-31 02:28:28 - INFO - Found 30 listings on page 1
+2024-12-31 02:28:28 - INFO - Scraping page 2/5
+2024-12-31 02:28:28 - INFO - Found 30 listings on page 2
+2024-12-31 02:28:28 - INFO - Scraping page 3/5
+2024-12-31 02:28:29 - INFO - Found 30 listings on page 3
+2024-12-31 02:28:29 - INFO - Scraping page 4/5
+2024-12-31 02:28:30 - INFO - Found 30 listings on page 4
+2024-12-31 02:28:30 - INFO - Scraping page 5/5
+2024-12-31 02:28:31 - INFO - Found 28 listings on page 5
+2024-12-31 02:28:31 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:28:31 - INFO - Converting listings to DataFrame...
+2024-12-31 02:28:31 - INFO - Processing scraped data...
+2024-12-31 02:28:31 - INFO - Processing new data...
+2024-12-31 02:28:31 - DEBUG - Added missing column: Features
+2024-12-31 02:28:31 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:28:31 - DEBUG - Added missing column: Latitude
+2024-12-31 02:28:31 - DEBUG - Added missing column: Longitude
+2024-12-31 02:28:31 - DEBUG - Added missing column: created_date
+2024-12-31 02:28:31 - DEBUG - Added missing column: closed_date
+2024-12-31 02:28:31 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:28:31 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:28:31 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:28:31 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:28:31 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:28:31 - INFO - Cleaning data...
+2024-12-31 02:28:31 - INFO - Data processing completed successfully
+2024-12-31 02:28:31 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:28:31 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:28:31 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:28:31 - INFO - First run - creating new database...
+2024-12-31 02:28:31 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:28:31 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:28:32 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0) , geojson
+2024-12-31 02:28:32 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:28:32 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0) , geojson
+2024-12-31 02:28:33 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:28:33 - INFO - 
+Script interrupted by user
+2024-12-31 02:28:46 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:28:46 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:28:46 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:28:46 - INFO - No existing data found, starting fresh
+2024-12-31 02:28:46 - INFO - Starting web scraping...
+2024-12-31 02:28:46 - INFO - Starting to scrape all listings...
+2024-12-31 02:28:48 - INFO - Found 5 pages to scrape
+2024-12-31 02:28:48 - INFO - Scraping page 1/5
+2024-12-31 02:28:49 - INFO - Found 30 listings on page 1
+2024-12-31 02:28:49 - INFO - Scraping page 2/5
+2024-12-31 02:28:50 - INFO - Found 30 listings on page 2
+2024-12-31 02:28:50 - INFO - Scraping page 3/5
+2024-12-31 02:28:51 - INFO - Found 30 listings on page 3
+2024-12-31 02:28:51 - INFO - Scraping page 4/5
+2024-12-31 02:28:52 - INFO - Found 30 listings on page 4
+2024-12-31 02:28:52 - INFO - Scraping page 5/5
+2024-12-31 02:28:53 - INFO - Found 28 listings on page 5
+2024-12-31 02:28:53 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:28:53 - INFO - Converting listings to DataFrame...
+2024-12-31 02:28:53 - INFO - Processing scraped data...
+2024-12-31 02:28:53 - INFO - Processing new data...
+2024-12-31 02:28:53 - DEBUG - Added missing column: Features
+2024-12-31 02:28:53 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:28:53 - DEBUG - Added missing column: Latitude
+2024-12-31 02:28:53 - DEBUG - Added missing column: Longitude
+2024-12-31 02:28:53 - DEBUG - Added missing column: created_date
+2024-12-31 02:28:53 - DEBUG - Added missing column: closed_date
+2024-12-31 02:28:53 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:28:53 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:28:53 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:28:53 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:28:53 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:28:53 - INFO - Cleaning data...
+2024-12-31 02:28:53 - INFO - Data processing completed successfully
+2024-12-31 02:28:53 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:28:53 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:28:53 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:28:53 - INFO - First run - creating new database...
+2024-12-31 02:28:53 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:28:53 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:28:53 - ERROR - An error occurred: name 'geojson' is not defined
+Traceback (most recent call last):
+  File "/workspaces/ImmoCollectTrier/lib/scraper.py", line 75, in get_detail_page_info
+    geojson_data = json.loads(geojson_match.group(1))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspaces/ImmoCollectTrier/main.py", line 100, in main
+    details = scraper.get_detail_page_info(link)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/ImmoCollectTrier/lib/scraper.py", line 80, in get_detail_page_info
+    logger.error(f"Error processing GeoJSON: {str(e)} , {geojson}")
+                                                         ^^^^^^^
+NameError: name 'geojson' is not defined
+2024-12-31 02:29:04 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:29:04 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:29:04 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:29:04 - INFO - No existing data found, starting fresh
+2024-12-31 02:29:04 - INFO - Starting web scraping...
+2024-12-31 02:29:04 - INFO - Starting to scrape all listings...
+2024-12-31 02:29:06 - INFO - Found 5 pages to scrape
+2024-12-31 02:29:06 - INFO - Scraping page 1/5
+2024-12-31 02:29:06 - INFO - Found 30 listings on page 1
+2024-12-31 02:29:06 - INFO - Scraping page 2/5
+2024-12-31 02:29:07 - INFO - Found 30 listings on page 2
+2024-12-31 02:29:07 - INFO - Scraping page 3/5
+2024-12-31 02:29:08 - INFO - Found 30 listings on page 3
+2024-12-31 02:29:08 - INFO - Scraping page 4/5
+2024-12-31 02:29:09 - INFO - Found 30 listings on page 4
+2024-12-31 02:29:09 - INFO - Scraping page 5/5
+2024-12-31 02:29:10 - INFO - Found 28 listings on page 5
+2024-12-31 02:29:10 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:29:10 - INFO - Converting listings to DataFrame...
+2024-12-31 02:29:10 - INFO - Processing scraped data...
+2024-12-31 02:29:10 - INFO - Processing new data...
+2024-12-31 02:29:10 - DEBUG - Added missing column: Features
+2024-12-31 02:29:10 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:29:10 - DEBUG - Added missing column: Latitude
+2024-12-31 02:29:10 - DEBUG - Added missing column: Longitude
+2024-12-31 02:29:10 - DEBUG - Added missing column: created_date
+2024-12-31 02:29:10 - DEBUG - Added missing column: closed_date
+2024-12-31 02:29:10 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:29:10 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:29:10 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:29:10 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:29:10 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:29:10 - INFO - Cleaning data...
+2024-12-31 02:29:10 - INFO - Data processing completed successfully
+2024-12-31 02:29:10 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:29:10 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:29:10 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:29:10 - INFO - First run - creating new database...
+2024-12-31 02:29:10 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:29:10 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:29:11 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0) , https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/geojson(%7B%22geometry%22%3A%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B6.628926753997803%2C49.74531173706055%5D%7D%2C%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22marker-color%22%3A%22%23ffcc00%22%2C%22marker-size%22%3A%22medium%22%2C%22fill%22%3A%22%23006591%22%2C%22fill-opacity%22%3A0.3%2C%22stroke-width%22%3A2%7D%7D)/6.628926753997803,49.74531173706055,12/900x120@2x?access_token=pk.eyJ1IjoibWVpbGxldXJzYWdlbnRzIiwiYSI6ImNsbjF1eHBtbzAxd3oybXFscWd4azRmOGgifQ.gV422Zwcwttx7dw1uns40Q&attribution=false&logo=false
+2024-12-31 02:29:11 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:29:12 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0) , https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/geojson(%7B%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B6.6333%2C49.7419%5D%2C%5B6.6353%2C49.7415%5D%2C%5B6.6343%2C49.7351%5D%2C%5B6.6292%2C49.7362%5D%2C%5B6.6333%2C49.7419%5D%5D%5D%7D%2C%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22marker-color%22%3A%22%23ffcc00%22%2C%22marker-size%22%3A%22medium%22%2C%22fill%22%3A%22%23006591%22%2C%22fill-opacity%22%3A0.3%2C%22stroke-width%22%3A2%7D%7D)/auto/900x120@2x?access_token=pk.eyJ1IjoibWVpbGxldXJzYWdlbnRzIiwiYSI6ImNsbjF1eHBtbzAxd3oybXFscWd4azRmOGgifQ.gV422Zwcwttx7dw1uns40Q&attribution=false&logo=false
+2024-12-31 02:29:12 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:29:13 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0) , https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/geojson(%7B%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B6.6355%2C49.7465%5D%2C%5B6.631%2C49.7445%5D%2C%5B6.6326%2C49.7471%5D%2C%5B6.6355%2C49.7465%5D%5D%5D%7D%2C%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22marker-color%22%3A%22%23ffcc00%22%2C%22marker-size%22%3A%22medium%22%2C%22fill%22%3A%22%23006591%22%2C%22fill-opacity%22%3A0.3%2C%22stroke-width%22%3A2%7D%7D)/auto/900x120@2x?access_token=pk.eyJ1IjoibWVpbGxldXJzYWdlbnRzIiwiYSI6ImNsbjF1eHBtbzAxd3oybXFscWd4azRmOGgifQ.gV422Zwcwttx7dw1uns40Q&attribution=false&logo=false
+2024-12-31 02:29:13 - INFO - [4/148] Detail scraping: https://www.immowelt.de/expose/89ee5085-4d92-4b97-aa43-509b2f4aaeb7
+2024-12-31 02:29:14 - INFO - 
+Script interrupted by user
+2024-12-31 02:30:26 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:30:26 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:30:26 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:30:26 - INFO - No existing data found, starting fresh
+2024-12-31 02:30:26 - INFO - Starting web scraping...
+2024-12-31 02:30:26 - INFO - Starting to scrape all listings...
+2024-12-31 02:30:28 - INFO - Found 5 pages to scrape
+2024-12-31 02:30:28 - INFO - Scraping page 1/5
+2024-12-31 02:30:28 - INFO - Found 30 listings on page 1
+2024-12-31 02:30:28 - INFO - Scraping page 2/5
+2024-12-31 02:30:29 - INFO - Found 30 listings on page 2
+2024-12-31 02:30:29 - INFO - Scraping page 3/5
+2024-12-31 02:30:30 - INFO - Found 30 listings on page 3
+2024-12-31 02:30:30 - INFO - Scraping page 4/5
+2024-12-31 02:30:31 - INFO - Found 30 listings on page 4
+2024-12-31 02:30:31 - INFO - Scraping page 5/5
+2024-12-31 02:30:32 - INFO - Found 28 listings on page 5
+2024-12-31 02:30:32 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:30:32 - INFO - Converting listings to DataFrame...
+2024-12-31 02:30:32 - INFO - Processing scraped data...
+2024-12-31 02:30:32 - INFO - Processing new data...
+2024-12-31 02:30:32 - DEBUG - Added missing column: Features
+2024-12-31 02:30:32 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:30:32 - DEBUG - Added missing column: Latitude
+2024-12-31 02:30:32 - DEBUG - Added missing column: Longitude
+2024-12-31 02:30:32 - DEBUG - Added missing column: created_date
+2024-12-31 02:30:32 - DEBUG - Added missing column: closed_date
+2024-12-31 02:30:32 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:30:32 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:30:32 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:30:32 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:30:32 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:30:32 - INFO - Cleaning data...
+2024-12-31 02:30:32 - INFO - Data processing completed successfully
+2024-12-31 02:30:32 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:30:32 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:30:32 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:30:32 - INFO - First run - creating new database...
+2024-12-31 02:30:32 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:30:32 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:30:32 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:30:33 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:30:33 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:30:34 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:30:34 - ERROR - Error processing GeoJSON: Expecting value: line 1 column 1 (char 0)
+2024-12-31 02:30:34 - INFO - 
+Script interrupted by user
+2024-12-31 02:32:53 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:32:53 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:32:53 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:32:53 - INFO - No existing data found, starting fresh
+2024-12-31 02:32:53 - INFO - Starting web scraping...
+2024-12-31 02:32:53 - INFO - Starting to scrape all listings...
+2024-12-31 02:32:55 - INFO - Found 5 pages to scrape
+2024-12-31 02:32:55 - INFO - Scraping page 1/5
+2024-12-31 02:32:55 - INFO - Found 30 listings on page 1
+2024-12-31 02:32:55 - INFO - Scraping page 2/5
+2024-12-31 02:32:56 - INFO - Found 30 listings on page 2
+2024-12-31 02:32:56 - INFO - Scraping page 3/5
+2024-12-31 02:32:57 - INFO - Found 30 listings on page 3
+2024-12-31 02:32:57 - INFO - Scraping page 4/5
+2024-12-31 02:32:58 - INFO - Found 30 listings on page 4
+2024-12-31 02:32:58 - INFO - Scraping page 5/5
+2024-12-31 02:32:59 - INFO - Found 28 listings on page 5
+2024-12-31 02:32:59 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:32:59 - INFO - Converting listings to DataFrame...
+2024-12-31 02:32:59 - INFO - Processing scraped data...
+2024-12-31 02:32:59 - INFO - Processing new data...
+2024-12-31 02:32:59 - DEBUG - Added missing column: Features
+2024-12-31 02:32:59 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:32:59 - DEBUG - Added missing column: Latitude
+2024-12-31 02:32:59 - DEBUG - Added missing column: Longitude
+2024-12-31 02:32:59 - DEBUG - Added missing column: created_date
+2024-12-31 02:32:59 - DEBUG - Added missing column: closed_date
+2024-12-31 02:32:59 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:32:59 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:32:59 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:32:59 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:32:59 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:32:59 - INFO - Cleaning data...
+2024-12-31 02:32:59 - INFO - Data processing completed successfully
+2024-12-31 02:32:59 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:32:59 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:32:59 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:32:59 - INFO - First run - creating new database...
+2024-12-31 02:32:59 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:32:59 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:33:00 - ERROR - An error occurred: name 'unquote' is not defined
+Traceback (most recent call last):
+  File "/workspaces/ImmoCollectTrier/main.py", line 100, in main
+    details = scraper.get_detail_page_info(link)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/ImmoCollectTrier/lib/scraper.py", line 80, in get_detail_page_info
+    decoded_geojson_string = unquote(geojson_string)
+                             ^^^^^^^
+NameError: name 'unquote' is not defined
+2024-12-31 02:33:14 - INFO - Starting Immowelt Scraper...
+2024-12-31 02:33:14 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:33:14 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:33:14 - INFO - No existing data found, starting fresh
+2024-12-31 02:33:14 - INFO - Starting web scraping...
+2024-12-31 02:33:14 - INFO - Starting to scrape all listings...
+2024-12-31 02:33:16 - INFO - Found 5 pages to scrape
+2024-12-31 02:33:16 - INFO - Scraping page 1/5
+2024-12-31 02:33:16 - INFO - Found 30 listings on page 1
+2024-12-31 02:33:16 - INFO - Scraping page 2/5
+2024-12-31 02:33:17 - INFO - Found 30 listings on page 2
+2024-12-31 02:33:17 - INFO - Scraping page 3/5
+2024-12-31 02:33:18 - INFO - Found 30 listings on page 3
+2024-12-31 02:33:18 - INFO - Scraping page 4/5
+2024-12-31 02:33:19 - INFO - Found 30 listings on page 4
+2024-12-31 02:33:19 - INFO - Scraping page 5/5
+2024-12-31 02:33:20 - INFO - Found 28 listings on page 5
+2024-12-31 02:33:20 - INFO - Completed scraping. Total listings found: 148
+2024-12-31 02:33:20 - INFO - Converting listings to DataFrame...
+2024-12-31 02:33:20 - INFO - Processing scraped data...
+2024-12-31 02:33:20 - INFO - Processing new data...
+2024-12-31 02:33:20 - DEBUG - Added missing column: Features
+2024-12-31 02:33:20 - DEBUG - Added missing column: Vollständige_Adresse
+2024-12-31 02:33:20 - DEBUG - Added missing column: Latitude
+2024-12-31 02:33:20 - DEBUG - Added missing column: Longitude
+2024-12-31 02:33:20 - DEBUG - Added missing column: created_date
+2024-12-31 02:33:20 - DEBUG - Added missing column: closed_date
+2024-12-31 02:33:20 - DEBUG - Added missing column: Preis_cleaned
+2024-12-31 02:33:20 - DEBUG - Added missing column: Wohnfläche
+2024-12-31 02:33:20 - DEBUG - Added missing column: Grundstücksfläche
+2024-12-31 02:33:20 - DEBUG - Added missing column: Zimmer
+2024-12-31 02:33:20 - DEBUG - Added missing column: Preis_pro_qm
+2024-12-31 02:33:20 - INFO - Cleaning data...
+2024-12-31 02:33:20 - INFO - Data processing completed successfully
+2024-12-31 02:33:20 - INFO - DEBUG: new_df is type: <class 'pandas.core.frame.DataFrame'>
+2024-12-31 02:33:20 - INFO - DEBUG: new_df shape: (148, 16)
+2024-12-31 02:33:20 - INFO - DEBUG: new_df columns: ['Link', 'Preis', 'Beschreibung', 'Details', 'Adresse', 'Features', 'Vollständige_Adresse', 'Latitude', 'Longitude', 'created_date', 'closed_date', 'Preis_cleaned', 'Wohnfläche', 'Grundstücksfläche', 'Zimmer', 'Preis_pro_qm']
+2024-12-31 02:33:20 - INFO - First run - creating new database...
+2024-12-31 02:33:20 - INFO - Scraping detail pages for all 148 listings on the first run...
+2024-12-31 02:33:20 - INFO - [1/148] Detail scraping: https://www.immowelt.de/expose/bbc45e2b-a3e9-4139-9b82-606606d4f35a
+2024-12-31 02:33:21 - INFO - [2/148] Detail scraping: https://www.immowelt.de/expose/54dcb821-8683-4163-8d93-58b07cb87ac4
+2024-12-31 02:33:22 - INFO - [3/148] Detail scraping: https://www.immowelt.de/expose/b2e74f61-38fe-424b-bc4f-2fd772f411d0
+2024-12-31 02:33:23 - INFO - [4/148] Detail scraping: https://www.immowelt.de/expose/89ee5085-4d92-4b97-aa43-509b2f4aaeb7
+2024-12-31 02:33:24 - INFO - [5/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:33:26 - INFO - [6/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:33:27 - INFO - [7/148] Detail scraping: https://www.immowelt.de/expose/14df6e54-3c3b-492e-b849-9db96abb6a96
+2024-12-31 02:33:28 - INFO - [8/148] Detail scraping: https://www.immowelt.de/projekte/expose/k24d632
+2024-12-31 02:33:29 - INFO - [9/148] Detail scraping: https://www.immowelt.de/projekte/expose/k24d632
+2024-12-31 02:33:30 - INFO - [10/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:33:31 - INFO - [11/148] Detail scraping: https://www.immowelt.de/projekte/expose/k24d632
+2024-12-31 02:33:32 - INFO - [12/148] Detail scraping: https://www.immowelt.de/projekte/expose/k24d632
+2024-12-31 02:33:33 - INFO - [13/148] Detail scraping: https://www.immowelt.de/expose/90187034-063e-464a-932c-7870377597d6
+2024-12-31 02:33:34 - INFO - [14/148] Detail scraping: https://www.immowelt.de/expose/a410103a-b112-45b5-8134-9b2634526ea2
+2024-12-31 02:33:35 - INFO - [15/148] Detail scraping: https://www.immowelt.de/expose/a4ad698e-5a46-47b1-959c-f52f026fbbc1
+2024-12-31 02:33:36 - INFO - [16/148] Detail scraping: https://www.immowelt.de/expose/518d3954-085e-41d0-9a9f-dca375f34079
+2024-12-31 02:33:38 - INFO - [17/148] Detail scraping: https://www.immowelt.de/expose/f24fb877-b14d-4442-ad49-64710dc81456
+2024-12-31 02:33:39 - INFO - [18/148] Detail scraping: https://www.immowelt.de/expose/f8c6cb80-42b8-4b0b-a2bb-ce930ce99687
+2024-12-31 02:33:40 - INFO - [19/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:33:41 - INFO - [20/148] Detail scraping: https://www.immowelt.de/expose/4f9fe860-471e-4e45-bad1-dd125e2b31b7
+2024-12-31 02:33:42 - INFO - [21/148] Detail scraping: https://www.immowelt.de/expose/1ad62ff6-861e-4520-86a0-01e4e9e13d6c
+2024-12-31 02:33:43 - INFO - [22/148] Detail scraping: https://www.immowelt.de/expose/47dc1557-da10-4947-9d34-835361870648
+2024-12-31 02:33:45 - INFO - [23/148] Detail scraping: https://www.immowelt.de/expose/8669fbc7-737f-4da8-b176-d247d5f75204
+2024-12-31 02:33:46 - INFO - [24/148] Detail scraping: https://www.immowelt.de/expose/5b2802a4-1e07-4828-9495-07b6da26a492
+2024-12-31 02:33:47 - INFO - [25/148] Detail scraping: https://www.immowelt.de/expose/671e30de-95bd-4fb2-b282-6e636cad5f7c
+2024-12-31 02:33:48 - INFO - [26/148] Detail scraping: https://www.immowelt.de/expose/ec63d378-9d6e-48e5-88a1-da46e24bbafd
+2024-12-31 02:33:50 - INFO - [27/148] Detail scraping: https://www.immowelt.de/expose/2e9d1bb2-2147-4453-b4d0-9832d5d5a3eb
+2024-12-31 02:33:51 - INFO - [28/148] Detail scraping: https://www.immowelt.de/expose/52d10bed-c566-4e5a-93be-ba5cb442b7c7
+2024-12-31 02:33:52 - INFO - [29/148] Detail scraping: https://www.immowelt.de/expose/3ad6d174-0b65-44eb-afad-bd10d391b5c2
+2024-12-31 02:33:54 - INFO - [30/148] Detail scraping: https://www.immowelt.de/expose/8a8ce174-f9a6-4a77-a586-a9e1148e3de0
+2024-12-31 02:33:55 - INFO - [31/148] Detail scraping: https://www.immowelt.de/expose/d8b42016-32a4-4634-a9ba-7bf0f7d2d45a
+2024-12-31 02:33:56 - INFO - [32/148] Detail scraping: https://www.immowelt.de/expose/15ae023b-bef7-4d7d-9bae-ce5daa512dea
+2024-12-31 02:33:58 - INFO - [33/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:33:59 - INFO - [34/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:00 - INFO - [35/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:00 - INFO - [36/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:01 - INFO - [37/148] Detail scraping: https://www.immowelt.de/expose/7f9b5c68-ba1d-4882-825b-33d523abfa61
+2024-12-31 02:34:03 - INFO - [38/148] Detail scraping: https://www.immowelt.de/expose/abc1cdd8-c7f8-444e-8ca9-a69e67f21bac
+2024-12-31 02:34:04 - INFO - [39/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:05 - INFO - [40/148] Detail scraping: https://www.immowelt.de/expose/88e2f05c-6e79-41ee-8ac8-05f7bc0532ee
+2024-12-31 02:34:06 - INFO - [41/148] Detail scraping: https://www.immowelt.de/expose/e50081df-c533-44ae-8b25-92172aa405d1
+2024-12-31 02:34:07 - INFO - [42/148] Detail scraping: https://www.immowelt.de/expose/7eec87b7-014f-489b-8914-547d92f6139d
+2024-12-31 02:34:08 - INFO - [43/148] Detail scraping: https://www.immowelt.de/expose/ec8e3fcd-142f-4046-a5e1-d9873298db2f
+2024-12-31 02:34:09 - INFO - [44/148] Detail scraping: https://www.immowelt.de/expose/1965e235-66b0-449a-987a-4431b4d6bbae
+2024-12-31 02:34:11 - INFO - [45/148] Detail scraping: https://www.immowelt.de/expose/bd282be7-f3d4-42df-9091-7a56cf5377fb
+2024-12-31 02:34:12 - INFO - [46/148] Detail scraping: https://www.immowelt.de/expose/169e60b8-2f18-42d7-bc64-d2b9c4f1a736
+2024-12-31 02:34:13 - INFO - [47/148] Detail scraping: https://www.immowelt.de/expose/596391e2-5d47-4410-bcc2-7adf77dcf56c
+2024-12-31 02:34:14 - INFO - [48/148] Detail scraping: https://www.immowelt.de/expose/63785cd3-415e-41ab-b688-6ee81fc8d954
+2024-12-31 02:34:16 - INFO - [49/148] Detail scraping: https://www.immowelt.de/expose/67fc1f42-b81f-4f5d-9f3e-db7253b2a369
+2024-12-31 02:34:17 - INFO - [50/148] Detail scraping: https://www.immowelt.de/expose/ca5b7f98-59a1-4251-8e31-1b5379772940
+2024-12-31 02:34:18 - INFO - [51/148] Detail scraping: https://www.immowelt.de/expose/61fc7b2f-c9a4-4239-8ce6-e57557aab305
+2024-12-31 02:34:19 - INFO - [52/148] Detail scraping: https://www.immowelt.de/expose/15d76adf-e8e9-4d91-bb57-9332e9a9d02e
+2024-12-31 02:34:21 - INFO - [53/148] Detail scraping: https://www.immowelt.de/expose/e8c690cd-875c-4a94-bf5c-44513638624c
+2024-12-31 02:34:22 - INFO - [54/148] Detail scraping: https://www.immowelt.de/expose/330f5fc4-d639-4dee-adf7-85d473b1374e
+2024-12-31 02:34:23 - INFO - [55/148] Detail scraping: https://www.immowelt.de/expose/1e1fbfa0-3ad4-4e1e-91ef-ead928807a7a
+2024-12-31 02:34:25 - INFO - [56/148] Detail scraping: https://www.immowelt.de/expose/beeb6f1d-c430-4e96-b873-30b912e0ad12
+2024-12-31 02:34:26 - INFO - [57/148] Detail scraping: https://www.immowelt.de/expose/d1e139e4-1e27-4f23-81d3-439d319e21c0
+2024-12-31 02:34:27 - INFO - [58/148] Detail scraping: https://www.immowelt.de/expose/4c2ea4d1-e365-4715-8fd1-a5e0359aaa8f
+2024-12-31 02:34:28 - INFO - [59/148] Detail scraping: https://www.immowelt.de/expose/f09145f6-6321-43ef-9ad0-8deb6982d2ee
+2024-12-31 02:34:29 - INFO - [60/148] Detail scraping: https://www.immowelt.de/expose/d9157930-cef3-4de5-9e02-a14ddeb8a7d0
+2024-12-31 02:34:30 - INFO - [61/148] Detail scraping: https://www.immowelt.de/expose/35b9bfe8-c7b3-447b-a297-6fdb0aa97ef5
+2024-12-31 02:34:32 - INFO - [62/148] Detail scraping: https://www.immowelt.de/expose/0b18a8ce-02e5-4335-9a33-6eacbf3ff718
+2024-12-31 02:34:33 - INFO - [63/148] Detail scraping: https://www.immowelt.de/expose/6b41d66c-594d-494a-994d-dc4d02ca1fe6
+2024-12-31 02:34:34 - INFO - [64/148] Detail scraping: https://www.immowelt.de/expose/bfb89320-9238-42d4-a063-522a51c39c29
+2024-12-31 02:34:35 - INFO - [65/148] Detail scraping: https://www.immowelt.de/expose/5212afdc-e062-4394-bf04-2f740a6ba6db
+2024-12-31 02:34:37 - INFO - [66/148] Detail scraping: https://www.immowelt.de/expose/a60b707b-5c23-4d45-a72a-1b555b1043cf
+2024-12-31 02:34:38 - INFO - [67/148] Detail scraping: https://www.immowelt.de/expose/4a487b06-2718-4086-9aa7-7c34c875a930
+2024-12-31 02:34:39 - INFO - [68/148] Detail scraping: https://www.immowelt.de/expose/bd36d900-6067-43b6-8e03-0e0ede07de96
+2024-12-31 02:34:40 - INFO - [69/148] Detail scraping: https://www.immowelt.de/expose/e2203b7f-784c-4b44-beed-791f46b97ba0
+2024-12-31 02:34:42 - INFO - [70/148] Detail scraping: https://www.immowelt.de/expose/1206a7f6-a417-4932-924b-c565a6edf82b
+2024-12-31 02:34:43 - INFO - [71/148] Detail scraping: https://www.immowelt.de/expose/9600c307-69c1-4dbf-b1f6-0ec98c60eefa
+2024-12-31 02:34:44 - INFO - [72/148] Detail scraping: https://www.immowelt.de/expose/3b327183-a6ec-4f90-908d-45fae98ff4c0
+2024-12-31 02:34:45 - INFO - [73/148] Detail scraping: https://www.immowelt.de/expose/6ef8d90b-7baa-438c-9ff7-14c031829bda
+2024-12-31 02:34:46 - INFO - [74/148] Detail scraping: https://www.immowelt.de/expose/8bf01e4c-4d07-45e3-a481-a02f270641d5
+2024-12-31 02:34:47 - INFO - [75/148] Detail scraping: https://www.immowelt.de/expose/da46e1c7-ebd0-4c5a-9b81-74f999fb00c6
+2024-12-31 02:34:49 - INFO - [76/148] Detail scraping: https://www.immowelt.de/expose/9836ad05-d9d5-4346-bd7e-e138ce255728
+2024-12-31 02:34:50 - INFO - [77/148] Detail scraping: https://www.immowelt.de/expose/5198120e-abec-45ca-a855-55a1b4b13882
+2024-12-31 02:34:51 - INFO - [78/148] Detail scraping: https://www.immowelt.de/expose/fd343a15-8128-4cdb-aeec-00a3628b5ee0
+2024-12-31 02:34:52 - INFO - [79/148] Detail scraping: https://www.immowelt.de/expose/402bc423-b5c9-4377-a5f9-2a2f5c7a2b2d
+2024-12-31 02:34:54 - INFO - [80/148] Detail scraping: https://www.immowelt.de/expose/dadde19e-81b0-47b5-8d32-24945ce9a9bd
+2024-12-31 02:34:55 - INFO - [81/148] Detail scraping: https://www.immowelt.de/expose/75ffdd58-cba0-4b02-b073-0cff7c6cb0b2
+2024-12-31 02:34:56 - INFO - [82/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:57 - INFO - [83/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:58 - INFO - [84/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:34:59 - INFO - [85/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:35:00 - INFO - [86/148] Detail scraping: https://www.immowelt.de/expose/16f96004-35f7-4aaf-beeb-a709c72c18ce
+2024-12-31 02:35:01 - INFO - [87/148] Detail scraping: https://www.immowelt.de/expose/6c1ef2b4-99f5-4e0a-a623-28588c3f6010
+2024-12-31 02:35:02 - INFO - [88/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:35:03 - INFO - [89/148] Detail scraping: https://www.immowelt.de/projekte/expose/k2wz432
+2024-12-31 02:35:04 - INFO - [90/148] Detail scraping: https://www.immowelt.de/expose/66b82099-2bcc-4175-b2f2-068d70978fd9
+2024-12-31 02:35:06 - INFO - [91/148] Detail scraping: https://www.immowelt.de/expose/5aff3f90-bae1-4f73-ad6f-898f9b9696d2
+2024-12-31 02:35:07 - INFO - [92/148] Detail scraping: https://www.immowelt.de/expose/2518e778-7e06-4594-b545-7f14ed797549
+2024-12-31 02:35:08 - INFO - [93/148] Detail scraping: https://www.immowelt.de/expose/6da84c78-67de-46ed-bfe6-9c303e26dcba
+2024-12-31 02:35:09 - INFO - [94/148] Detail scraping: https://www.immowelt.de/expose/2daae2fa-08ad-4f7f-972d-3660c31fd98c
+2024-12-31 02:35:10 - INFO - [95/148] Detail scraping: https://www.immowelt.de/expose/e641fcc8-5427-438a-b03c-70c3d9186a5a
+2024-12-31 02:35:11 - INFO - [96/148] Detail scraping: https://www.immowelt.de/expose/73afc6da-41e4-4643-80a8-71dac0e468cd
+2024-12-31 02:35:13 - INFO - [97/148] Detail scraping: https://www.immowelt.de/expose/a901c844-1186-44be-b984-67651c85553d
+2024-12-31 02:35:14 - INFO - [98/148] Detail scraping: https://www.immowelt.de/expose/a15cfdc9-9e7f-41d8-ac24-d1586b0ac490
+2024-12-31 02:35:15 - INFO - [99/148] Detail scraping: https://www.immowelt.de/expose/4d0d338c-87b8-454e-bf0a-ca1715da9cac
+2024-12-31 02:35:16 - INFO - [100/148] Detail scraping: https://www.immowelt.de/expose/a3fe687b-add1-41ff-a195-deda229611eb
+2024-12-31 02:35:18 - INFO - [101/148] Detail scraping: https://www.immowelt.de/expose/35fb2cb5-ebf8-406d-bead-a67efbbde7a9
+2024-12-31 02:35:19 - INFO - [102/148] Detail scraping: https://www.immowelt.de/expose/f22b384e-b024-4553-82ee-fa73ac1de0be
+2024-12-31 02:35:20 - INFO - [103/148] Detail scraping: https://www.immowelt.de/expose/2847ab34-4c7d-44bb-a9da-5ad2d7011112
+2024-12-31 02:35:21 - INFO - [104/148] Detail scraping: https://www.immowelt.de/expose/198c58a9-45c5-4c81-ab2a-dc8ab7e95d3d
+2024-12-31 02:35:22 - INFO - [105/148] Detail scraping: https://www.immowelt.de/expose/01b45042-4bae-4122-a88f-6ebc44060730
+2024-12-31 02:35:24 - INFO - [106/148] Detail scraping: https://www.immowelt.de/expose/d43e247f-b6bc-457a-a388-72ffeb7f637e
+2024-12-31 02:35:25 - INFO - [107/148] Detail scraping: https://www.immowelt.de/expose/c38a44c0-5dae-43d7-9b36-2b32fc6d5c54
+2024-12-31 02:35:26 - INFO - [108/148] Detail scraping: https://www.immowelt.de/expose/f1df2727-3326-465e-910d-522f0df8fb1a
+2024-12-31 02:35:27 - INFO - [109/148] Detail scraping: https://www.immowelt.de/expose/c9ebc0ff-17dc-470a-a484-399984dfc1a5
+2024-12-31 02:35:29 - INFO - [110/148] Detail scraping: https://www.immowelt.de/expose/760291bc-3712-4e3c-8668-efee332d95e9
+2024-12-31 02:35:30 - INFO - [111/148] Detail scraping: https://www.immowelt.de/expose/4d48f2a5-db19-4fdb-9eab-f4983b41d524
+2024-12-31 02:35:32 - INFO - [112/148] Detail scraping: https://www.immowelt.de/expose/dffa46bc-f148-45cf-af11-76de66a72918
+2024-12-31 02:35:33 - INFO - [113/148] Detail scraping: https://www.immowelt.de/expose/09e0b575-f935-481d-b61b-145f3acbea2e
+2024-12-31 02:35:34 - INFO - [114/148] Detail scraping: https://www.immowelt.de/expose/23c9c398-5d55-422a-b728-277cc865b1c7
+2024-12-31 02:35:35 - INFO - [115/148] Detail scraping: https://www.immowelt.de/expose/3a6b6cd3-8e8d-46eb-a691-876fc1c6c04f
+2024-12-31 02:35:37 - INFO - [116/148] Detail scraping: https://www.immowelt.de/expose/e0a277c7-8830-439d-8208-8681b3cb1103
+2024-12-31 02:35:38 - INFO - [117/148] Detail scraping: https://www.immowelt.de/expose/1bf9cb45-a02f-48ee-8a31-03ea0ee53978
+2024-12-31 02:35:39 - INFO - [118/148] Detail scraping: https://www.immowelt.de/expose/3569f21c-44bb-4238-aebd-8927bca800df
+2024-12-31 02:35:41 - INFO - [119/148] Detail scraping: https://www.immowelt.de/expose/2b653382-1cd2-443e-bb38-9188c8b71a57
+2024-12-31 02:35:42 - INFO - [120/148] Detail scraping: https://www.immowelt.de/expose/cd667173-0d18-4ebe-8e9e-8f8de75a5bb4
+2024-12-31 02:35:43 - INFO - [121/148] Detail scraping: https://www.immowelt.de/expose/75858fc4-635d-4197-9f21-b12974002b79
+2024-12-31 02:35:44 - INFO - [122/148] Detail scraping: https://www.immowelt.de/expose/d3d9a4a7-41b9-4564-889c-6907202024c9
+2024-12-31 02:35:45 - INFO - [123/148] Detail scraping: https://www.immowelt.de/expose/6211df29-4ded-4ec4-b213-854ac9a99eef
+2024-12-31 02:35:47 - INFO - [124/148] Detail scraping: https://www.immowelt.de/expose/a493149e-7f4f-48ec-a2cb-984571b4e6a5
+2024-12-31 02:35:48 - INFO - [125/148] Detail scraping: https://www.immowelt.de/expose/2be27496-cc23-41dd-a6f7-2e601bf3df0e
+2024-12-31 02:35:49 - INFO - [126/148] Detail scraping: https://www.immowelt.de/expose/879f7015-62b3-4899-b34b-939a9c52cb0f
+2024-12-31 02:35:50 - INFO - [127/148] Detail scraping: https://www.immowelt.de/expose/0b453b8f-4ab8-4e53-80e2-3dcf9c475858
+2024-12-31 02:35:52 - INFO - [128/148] Detail scraping: https://www.immowelt.de/expose/37ced9f9-f45d-4961-aec9-1eea24d5f004
+2024-12-31 02:35:53 - INFO - [129/148] Detail scraping: https://www.immowelt.de/expose/cd0a05a6-6aa8-474b-9d32-c53f2c975291
+2024-12-31 02:35:55 - INFO - [130/148] Detail scraping: https://www.immowelt.de/expose/754cadb1-f566-48b9-9e2e-069f886ea9ff
+2024-12-31 02:35:56 - INFO - [131/148] Detail scraping: https://www.immowelt.de/expose/f1d4e318-e078-48a0-b2c1-42caf4171da0
+2024-12-31 02:35:57 - INFO - [132/148] Detail scraping: https://www.immowelt.de/expose/2199f101-8d48-46ef-ae62-828d32db1695
+2024-12-31 02:35:58 - INFO - [133/148] Detail scraping: https://www.immowelt.de/expose/5faf808a-b81d-4903-8d51-00aac1bbdfb4
+2024-12-31 02:36:00 - INFO - [134/148] Detail scraping: https://www.immowelt.de/expose/a8471733-4fb4-4779-a69d-997d85889e20
+2024-12-31 02:36:01 - INFO - [135/148] Detail scraping: https://www.immowelt.de/expose/44641d25-c44e-49e7-9e8f-93d93862b121
+2024-12-31 02:36:02 - INFO - [136/148] Detail scraping: https://www.immowelt.de/expose/8e09c0bb-fca8-42fb-9b50-09f8872991f6
+2024-12-31 02:36:04 - INFO - [137/148] Detail scraping: https://www.immowelt.de/expose/31679262-cead-4cb2-8439-5de8acf5cac1
+2024-12-31 02:36:06 - INFO - [138/148] Detail scraping: https://www.immowelt.de/expose/893abb7a-b455-4a18-9de8-5b8f2744f8fa
+2024-12-31 02:36:08 - INFO - [139/148] Detail scraping: https://www.immowelt.de/expose/8424913e-4ef3-44ba-b6fc-2f83b18f49d9
+2024-12-31 02:36:09 - INFO - [140/148] Detail scraping: https://www.immowelt.de/expose/0658f42f-9024-458f-86f3-0a97ec452e67
+2024-12-31 02:36:10 - INFO - [141/148] Detail scraping: https://www.immowelt.de/expose/cfd7de80-c099-4658-884b-8bba2b5d3b88
+2024-12-31 02:36:12 - INFO - [142/148] Detail scraping: https://www.immowelt.de/expose/f366bdec-721d-4183-9936-5799302d651d
+2024-12-31 02:36:13 - INFO - [143/148] Detail scraping: https://www.immowelt.de/expose/87961b71-5bb2-4d39-9589-3ec42058c80a
+2024-12-31 02:36:14 - INFO - [144/148] Detail scraping: https://www.immowelt.de/expose/1fc304f3-85e8-4e17-9e1f-dd832e6a5796
+2024-12-31 02:36:15 - INFO - [145/148] Detail scraping: https://www.immowelt.de/expose/91b2eb90-fd64-4194-a91e-bf675fce63fd
+2024-12-31 02:36:16 - INFO - [146/148] Detail scraping: https://www.immowelt.de/expose/3746fc09-ba67-43a3-9c53-2171cb541414
+2024-12-31 02:36:18 - INFO - [147/148] Detail scraping: https://www.immowelt.de/expose/947a77ee-5f05-4d4c-be52-ee25bb6f3aab
+2024-12-31 02:36:19 - INFO - [148/148] Detail scraping: https://www.immowelt.de/expose/8e8680cb-8412-4003-a916-e9a0025433f3
+2024-12-31 02:36:20 - INFO - Saved 148 records to /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2024-12-31 02:36:20 - INFO - Initial database created successfully!
