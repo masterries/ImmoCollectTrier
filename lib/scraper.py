@@ -65,11 +65,11 @@ class WebScraper:
                     features.append(feature_text.text.strip())
 
         latitude = longitude = None
-        centroid = None
 
         map_button = soup.find("button", {"aria-label": "Adresse auf Karte ansehen"})
         if map_button and map_button.find("img"):
             img_src = map_button.find("img")["src"]
+            logger.debug(f"Map image source: {img_src}")  # Log map image source
             if "geojson" in img_src:
                 geojson_match = re.search(r'geojson\((.*?)\)', img_src)
                 if geojson_match:
@@ -78,13 +78,17 @@ class WebScraper:
                         try:
                             # Decode the URL-encoded GeoJSON string
                             decoded_geojson_string = unquote(geojson_string)
+                            logger.debug(f"Decoded GeoJSON string: {decoded_geojson_string}")  # Log decoded GeoJSON
                             
                             # Parse the decoded string as JSON
                             geojson_data = json.loads(decoded_geojson_string)
+                            logger.debug(f"Parsed GeoJSON data: {geojson_data}")  # Log parsed GeoJSON
                             
                             if geojson_data.get("geometry", {}).get("type") == "Polygon":
                                 polygon_coords = geojson_data["geometry"]["coordinates"][0]
-                                centroid = calculate_polygon_centroid(polygon_coords)
+                                logger.debug(f"Polygon coordinates: {polygon_coords}")  # Log polygon coordinates
+                                longitude, latitude = calculate_polygon_centroid(polygon_coords)
+                                logger.info(f"Calculated centroid as longitude={longitude}, latitude={latitude}")
                         except json.JSONDecodeError as e:
                             logger.error(f"Error decoding GeoJSON: {str(e)}, {decoded_geojson_string}")
                         except KeyError as e:
@@ -96,6 +100,7 @@ class WebScraper:
                 if coordinates_match:
                     longitude = float(coordinates_match.group(1))
                     latitude = float(coordinates_match.group(2))
+                    logger.info(f"Extracted coordinates: longitude={longitude}, latitude={latitude}")
 
         address_div = soup.find("div", {"data-testid": "aviv.CDP.Location.Address"})
         full_address = address_div.text.strip() if address_div else "Keine Adresse gefunden"
@@ -104,9 +109,9 @@ class WebScraper:
             "features": features,
             "full_address": full_address,
             "latitude": latitude,
-            "longitude": longitude,
-            "centroid": centroid
+            "longitude": longitude
         }
+
 
 
 
