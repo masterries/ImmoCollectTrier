@@ -6,7 +6,7 @@ function App() {
   return (
     <Container maxWidth="lg" style={{ marginTop: '2rem' }}>
       <Typography variant="h4" gutterBottom>
-        Immowelt Listings with MapLibre (Free, No API Key)
+        3D Deck.GL Map (No API Key!)
       </Typography>
       <HomePage />
     </Container>

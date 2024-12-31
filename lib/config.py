@@ -20,7 +20,7 @@ class Config:
     LOG_DIR = os.path.join(BASE_DIR, 'logs')
     
     # Base URL for scraping
-    BASE_URL = "https://www.immowelt.de/classified-search?distributionTypes=Buy,Buy_Auction,Compulsory_Auction&estateTypes=House,Apartment&locations=eyJwbGFjZUlkIjoiQUQwOERFNDA0OCIsInJhZGl1cyI6NSwicG9seWxpbmUiOiJjZ3xuSG9ncmdAakR6c0F-TnBwQX5YYmpBfGFAemBBcGlAfnRAcG9AYmdAcnNAcld4dUBoR3Z1QG1HcnNAeVdub0BlZ0BwaUBhdUB6YUB5YEF8WGFqQXxObXBBakR1c0FrRHVzQX1ObXBBfVhhakF7YUB5YEFxaUBhdUBvb0BlZ0Bzc0B3V3d1QG1HeXVAZkdzc0B0V3FvQGBnQHFpQGB1QH1hQHhgQV9ZZGpBX09wcEFrRHhzQSJ9"
+    BASE_URL = "https://www.immowelt.de/classified-search?distributionTypes=Buy,Buy_Auction,Compulsory_Auction&estateTypes=House,Apartment&locations=eyJwbGFjZUlkIjoiQUQwOERFNDA0OCIsInJhZGl1cyI6NTAsInBvbHlsaW5lIjoic2VrcUhvZ3JnQGx1QGp2WWRgRHJ0WG5kR25yVnJ-SXhyU3pqTHZ5T2xmTn5rS2BvT3RvRmJjUHZqQWJiUGV6QWRsT3V8RmRiTnd0S3xlTHd8T3J5SXlvU2pgR3dpVmh9Q3FnWGx0QF9nWW10QH1mWWl9Q3FnWGtgR3dpVnN5SXlvU31lTHd8T2ViTnl0S2VsT3V8RmNiUGN6QWNjUHZqQWFvT3JvRm1mTmBsS3tqTHR5T3N-SXpyU29kR25yVmVgRHB0WG11QGp2WSJ9"
     REQUEST_DELAY = 0.1
     RETRY_ATTEMPTS = 3
     TIMEOUT = 10
