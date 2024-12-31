@@ -84,7 +84,13 @@ class WebScraper:
                             geojson_data = json.loads(decoded_geojson_string)
                             logger.debug(f"Parsed GeoJSON data: {geojson_data}")  # Log parsed GeoJSON
                             
-                            if geojson_data.get("geometry", {}).get("type") == "Polygon":
+                            geometry_type = geojson_data.get("geometry", {}).get("type")
+                            if geometry_type == "Point":
+                                point_coords = geojson_data["geometry"]["coordinates"]
+                                logger.debug(f"Point coordinates: {point_coords}")  # Log point coordinates
+                                longitude, latitude = point_coords[0], point_coords[1]
+                                logger.info(f"Extracted Point coordinates as longitude={longitude}, latitude={latitude}")
+                            elif geometry_type == "Polygon":
                                 polygon_coords = geojson_data["geometry"]["coordinates"][0]
                                 logger.debug(f"Polygon coordinates: {polygon_coords}")  # Log polygon coordinates
                                 longitude, latitude = calculate_polygon_centroid(polygon_coords)
