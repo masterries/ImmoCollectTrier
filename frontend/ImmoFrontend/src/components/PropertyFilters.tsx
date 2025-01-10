@@ -1,10 +1,13 @@
+// src/components/PropertyFilters.tsx
+
 import React, { useState } from 'react';
 import { useFilters } from '../contexts/FilterContext';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
+import DateRangeFilter from "./DateRangeFilter";
 import MapRadiusFilter from "./MapRadiusFilter";
+import ListingStatusFilter from "./ListingStatusFilter";
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import {
   Select,
@@ -18,40 +21,53 @@ import type { DataRanges } from '../types';
 
 // Example breakpoints for Price per m²
 const pricePerSqmOptions = [0, 1000, 2000, 3000, 4000, 5000, 10000];
-
-// For Rooms: we’ll allow up to 6, plus "7", "8", "9", "10" or "NoMax" 
-// to demonstrate a "between" approach. Adjust as you like.
 const roomDropdownOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const NO_MAX_ROOMS = "NoMax"; // for the dropdown
+const NO_MAX_ROOMS = "NoMax";
 
 interface Props {
   propertyTypes: string[];
   ranges: DataRanges;
-  /**
-   * DataRanges might look like:
-   * {
-   *   price: { min: number; max: number };
-   *   pricePerSqm: { min: number; max: number };
-   *   livingSpace: { min: number; max: number };
-   *   rooms: { min: number; max: number };
-   *   ...
-   * }
-   */
+  isComparisonSet?: boolean;
+  comparisonSetIndex?: number;
+  comparisonFilters?: any;
+  onComparisonFilterChange?: (updater: any) => void;
 }
 
-export default function PropertyFilters({ propertyTypes, ranges }: Props) {
-  const { filters, setFilters } = useFilters();
+export default function PropertyFilters({ 
+  propertyTypes, 
+  ranges,
+  isComparisonSet = false,
+  comparisonFilters,
+  onComparisonFilterChange
+}: Props) {
+  // Pull from context only if not comparison set
+  const { filters: contextFilters, setFilters: setContextFilters } = useFilters();
+
+  // If this is a comparison set, use the passed-in filters; otherwise use context
+  const filters = isComparisonSet ? comparisonFilters : contextFilters;
+
+  // Similarly, define how to set filters
+  const setFilters = isComparisonSet
+    ? (newFiltersOrFn: any) => {
+        // Call the parent's comparison filter change handler if provided
+        if (onComparisonFilterChange) {
+          onComparisonFilterChange((prevFilters: any) => {
+            // If newFiltersOrFn is a function, pass prevFilters to it
+            if (typeof newFiltersOrFn === "function") {
+              return newFiltersOrFn(prevFilters);
+            }
+            // Otherwise, just return the new object
+            return newFiltersOrFn;
+          });
+        }
+      }
+    : setContextFilters;
+
   const [showAdvanced, setShowAdvanced] = useState(false);
 
-  // ----------------------------------
-  // 1) BASIC PRICE RANGE (with "Apply")
-  // ----------------------------------
-  const [basicPriceMin, setBasicPriceMin] = useState(
-    ranges.price.min.toString()
-  );
-  const [basicPriceMax, setBasicPriceMax] = useState(
-    ranges.price.max.toString()
-  );
+  // Basic price range state (local text inputs)
+  const [basicPriceMin, setBasicPriceMin] = useState(ranges.price.min.toString());
+  const [basicPriceMax, setBasicPriceMax] = useState(ranges.price.max.toString());
 
   const handleBasicPriceApply = () => {
     const minVal = Number(basicPriceMin) || 0;
@@ -59,15 +75,13 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
     const finalMin = Math.min(minVal, maxVal);
     const finalMax = Math.max(minVal, maxVal);
 
-    setFilters((prev) => ({
+    setFilters((prev: any) => ({
       ...prev,
       priceRange: [finalMin, finalMax],
     }));
   };
 
-  // ----------------------------------
-  // Helper for Infinity <-> "NoMax"
-  // ----------------------------------
+  // Helper functions
   const toDropdownValue = (val: number) =>
     val === Infinity ? "NoMax" : val.toString();
 
@@ -77,36 +91,29 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
     return isNaN(parsed) ? 0 : parsed;
   };
 
-  // ----------------------------------
-  // 2) PRICE PER M² (Dropdowns, no apply button)
-  // ----------------------------------
+  // Price per sqm handlers
   const handlePricePerSqmChange = (which: "min" | "max") => (selected: string) => {
-    setFilters((prev) => {
+    setFilters((prev: any) => {
       const [oldMin, oldMax] = prev.pricePerSqmRange;
       const newVal = fromDropdownValue(selected);
 
       if (which === "min") {
-        // If new min is greater than old max, clamp to newVal
         const correctedMax = newVal > oldMax ? newVal : oldMax;
         return { ...prev, pricePerSqmRange: [newVal, correctedMax] };
       } else {
-        // If new max is less than old min, clamp to newVal
         const correctedMin = newVal < oldMin ? newVal : oldMin;
         return { ...prev, pricePerSqmRange: [correctedMin, newVal] };
       }
     });
   };
 
-  // ----------------------------------
-  // 3) LIVING SPACE (Manual only, no apply button)
-  // ----------------------------------
-  // We'll update the context in real-time as user types or changes.
+  // Living space handlers
   const handleLivingSpaceChange = (which: "min" | "max") => (
     e: React.ChangeEvent<HTMLInputElement>
   ) => {
     const val = Number(e.target.value) || 0;
 
-    setFilters((prev) => {
+    setFilters((prev: any) => {
       const [oldMin, oldMax] = prev.livingSpaceRange;
       if (which === "min") {
         const finalMin = Math.min(val, oldMax);
@@ -120,53 +127,42 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
     });
   };
 
-  // Because we are updating the context directly, let's read the current min/max from filters
-  const livingSpaceMinValue = filters.livingSpaceRange[0];
-  const livingSpaceMaxValue = filters.livingSpaceRange[1];
-
-  // ----------------------------------
-  // 4) ROOMS (Between X and Y, via two dropdowns, no apply button)
-  // ----------------------------------
+  // Rooms handlers
   const handleRoomsChange = (which: "min" | "max") => (selected: string) => {
-    setFilters((prev) => {
+    setFilters((prev: any) => {
       const [oldMin, oldMax] = prev.roomsRange;
       const newVal = selected === NO_MAX_ROOMS ? Infinity : Number(selected);
 
       if (which === "min") {
-        // If newMin > oldMax, clamp oldMax
         const correctedMax = newVal > oldMax ? newVal : oldMax;
         return { ...prev, roomsRange: [newVal, correctedMax] };
       } else {
-        // If newMax < oldMin, clamp oldMin
         const correctedMin = newVal < oldMin ? newVal : oldMin;
         return { ...prev, roomsRange: [correctedMin, newVal] };
       }
     });
   };
 
-  // Convert the current roomsRange into dropdown strings
+  const livingSpaceMinValue = filters.livingSpaceRange[0];
+  const livingSpaceMaxValue = filters.livingSpaceRange[1];
   const roomsMinString = toDropdownValue(filters.roomsRange[0]);
   const roomsMaxString = toDropdownValue(filters.roomsRange[1]);
+  const roomMaxOptions = [
+    ...roomDropdownOptions.map((n) => n.toString()),
+    NO_MAX_ROOMS,
+  ];
 
-  // We'll build an array of values for max dropdown that includes "NoMax"
-  const roomMaxOptions = [...roomDropdownOptions.map((n) => n.toString()), NO_MAX_ROOMS];
-
-  // ----------------------------------
-  // RENDER
-  // ----------------------------------
   return (
     <Card className="bg-white shadow-sm border border-gray-200">
       <CardContent className="p-6">
-
-        {/* BASIC FILTERS */}
+        {/* Basic Filters */}
         <div className="flex flex-wrap gap-4 items-center">
-          
-          {/* PROPERTY TYPE SELECT */}
+          {/* Property Type Select */}
           <div className="w-64">
             <Select
               value={filters.propertyType}
               onValueChange={(value) =>
-                setFilters((prev) => ({ ...prev, propertyType: value }))
+                setFilters((prev: any) => ({ ...prev, propertyType: value }))
               }
             >
               <SelectTrigger className="bg-white border-gray-200">
@@ -185,7 +181,7 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
             </Select>
           </div>
 
-          {/* BASIC PRICE RANGE (Min / Max + Apply) */}
+          {/* Price Range */}
           <div className="flex gap-2 items-center">
             <div className="relative">
               <Input
@@ -196,7 +192,6 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
                 onChange={(e) => {
                   const val = e.target.value;
                   setBasicPriceMin(val);
-                  // optional auto-correct if user sets min > max
                   if (Number(val) > Number(basicPriceMax)) {
                     setBasicPriceMax(val);
                   }
@@ -216,7 +211,6 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
                 onChange={(e) => {
                   const val = e.target.value;
                   setBasicPriceMax(val);
-                  // optional auto-correct if user sets max < min
                   if (Number(val) < Number(basicPriceMin)) {
                     setBasicPriceMin(val);
                   }
@@ -236,7 +230,7 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
             </Button>
           </div>
 
-          {/* TOGGLE ADVANCED */}
+          {/* Advanced Toggle */}
           <Button
             variant="ghost"
             className="ml-auto text-gray-600 hover:bg-gray-100"
@@ -251,15 +245,16 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
           </Button>
         </div>
 
-        {/* ADVANCED FILTERS - no apply buttons here */}
+        {/* Advanced Filters */}
         {showAdvanced && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-gray-200">
-            <MapRadiusFilter />
-            {/* PRICE PER M² (two dropdowns) */}
+            <ListingStatusFilter filters={filters} setFilters={setFilters} />
+            <DateRangeFilter filters={filters} setFilters={setFilters} />
+
+            {/* Price per m² */}
             <div className="space-y-2">
               <label className="text-sm text-gray-600">Price per m² (€)</label>
               <div className="flex gap-2">
-                {/* Min dropdown */}
                 <Select
                   value={toDropdownValue(filters.pricePerSqmRange[0])}
                   onValueChange={handlePricePerSqmChange("min")}
@@ -280,7 +275,6 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
 
                 <span className="text-gray-500 self-center">-</span>
 
-                {/* Max dropdown */}
                 <Select
                   value={toDropdownValue(filters.pricePerSqmRange[1])}
                   onValueChange={handlePricePerSqmChange("max")}
@@ -301,20 +295,19 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
                 </Select>
               </div>
               <div className="text-xs text-gray-500">
-                Current: 
+                Current:{" "}
                 {filters.pricePerSqmRange[0] === Infinity
                   ? "∞"
-                  : filters.pricePerSqmRange[0].toLocaleString("de-DE")
-                }€ 
-                {" - "}
+                  : filters.pricePerSqmRange[0].toLocaleString("de-DE")}
+                € -{" "}
                 {filters.pricePerSqmRange[1] === Infinity
                   ? "∞"
-                  : filters.pricePerSqmRange[1].toLocaleString("de-DE")
-                }€
+                  : filters.pricePerSqmRange[1].toLocaleString("de-DE")}
+                €
               </div>
             </div>
 
-            {/* LIVING SPACE (manual only, min + max, live updates) */}
+            {/* Living Space */}
             <div className="space-y-2">
               <label className="text-sm text-gray-600">Living Space (m²)</label>
               <div className="flex gap-2 items-center">
@@ -335,19 +328,16 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
                 />
               </div>
               <div className="text-xs text-gray-500">
-                Current: {filters.livingSpaceRange[0]} m² - {filters.livingSpaceRange[1]} m²
+                Current: {filters.livingSpaceRange[0]} m² -{" "}
+                {filters.livingSpaceRange[1]} m²
               </div>
             </div>
 
-            {/* ROOMS (Between X and Y, two dropdowns, live updates) */}
+            {/* Rooms */}
             <div className="space-y-2">
               <label className="text-sm text-gray-600">Rooms (Between)</label>
               <div className="flex gap-2 items-center">
-                {/* Min rooms */}
-                <Select
-                  value={roomsMinString}
-                  onValueChange={handleRoomsChange("min")}
-                >
+                <Select value={roomsMinString} onValueChange={handleRoomsChange("min")}>
                   <SelectTrigger className="w-24 bg-white border-gray-200">
                     <SelectValue placeholder="Min Rooms" />
                   </SelectTrigger>
@@ -364,11 +354,7 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
 
                 <span className="text-gray-500">-</span>
 
-                {/* Max rooms */}
-                <Select
-                  value={roomsMaxString}
-                  onValueChange={handleRoomsChange("max")}
-                >
+                <Select value={roomsMaxString} onValueChange={handleRoomsChange("max")}>
                   <SelectTrigger className="w-24 bg-white border-gray-200">
                     <SelectValue placeholder="Max Rooms" />
                   </SelectTrigger>
@@ -385,13 +371,20 @@ export default function PropertyFilters({ propertyTypes, ranges }: Props) {
                 </Select>
               </div>
               <div className="text-xs text-gray-500">
-                Current: 
-                {filters.roomsRange[0] === Infinity ? "∞" : filters.roomsRange[0]} 
-                {" - "}
-                {filters.roomsRange[1] === Infinity ? "∞" : filters.roomsRange[1]} rooms
+                Current:{" "}
+                {filters.roomsRange[0] === Infinity
+                  ? "∞"
+                  : filters.roomsRange[0]}{" "}
+                -{" "}
+                {filters.roomsRange[1] === Infinity
+                  ? "∞"
+                  : filters.roomsRange[1]}{" "}
+                rooms
               </div>
             </div>
 
+            {/* Map Filter */}
+            <MapRadiusFilter filters={filters} setFilters={setFilters} />
           </div>
         )}
       </CardContent>

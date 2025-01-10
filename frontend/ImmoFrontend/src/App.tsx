@@ -1,10 +1,11 @@
 // src/App.tsx
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Papa from 'papaparse';
 import { FilterProvider } from './contexts/FilterContext';
-import Layout from './components/Layout';
-import PropertyFilters from './components/PropertyFilters';
-import HousingAnalytics from './components/HousingAnalytics';
+import DashboardPage from './pages/DashboardPage';
+import PropertyListPage from './pages/PropertyListPage';
+import AnalyticsPage from './pages/AnalyticsPage';
 import type { PropertyData, DataRanges } from './types';
 
 function App() {
@@ -107,14 +108,52 @@ function App() {
   }
 
   return (
-    <FilterProvider>
-      <Layout>
-        <div className="space-y-8">
-          <PropertyFilters propertyTypes={propertyTypes} ranges={ranges} />
-          <HousingAnalytics data={data} />
-        </div>
-      </Layout>
-    </FilterProvider>
+    <Router>
+      <FilterProvider>
+        <Routes>
+          <Route 
+            path="/" 
+            element={
+              loading ? (
+                <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center">
+                  Loading...
+                </div>
+              ) : (
+                <DashboardPage data={data} propertyTypes={propertyTypes} ranges={ranges} />
+              )
+            } 
+          />
+          <Route 
+            path="/list" 
+            element={
+              loading ? (
+                <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center">
+                  Loading...
+                </div>
+              ) : (
+                <PropertyListPage data={data} />
+              )
+            } 
+          />
+          <Route 
+            path="/analytics" 
+            element={
+              loading ? (
+                <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center">
+                  Loading...
+                </div>
+              ) : (
+                <AnalyticsPage 
+                  data={data} 
+                  propertyTypes={propertyTypes} 
+                  ranges={ranges} 
+                />
+              )
+            } 
+          />
+        </Routes>
+      </FilterProvider>
+    </Router>
   );
 }
 

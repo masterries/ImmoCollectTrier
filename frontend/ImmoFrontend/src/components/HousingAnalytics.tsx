@@ -42,6 +42,7 @@ const HousingAnalytics = ({ data }: Props) => {
     }
 
     // Apply geo filter if location is set
+    // Apply geo filter if location is set
     if (filters.mapLocation && item.Latitude && item.Longitude) {
       const distance = calculateDistance(
         filters.mapLocation.lat,
@@ -51,6 +52,71 @@ const HousingAnalytics = ({ data }: Props) => {
       );
       if (distance > filters.mapLocation.radiusKm) {
         return false;
+      }
+    }
+
+    // Apply listing status filter
+    const hasClosedDate = !!item.closed_date;
+    if (!filters.listingStatus.active && !filters.listingStatus.closed) {
+      return false; // No status selected, show nothing
+    }
+    if (!filters.listingStatus.active && !hasClosedDate) {
+      return false; // Active listings not selected, and this is an active listing
+    }
+    if (!filters.listingStatus.closed && hasClosedDate) {
+      return false; // Closed listings not selected, and this is a closed listing
+    }
+
+    // Apply date range filter based on listing status and selected dates
+    if (filters.dateRange.start || filters.dateRange.end) {
+      // If both statuses are selected, apply date filter to both created and closed dates
+      if (filters.listingStatus.active && filters.listingStatus.closed) {
+        const itemCreatedDate = new Date(item.created_date);
+        const itemClosedDate = item.closed_date ? new Date(item.closed_date) : null;
+        
+        if (filters.dateRange.start) {
+          const startDate = new Date(filters.dateRange.start);
+          if (itemClosedDate) {
+            // For closed listings, check if closed date is after start date
+            if (itemClosedDate < startDate) return false;
+          } else {
+            // For active listings, check if created date is after start date
+            if (itemCreatedDate < startDate) return false;
+          }
+        }
+        
+        if (filters.dateRange.end) {
+          const endDate = new Date(filters.dateRange.end);
+          if (itemClosedDate) {
+            // For closed listings, check if closed date is before end date
+            if (itemClosedDate > endDate) return false;
+          } else {
+            // For active listings, check if created date is before end date
+            if (itemCreatedDate > endDate) return false;
+          }
+        }
+      }
+      // If only closed listings are selected, filter by closed date
+      else if (filters.listingStatus.closed && hasClosedDate) {
+        const itemClosedDate = new Date(item.closed_date);
+        
+        if (filters.dateRange.start && itemClosedDate < new Date(filters.dateRange.start)) {
+          return false;
+        }
+        if (filters.dateRange.end && itemClosedDate > new Date(filters.dateRange.end)) {
+          return false;
+        }
+      }
+      // If only active listings are selected, filter by created date
+      else if (filters.listingStatus.active && !hasClosedDate) {
+        const itemCreatedDate = new Date(item.created_date);
+        
+        if (filters.dateRange.start && itemCreatedDate < new Date(filters.dateRange.start)) {
+          return false;
+        }
+        if (filters.dateRange.end && itemCreatedDate > new Date(filters.dateRange.end)) {
+          return false;
+        }
       }
     }
 

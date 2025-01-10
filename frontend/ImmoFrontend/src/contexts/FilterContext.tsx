@@ -11,6 +11,14 @@ interface Filters {
   plotSizeRange: [number, number];
   roomsRange: [number, number];
   mapLocation: MapLocation;
+  dateRange: {
+    start: string | null;
+    end: string | null;
+  };
+  listingStatus: {
+    active: boolean;
+    closed: boolean;
+  };
 }
 
 const initialState: Filters = {
@@ -24,6 +32,14 @@ const initialState: Filters = {
     lat: TRIER_COORDS.lat,
     lng: TRIER_COORDS.lng,
     radiusKm: DEFAULT_RADIUS
+  },
+  dateRange: {
+    start: null,
+    end: null
+  },
+  listingStatus: {
+    active: true,
+    closed: true
   }
 };
 
