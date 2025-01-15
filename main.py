@@ -146,24 +146,15 @@ def main():
                     new_df.at[idx, 'Latitude'] = details['latitude']
                     new_df.at[idx, 'Longitude'] = details['longitude']
                     
-                    # Handle images
+                    # Store image URLs instead of downloading
                     image_urls = details.get('image_urls', [])
                     if image_urls:
-                        downloaded_images = []
-                        for img_url in image_urls:
-                            filename = download_image(img_url, image_dir, idx)
-                            if filename:
-                                downloaded_images.append(filename)
-                        new_df.at[idx, 'Images'] = ';'.join(downloaded_images)
+                        new_df.at[idx, 'Images'] = ';'.join(image_urls)
                 else:
                     logger.warning(f"Could not retrieve details for: {link}")
                 time.sleep(0.5)
-
-            db_handler.save_data(new_df)
-            logger.info("Initial database created successfully!")
-            return 0
-
-        # Handle existing database updates
+        
+              # Handle existing database updates
         comparison = db_handler.compare_listings(existing_df, new_df)
 
         if comparison['new_listings']:
@@ -180,19 +171,13 @@ def main():
                     new_df.at[idx, 'Latitude'] = details['latitude']
                     new_df.at[idx, 'Longitude'] = details['longitude']
                     
-                    # Handle images for new listings
+                    # Store image URLs for new listings
                     image_urls = details.get('image_urls', [])
                     if image_urls:
-                        downloaded_images = []
-                        for img_url in image_urls:
-                            filename = download_image(img_url, image_dir, idx)
-                            if filename:
-                                downloaded_images.append(filename)
-                        new_df.at[idx, 'Images'] = ';'.join(downloaded_images)
+                        new_df.at[idx, 'Images'] = ';'.join(image_urls)
                 else:
                     logger.warning(f"Could not retrieve details for: {link}")
                 time.sleep(0.1)
-        
         # Update database
         merged_df = db_handler.update_database(existing_df, new_df, comparison)
         

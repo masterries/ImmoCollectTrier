@@ -3272,3 +3272,937 @@ Final Statistics:
 2025-01-15 03:37:18 - INFO - Average Wohnfläche: 213.18
 2025-01-15 03:37:18 - INFO - Average Preis_pro_qm: 3964.83
 2025-01-15 03:37:18 - INFO - Script completed successfully!
+2025-01-15 18:58:00 - INFO - Starting Immowelt Scraper...
+2025-01-15 18:58:00 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-15 18:58:00 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-15 18:58:00 - INFO - Loaded 5735 existing records
+2025-01-15 18:58:00 - INFO - Starting web scraping...
+2025-01-15 18:58:00 - INFO - Starting to scrape all listings...
+2025-01-15 18:58:01 - INFO - Found 172 pages to scrape
+2025-01-15 18:58:01 - INFO - Scraping page 1/172
+2025-01-15 18:58:01 - INFO - Found 30 listings on page 1
+2025-01-15 18:58:01 - INFO - Scraping page 2/172
+2025-01-15 18:58:02 - INFO - Found 30 listings on page 2
+2025-01-15 18:58:02 - INFO - Scraping page 3/172
+2025-01-15 18:58:03 - INFO - Found 30 listings on page 3
+2025-01-15 18:58:03 - INFO - Scraping page 4/172
+2025-01-15 18:58:04 - INFO - Found 30 listings on page 4
+2025-01-15 18:58:04 - INFO - Scraping page 5/172
+2025-01-15 18:58:04 - INFO - Found 30 listings on page 5
+2025-01-15 18:58:04 - INFO - Scraping page 6/172
+2025-01-15 18:58:05 - INFO - Found 30 listings on page 6
+2025-01-15 18:58:05 - INFO - Scraping page 7/172
+2025-01-15 18:58:06 - INFO - Found 30 listings on page 7
+2025-01-15 18:58:06 - INFO - Scraping page 8/172
+2025-01-15 18:58:07 - INFO - Found 30 listings on page 8
+2025-01-15 18:58:07 - INFO - Scraping page 9/172
+2025-01-15 18:58:08 - INFO - Found 30 listings on page 9
+2025-01-15 18:58:08 - INFO - Scraping page 10/172
+2025-01-15 18:58:08 - INFO - Found 30 listings on page 10
+2025-01-15 18:58:08 - INFO - Scraping page 11/172
+2025-01-15 18:58:09 - INFO - Found 30 listings on page 11
+2025-01-15 18:58:09 - INFO - Scraping page 12/172
+2025-01-15 18:58:10 - INFO - Found 30 listings on page 12
+2025-01-15 18:58:10 - INFO - Scraping page 13/172
+2025-01-15 18:58:11 - INFO - Found 30 listings on page 13
+2025-01-15 18:58:11 - INFO - Scraping page 14/172
+2025-01-15 18:58:12 - INFO - Found 30 listings on page 14
+2025-01-15 18:58:12 - INFO - Scraping page 15/172
+2025-01-15 18:58:13 - INFO - Found 30 listings on page 15
+2025-01-15 18:58:13 - INFO - Scraping page 16/172
+2025-01-15 18:58:13 - INFO - Found 30 listings on page 16
+2025-01-15 18:58:13 - INFO - Scraping page 17/172
+2025-01-15 18:58:14 - INFO - Found 30 listings on page 17
+2025-01-15 18:58:14 - INFO - Scraping page 18/172
+2025-01-15 18:58:15 - INFO - Found 30 listings on page 18
+2025-01-15 18:58:15 - INFO - Scraping page 19/172
+2025-01-15 18:58:16 - INFO - Found 30 listings on page 19
+2025-01-15 18:58:16 - INFO - Scraping page 20/172
+2025-01-15 18:58:17 - INFO - Found 30 listings on page 20
+2025-01-15 18:58:17 - INFO - Scraping page 21/172
+2025-01-15 18:58:17 - INFO - Found 30 listings on page 21
+2025-01-15 18:58:17 - INFO - Scraping page 22/172
+2025-01-15 18:58:18 - INFO - Found 30 listings on page 22
+2025-01-15 18:58:18 - INFO - Scraping page 23/172
+2025-01-15 18:58:19 - INFO - Found 30 listings on page 23
+2025-01-15 18:58:19 - INFO - Scraping page 24/172
+2025-01-15 18:58:20 - INFO - Found 30 listings on page 24
+2025-01-15 18:58:20 - INFO - Scraping page 25/172
+2025-01-15 18:58:21 - INFO - Found 30 listings on page 25
+2025-01-15 18:58:21 - INFO - Scraping page 26/172
+2025-01-15 18:58:21 - INFO - Found 30 listings on page 26
+2025-01-15 18:58:21 - INFO - Scraping page 27/172
+2025-01-15 18:58:22 - INFO - Found 30 listings on page 27
+2025-01-15 18:58:22 - INFO - Scraping page 28/172
+2025-01-15 18:58:23 - INFO - Found 30 listings on page 28
+2025-01-15 18:58:23 - INFO - Scraping page 29/172
+2025-01-15 18:58:24 - INFO - Found 30 listings on page 29
+2025-01-15 18:58:24 - INFO - Scraping page 30/172
+2025-01-15 18:58:24 - INFO - Found 30 listings on page 30
+2025-01-15 18:58:24 - INFO - Scraping page 31/172
+2025-01-15 18:58:25 - INFO - Found 30 listings on page 31
+2025-01-15 18:58:25 - INFO - Scraping page 32/172
+2025-01-15 18:58:26 - INFO - Found 30 listings on page 32
+2025-01-15 18:58:26 - INFO - Scraping page 33/172
+2025-01-15 18:58:27 - INFO - Found 30 listings on page 33
+2025-01-15 18:58:27 - INFO - Scraping page 34/172
+2025-01-15 18:58:28 - INFO - Found 30 listings on page 34
+2025-01-15 18:58:28 - INFO - Scraping page 35/172
+2025-01-15 18:58:29 - INFO - Found 30 listings on page 35
+2025-01-15 18:58:29 - INFO - Scraping page 36/172
+2025-01-15 18:58:29 - INFO - Found 30 listings on page 36
+2025-01-15 18:58:29 - INFO - Scraping page 37/172
+2025-01-15 18:58:30 - INFO - Found 30 listings on page 37
+2025-01-15 18:58:30 - INFO - Scraping page 38/172
+2025-01-15 18:58:31 - INFO - Found 30 listings on page 38
+2025-01-15 18:58:31 - INFO - Scraping page 39/172
+2025-01-15 18:58:32 - INFO - Found 30 listings on page 39
+2025-01-15 18:58:32 - INFO - Scraping page 40/172
+2025-01-15 18:58:32 - INFO - Found 30 listings on page 40
+2025-01-15 18:58:32 - INFO - Scraping page 41/172
+2025-01-15 18:58:33 - INFO - Found 30 listings on page 41
+2025-01-15 18:58:33 - INFO - Scraping page 42/172
+2025-01-15 18:58:34 - INFO - Found 30 listings on page 42
+2025-01-15 18:58:34 - INFO - Scraping page 43/172
+2025-01-15 18:58:35 - INFO - Found 30 listings on page 43
+2025-01-15 18:58:35 - INFO - Scraping page 44/172
+2025-01-15 18:58:35 - INFO - Found 30 listings on page 44
+2025-01-15 18:58:35 - INFO - Scraping page 45/172
+2025-01-15 18:58:36 - INFO - Found 30 listings on page 45
+2025-01-15 18:58:36 - INFO - Scraping page 46/172
+2025-01-15 18:58:37 - INFO - Found 30 listings on page 46
+2025-01-15 18:58:37 - INFO - Scraping page 47/172
+2025-01-15 18:58:37 - INFO - Found 30 listings on page 47
+2025-01-15 18:58:37 - INFO - Scraping page 48/172
+2025-01-15 18:58:38 - INFO - Found 30 listings on page 48
+2025-01-15 18:58:38 - INFO - Scraping page 49/172
+2025-01-15 18:58:39 - INFO - Found 30 listings on page 49
+2025-01-15 18:58:39 - INFO - Scraping page 50/172
+2025-01-15 18:58:40 - INFO - Found 30 listings on page 50
+2025-01-15 18:58:40 - INFO - Scraping page 51/172
+2025-01-15 18:58:40 - INFO - Found 30 listings on page 51
+2025-01-15 18:58:40 - INFO - Scraping page 52/172
+2025-01-15 18:58:41 - INFO - Found 30 listings on page 52
+2025-01-15 18:58:41 - INFO - Scraping page 53/172
+2025-01-15 18:58:42 - INFO - Found 30 listings on page 53
+2025-01-15 18:58:42 - INFO - Scraping page 54/172
+2025-01-15 18:58:43 - INFO - Found 30 listings on page 54
+2025-01-15 18:58:43 - INFO - Scraping page 55/172
+2025-01-15 18:58:43 - INFO - Found 30 listings on page 55
+2025-01-15 18:58:43 - INFO - Scraping page 56/172
+2025-01-15 18:58:44 - INFO - Found 30 listings on page 56
+2025-01-15 18:58:44 - INFO - Scraping page 57/172
+2025-01-15 18:58:45 - INFO - Found 30 listings on page 57
+2025-01-15 18:58:45 - INFO - Scraping page 58/172
+2025-01-15 18:58:46 - INFO - Found 30 listings on page 58
+2025-01-15 18:58:46 - INFO - Scraping page 59/172
+2025-01-15 18:58:47 - INFO - Found 30 listings on page 59
+2025-01-15 18:58:47 - INFO - Scraping page 60/172
+2025-01-15 18:58:47 - INFO - Found 30 listings on page 60
+2025-01-15 18:58:47 - INFO - Scraping page 61/172
+2025-01-15 18:58:48 - INFO - Found 30 listings on page 61
+2025-01-15 18:58:48 - INFO - Scraping page 62/172
+2025-01-15 18:58:49 - INFO - Found 30 listings on page 62
+2025-01-15 18:58:49 - INFO - Scraping page 63/172
+2025-01-15 18:58:50 - INFO - Found 30 listings on page 63
+2025-01-15 18:58:50 - INFO - Scraping page 64/172
+2025-01-15 18:58:51 - INFO - Found 30 listings on page 64
+2025-01-15 18:58:51 - INFO - Scraping page 65/172
+2025-01-15 18:58:52 - INFO - Found 30 listings on page 65
+2025-01-15 18:58:52 - INFO - Scraping page 66/172
+2025-01-15 18:58:52 - INFO - Found 30 listings on page 66
+2025-01-15 18:58:52 - INFO - Scraping page 67/172
+2025-01-15 18:58:53 - INFO - Found 30 listings on page 67
+2025-01-15 18:58:53 - INFO - Scraping page 68/172
+2025-01-15 18:58:54 - INFO - Found 30 listings on page 68
+2025-01-15 18:58:54 - INFO - Scraping page 69/172
+2025-01-15 18:58:55 - INFO - Found 30 listings on page 69
+2025-01-15 18:58:55 - INFO - Scraping page 70/172
+2025-01-15 18:58:55 - INFO - Found 30 listings on page 70
+2025-01-15 18:58:55 - INFO - Scraping page 71/172
+2025-01-15 18:58:56 - INFO - Found 30 listings on page 71
+2025-01-15 18:58:56 - INFO - Scraping page 72/172
+2025-01-15 18:58:57 - INFO - Found 30 listings on page 72
+2025-01-15 18:58:57 - INFO - Scraping page 73/172
+2025-01-15 18:58:58 - INFO - Found 30 listings on page 73
+2025-01-15 18:58:58 - INFO - Scraping page 74/172
+2025-01-15 18:58:58 - INFO - Found 30 listings on page 74
+2025-01-15 18:58:58 - INFO - Scraping page 75/172
+2025-01-15 18:58:59 - INFO - Found 30 listings on page 75
+2025-01-15 18:58:59 - INFO - Scraping page 76/172
+2025-01-15 18:59:00 - INFO - Found 30 listings on page 76
+2025-01-15 18:59:00 - INFO - Scraping page 77/172
+2025-01-15 18:59:01 - INFO - Found 30 listings on page 77
+2025-01-15 18:59:01 - INFO - Scraping page 78/172
+2025-01-15 18:59:01 - INFO - Found 30 listings on page 78
+2025-01-15 18:59:01 - INFO - Scraping page 79/172
+2025-01-15 18:59:02 - INFO - Found 30 listings on page 79
+2025-01-15 18:59:02 - INFO - Scraping page 80/172
+2025-01-15 18:59:03 - INFO - Found 30 listings on page 80
+2025-01-15 18:59:03 - INFO - Scraping page 81/172
+2025-01-15 18:59:04 - INFO - Found 30 listings on page 81
+2025-01-15 18:59:04 - INFO - Scraping page 82/172
+2025-01-15 18:59:04 - INFO - Found 30 listings on page 82
+2025-01-15 18:59:04 - INFO - Scraping page 83/172
+2025-01-15 18:59:05 - INFO - Found 30 listings on page 83
+2025-01-15 18:59:05 - INFO - Scraping page 84/172
+2025-01-15 18:59:06 - INFO - Found 30 listings on page 84
+2025-01-15 18:59:06 - INFO - Scraping page 85/172
+2025-01-15 18:59:07 - INFO - Found 30 listings on page 85
+2025-01-15 18:59:07 - INFO - Scraping page 86/172
+2025-01-15 18:59:07 - INFO - Found 30 listings on page 86
+2025-01-15 18:59:07 - INFO - Scraping page 87/172
+2025-01-15 18:59:08 - INFO - Found 30 listings on page 87
+2025-01-15 18:59:08 - INFO - Scraping page 88/172
+2025-01-15 18:59:09 - INFO - Found 30 listings on page 88
+2025-01-15 18:59:09 - INFO - Scraping page 89/172
+2025-01-15 18:59:10 - INFO - Found 30 listings on page 89
+2025-01-15 18:59:10 - INFO - Scraping page 90/172
+2025-01-15 18:59:11 - INFO - Found 30 listings on page 90
+2025-01-15 18:59:11 - INFO - Scraping page 91/172
+2025-01-15 18:59:11 - INFO - Found 30 listings on page 91
+2025-01-15 18:59:11 - INFO - Scraping page 92/172
+2025-01-15 18:59:12 - INFO - Found 30 listings on page 92
+2025-01-15 18:59:12 - INFO - Scraping page 93/172
+2025-01-15 18:59:13 - INFO - Found 30 listings on page 93
+2025-01-15 18:59:13 - INFO - Scraping page 94/172
+2025-01-15 18:59:14 - INFO - Found 30 listings on page 94
+2025-01-15 18:59:14 - INFO - Scraping page 95/172
+2025-01-15 18:59:15 - INFO - Found 30 listings on page 95
+2025-01-15 18:59:15 - INFO - Scraping page 96/172
+2025-01-15 18:59:15 - INFO - Found 30 listings on page 96
+2025-01-15 18:59:15 - INFO - Scraping page 97/172
+2025-01-15 18:59:16 - INFO - Found 30 listings on page 97
+2025-01-15 18:59:16 - INFO - Scraping page 98/172
+2025-01-15 18:59:17 - INFO - Found 30 listings on page 98
+2025-01-15 18:59:17 - INFO - Scraping page 99/172
+2025-01-15 18:59:17 - INFO - Found 30 listings on page 99
+2025-01-15 18:59:17 - INFO - Scraping page 100/172
+2025-01-15 18:59:18 - INFO - Found 30 listings on page 100
+2025-01-15 18:59:18 - INFO - Scraping page 101/172
+2025-01-15 18:59:19 - INFO - Found 30 listings on page 101
+2025-01-15 18:59:19 - INFO - Scraping page 102/172
+2025-01-15 18:59:20 - INFO - Found 30 listings on page 102
+2025-01-15 18:59:20 - INFO - Scraping page 103/172
+2025-01-15 18:59:20 - INFO - Found 30 listings on page 103
+2025-01-15 18:59:20 - INFO - Scraping page 104/172
+2025-01-15 18:59:21 - INFO - Found 30 listings on page 104
+2025-01-15 18:59:21 - INFO - Scraping page 105/172
+2025-01-15 18:59:22 - INFO - Found 30 listings on page 105
+2025-01-15 18:59:22 - INFO - Scraping page 106/172
+2025-01-15 18:59:23 - INFO - Found 30 listings on page 106
+2025-01-15 18:59:23 - INFO - Scraping page 107/172
+2025-01-15 18:59:24 - INFO - Found 30 listings on page 107
+2025-01-15 18:59:24 - INFO - Scraping page 108/172
+2025-01-15 18:59:24 - INFO - Found 30 listings on page 108
+2025-01-15 18:59:24 - INFO - Scraping page 109/172
+2025-01-15 18:59:25 - INFO - Found 30 listings on page 109
+2025-01-15 18:59:25 - INFO - Scraping page 110/172
+2025-01-15 18:59:26 - INFO - Found 30 listings on page 110
+2025-01-15 18:59:26 - INFO - Scraping page 111/172
+2025-01-15 18:59:27 - INFO - Found 30 listings on page 111
+2025-01-15 18:59:27 - INFO - Scraping page 112/172
+2025-01-15 18:59:27 - INFO - Found 30 listings on page 112
+2025-01-15 18:59:27 - INFO - Scraping page 113/172
+2025-01-15 18:59:28 - INFO - Found 30 listings on page 113
+2025-01-15 18:59:28 - INFO - Scraping page 114/172
+2025-01-15 18:59:29 - INFO - Found 30 listings on page 114
+2025-01-15 18:59:29 - INFO - Scraping page 115/172
+2025-01-15 18:59:30 - INFO - Found 30 listings on page 115
+2025-01-15 18:59:30 - INFO - Scraping page 116/172
+2025-01-15 18:59:30 - INFO - Found 30 listings on page 116
+2025-01-15 18:59:30 - INFO - Scraping page 117/172
+2025-01-15 18:59:31 - INFO - Found 30 listings on page 117
+2025-01-15 18:59:31 - INFO - Scraping page 118/172
+2025-01-15 18:59:32 - INFO - Found 30 listings on page 118
+2025-01-15 18:59:32 - INFO - Scraping page 119/172
+2025-01-15 18:59:33 - INFO - Found 30 listings on page 119
+2025-01-15 18:59:33 - INFO - Scraping page 120/172
+2025-01-15 18:59:33 - INFO - Found 30 listings on page 120
+2025-01-15 18:59:33 - INFO - Scraping page 121/172
+2025-01-15 18:59:34 - INFO - Found 30 listings on page 121
+2025-01-15 18:59:34 - INFO - Scraping page 122/172
+2025-01-15 18:59:35 - INFO - Found 30 listings on page 122
+2025-01-15 18:59:35 - INFO - Scraping page 123/172
+2025-01-15 18:59:36 - INFO - Found 30 listings on page 123
+2025-01-15 18:59:36 - INFO - Scraping page 124/172
+2025-01-15 18:59:37 - INFO - Found 30 listings on page 124
+2025-01-15 18:59:37 - INFO - Scraping page 125/172
+2025-01-15 18:59:37 - INFO - Found 30 listings on page 125
+2025-01-15 18:59:37 - INFO - Scraping page 126/172
+2025-01-15 18:59:38 - INFO - Found 30 listings on page 126
+2025-01-15 18:59:38 - INFO - Scraping page 127/172
+2025-01-15 18:59:39 - INFO - Found 30 listings on page 127
+2025-01-15 18:59:39 - INFO - Scraping page 128/172
+2025-01-15 18:59:39 - INFO - Found 30 listings on page 128
+2025-01-15 18:59:39 - INFO - Scraping page 129/172
+2025-01-15 18:59:40 - INFO - Found 30 listings on page 129
+2025-01-15 18:59:40 - INFO - Scraping page 130/172
+2025-01-15 18:59:41 - INFO - Found 30 listings on page 130
+2025-01-15 18:59:41 - INFO - Scraping page 131/172
+2025-01-15 18:59:42 - INFO - Found 30 listings on page 131
+2025-01-15 18:59:42 - INFO - Scraping page 132/172
+2025-01-15 18:59:43 - INFO - Found 30 listings on page 132
+2025-01-15 18:59:43 - INFO - Scraping page 133/172
+2025-01-15 18:59:43 - INFO - Found 30 listings on page 133
+2025-01-15 18:59:43 - INFO - Scraping page 134/172
+2025-01-15 18:59:44 - INFO - Found 30 listings on page 134
+2025-01-15 18:59:44 - INFO - Scraping page 135/172
+2025-01-15 18:59:45 - INFO - Found 30 listings on page 135
+2025-01-15 18:59:45 - INFO - Scraping page 136/172
+2025-01-15 18:59:46 - INFO - Found 30 listings on page 136
+2025-01-15 18:59:46 - INFO - Scraping page 137/172
+2025-01-15 18:59:47 - INFO - Found 30 listings on page 137
+2025-01-15 18:59:47 - INFO - Scraping page 138/172
+2025-01-15 18:59:48 - INFO - Found 30 listings on page 138
+2025-01-15 18:59:48 - INFO - Scraping page 139/172
+2025-01-15 18:59:48 - INFO - Found 30 listings on page 139
+2025-01-15 18:59:48 - INFO - Scraping page 140/172
+2025-01-15 18:59:49 - INFO - Found 30 listings on page 140
+2025-01-15 18:59:49 - INFO - Scraping page 141/172
+2025-01-15 18:59:50 - INFO - Found 30 listings on page 141
+2025-01-15 18:59:50 - INFO - Scraping page 142/172
+2025-01-15 18:59:51 - INFO - Found 30 listings on page 142
+2025-01-15 18:59:51 - INFO - Scraping page 143/172
+2025-01-15 18:59:52 - INFO - Found 30 listings on page 143
+2025-01-15 18:59:52 - INFO - Scraping page 144/172
+2025-01-15 18:59:52 - INFO - Found 30 listings on page 144
+2025-01-15 18:59:52 - INFO - Scraping page 145/172
+2025-01-15 18:59:53 - INFO - Found 30 listings on page 145
+2025-01-15 18:59:53 - INFO - Scraping page 146/172
+2025-01-15 18:59:54 - INFO - Found 30 listings on page 146
+2025-01-15 18:59:54 - INFO - Scraping page 147/172
+2025-01-15 18:59:55 - INFO - Found 30 listings on page 147
+2025-01-15 18:59:55 - INFO - Scraping page 148/172
+2025-01-15 18:59:55 - INFO - Found 30 listings on page 148
+2025-01-15 18:59:55 - INFO - Scraping page 149/172
+2025-01-15 18:59:56 - INFO - Found 30 listings on page 149
+2025-01-15 18:59:56 - INFO - Scraping page 150/172
+2025-01-15 18:59:57 - INFO - Found 30 listings on page 150
+2025-01-15 18:59:57 - INFO - Scraping page 151/172
+2025-01-15 18:59:57 - INFO - Found 30 listings on page 151
+2025-01-15 18:59:57 - INFO - Scraping page 152/172
+2025-01-15 18:59:58 - INFO - Found 30 listings on page 152
+2025-01-15 18:59:58 - INFO - Scraping page 153/172
+2025-01-15 18:59:59 - INFO - Found 30 listings on page 153
+2025-01-15 18:59:59 - INFO - Scraping page 154/172
+2025-01-15 19:00:00 - INFO - Found 30 listings on page 154
+2025-01-15 19:00:00 - INFO - Scraping page 155/172
+2025-01-15 19:00:00 - INFO - Found 30 listings on page 155
+2025-01-15 19:00:00 - INFO - Scraping page 156/172
+2025-01-15 19:00:01 - INFO - Found 30 listings on page 156
+2025-01-15 19:00:01 - INFO - Scraping page 157/172
+2025-01-15 19:00:02 - INFO - Found 30 listings on page 157
+2025-01-15 19:00:02 - INFO - Scraping page 158/172
+2025-01-15 19:00:04 - INFO - Found 30 listings on page 158
+2025-01-15 19:00:04 - INFO - Scraping page 159/172
+2025-01-15 19:00:05 - INFO - Found 30 listings on page 159
+2025-01-15 19:00:05 - INFO - Scraping page 160/172
+2025-01-15 19:00:06 - INFO - Found 30 listings on page 160
+2025-01-15 19:00:06 - INFO - Scraping page 161/172
+2025-01-15 19:00:07 - INFO - Found 30 listings on page 161
+2025-01-15 19:00:07 - INFO - Scraping page 162/172
+2025-01-15 19:00:08 - INFO - Found 30 listings on page 162
+2025-01-15 19:00:08 - INFO - Scraping page 163/172
+2025-01-15 19:00:09 - INFO - Found 30 listings on page 163
+2025-01-15 19:00:09 - INFO - Scraping page 164/172
+2025-01-15 19:00:10 - INFO - Found 30 listings on page 164
+2025-01-15 19:00:10 - INFO - Scraping page 165/172
+2025-01-15 19:00:11 - INFO - Found 30 listings on page 165
+2025-01-15 19:00:11 - INFO - Scraping page 166/172
+2025-01-15 19:00:12 - INFO - Found 30 listings on page 166
+2025-01-15 19:00:12 - INFO - Scraping page 167/172
+2025-01-15 19:00:13 - INFO - Found 30 listings on page 167
+2025-01-15 19:00:13 - INFO - Scraping page 168/172
+2025-01-15 19:00:14 - INFO - Found 30 listings on page 168
+2025-01-15 19:00:14 - INFO - Scraping page 169/172
+2025-01-15 19:00:16 - INFO - Found 30 listings on page 169
+2025-01-15 19:00:16 - INFO - Scraping page 170/172
+2025-01-15 19:00:17 - INFO - Found 30 listings on page 170
+2025-01-15 19:00:17 - INFO - Scraping page 171/172
+2025-01-15 19:00:17 - INFO - Found 30 listings on page 171
+2025-01-15 19:00:17 - INFO - Scraping page 172/172
+2025-01-15 19:00:18 - INFO - Found 1 listings on page 172
+2025-01-15 19:00:18 - INFO - Completed scraping. Total listings found: 5131
+2025-01-15 19:00:18 - INFO - Converting listings to DataFrame...
+2025-01-15 19:00:18 - INFO - Processing scraped data...
+2025-01-15 19:00:18 - INFO - Processing new data...
+2025-01-15 19:00:18 - DEBUG - Added missing column: Features
+2025-01-15 19:00:18 - DEBUG - Added missing column: Vollständige_Adresse
+2025-01-15 19:00:18 - DEBUG - Added missing column: Latitude
+2025-01-15 19:00:18 - DEBUG - Added missing column: Longitude
+2025-01-15 19:00:18 - DEBUG - Added missing column: created_date
+2025-01-15 19:00:18 - DEBUG - Added missing column: closed_date
+2025-01-15 19:00:18 - DEBUG - Added missing column: Preis_cleaned
+2025-01-15 19:00:18 - DEBUG - Added missing column: Wohnfläche
+2025-01-15 19:00:18 - DEBUG - Added missing column: Grundstücksfläche
+2025-01-15 19:00:18 - DEBUG - Added missing column: Zimmer
+2025-01-15 19:00:18 - DEBUG - Added missing column: Preis_pro_qm
+2025-01-15 19:00:18 - INFO - Cleaning data...
+2025-01-15 19:00:18 - INFO - Data processing completed successfully
+2025-01-15 19:00:18 - INFO - Comparison results:
+2025-01-15 19:00:18 - INFO - - New listings: 274
+2025-01-15 19:00:18 - INFO - - Closed listings: 838
+2025-01-15 19:00:18 - INFO - - Unchanged listings: 4784
+2025-01-15 19:00:18 - INFO - Processing 274 new listings...
+2025-01-15 19:00:18 - INFO - [1/274] Detail scraping new listing: https://www.immowelt.de/expose/05c7b953-e967-438f-94ef-1b1f1b849e1b
+2025-01-15 19:00:19 - DEBUG - Found 3 unique images
+2025-01-15 19:00:19 - INFO - [2/274] Detail scraping new listing: https://www.immowelt.de/expose/98874448-8529-42f8-bc61-8d55fe8f33e4
+2025-01-15 19:00:19 - DEBUG - Found 3 unique images
+2025-01-15 19:00:19 - INFO - [3/274] Detail scraping new listing: https://www.immowelt.de/expose/d5769491-4ebe-4230-a83a-0c6aee732da7
+2025-01-15 19:00:20 - DEBUG - Found 2 unique images
+2025-01-15 19:00:20 - INFO - [4/274] Detail scraping new listing: https://www.immowelt.de/expose/b983ed5c-da69-49ed-892e-e89594cf92cd
+2025-01-15 19:00:20 - DEBUG - Found 4 unique images
+2025-01-15 19:00:20 - INFO - [5/274] Detail scraping new listing: https://www.immowelt.de/expose/21b974d2-d407-4ffa-a2c0-54fd3960aee6
+2025-01-15 19:00:21 - DEBUG - Found 4 unique images
+2025-01-15 19:00:21 - INFO - [6/274] Detail scraping new listing: https://www.immowelt.de/expose/00a4afa8-716f-46d9-98ba-64e5600b361a
+2025-01-15 19:00:22 - DEBUG - Found 4 unique images
+2025-01-15 19:00:22 - INFO - [7/274] Detail scraping new listing: https://www.immowelt.de/expose/7be653dc-9cd0-4b8c-b731-80757cbdadfd
+2025-01-15 19:00:23 - DEBUG - Found 4 unique images
+2025-01-15 19:00:23 - INFO - [8/274] Detail scraping new listing: https://www.immowelt.de/expose/6989f347-a50c-4159-b933-dd35086420f8
+2025-01-15 19:00:24 - DEBUG - Found 3 unique images
+2025-01-15 19:00:24 - INFO - [9/274] Detail scraping new listing: https://www.immowelt.de/expose/2abf581a-57b3-4a86-9e11-0d0c029fe3fb
+2025-01-15 19:00:25 - DEBUG - Found 4 unique images
+2025-01-15 19:00:25 - INFO - [10/274] Detail scraping new listing: https://www.immowelt.de/expose/cf7d85e5-3cff-419a-8cb4-beaa7c0dbcee
+2025-01-15 19:00:26 - DEBUG - Found 4 unique images
+2025-01-15 19:00:27 - INFO - [11/274] Detail scraping new listing: https://www.immowelt.de/expose/d584e058-ba84-419c-8255-7828463f745e
+2025-01-15 19:00:27 - DEBUG - Found 3 unique images
+2025-01-15 19:00:27 - INFO - [12/274] Detail scraping new listing: https://www.immowelt.de/expose/6ea50786-dc93-4f38-99ba-2d59f359076b
+2025-01-15 19:00:28 - DEBUG - Found 4 unique images
+2025-01-15 19:00:28 - INFO - [13/274] Detail scraping new listing: https://www.immowelt.de/expose/edebc47f-ddda-4e85-a9f1-590477bb0844
+2025-01-15 19:00:29 - DEBUG - Found 4 unique images
+2025-01-15 19:00:29 - INFO - [14/274] Detail scraping new listing: https://www.immowelt.de/expose/80d2380c-6fad-4189-ab43-ebf045632baa
+2025-01-15 19:00:29 - DEBUG - Found 3 unique images
+2025-01-15 19:00:29 - INFO - [15/274] Detail scraping new listing: https://www.immowelt.de/expose/524224a5-e5f4-4117-81f2-0f555890ad78
+2025-01-15 19:00:30 - DEBUG - Found 2 unique images
+2025-01-15 19:00:30 - INFO - [16/274] Detail scraping new listing: https://www.immowelt.de/expose/306914df-de39-429a-8075-aaf371345307
+2025-01-15 19:00:31 - DEBUG - Found 4 unique images
+2025-01-15 19:00:31 - INFO - [17/274] Detail scraping new listing: https://www.immowelt.de/expose/e5f5b6a7-fb9c-4ff8-98fe-43442ed78463
+2025-01-15 19:00:31 - DEBUG - Found 3 unique images
+2025-01-15 19:00:31 - INFO - [18/274] Detail scraping new listing: https://www.immowelt.de/expose/ed1e78a1-2c5f-4f3c-8640-2964212eb54e
+2025-01-15 19:00:32 - DEBUG - Found 3 unique images
+2025-01-15 19:00:32 - INFO - [19/274] Detail scraping new listing: https://www.immowelt.de/expose/ffb9291e-a669-4d15-a312-8aa90f5e6741
+2025-01-15 19:00:33 - DEBUG - Found 4 unique images
+2025-01-15 19:00:33 - INFO - [20/274] Detail scraping new listing: https://www.immowelt.de/expose/fc34828f-70d4-43f7-abf2-b1febb7b4d08
+2025-01-15 19:00:33 - DEBUG - Found 3 unique images
+2025-01-15 19:00:33 - INFO - [21/274] Detail scraping new listing: https://www.immowelt.de/expose/0a5353d6-9ded-4b03-9924-e9240a2d9d74
+2025-01-15 19:00:34 - DEBUG - Found 4 unique images
+2025-01-15 19:00:34 - INFO - [22/274] Detail scraping new listing: https://www.immowelt.de/expose/122bb50a-0b5e-47c7-9853-af5f585e85a9
+2025-01-15 19:00:34 - DEBUG - Found 2 unique images
+2025-01-15 19:00:34 - INFO - [23/274] Detail scraping new listing: https://www.immowelt.de/expose/198b17e4-f383-4d58-acca-d771d17718e7
+2025-01-15 19:00:35 - DEBUG - Found 2 unique images
+2025-01-15 19:00:35 - INFO - [24/274] Detail scraping new listing: https://www.immowelt.de/expose/805638c9-f856-4a69-907a-19a12b2c58e5
+2025-01-15 19:00:36 - DEBUG - Found 3 unique images
+2025-01-15 19:00:36 - INFO - [25/274] Detail scraping new listing: https://www.immowelt.de/expose/f321bb5f-5fe2-43df-84e0-f59225d80c5d
+2025-01-15 19:00:36 - DEBUG - Found 3 unique images
+2025-01-15 19:00:36 - INFO - [26/274] Detail scraping new listing: https://www.immowelt.de/expose/c78b848b-c868-48de-a0c6-2b247f2890d9
+2025-01-15 19:00:37 - DEBUG - Found 3 unique images
+2025-01-15 19:00:37 - INFO - [27/274] Detail scraping new listing: https://www.immowelt.de/expose/6795ea3a-5941-4ff1-83fb-ccc8261e8903
+2025-01-15 19:00:38 - DEBUG - Found 4 unique images
+2025-01-15 19:00:38 - INFO - [28/274] Detail scraping new listing: https://www.immowelt.de/expose/28070a10-742e-4b5b-9af5-5e14d61600f5
+2025-01-15 19:00:38 - DEBUG - Found 3 unique images
+2025-01-15 19:00:38 - INFO - [29/274] Detail scraping new listing: https://www.immowelt.de/expose/8fcb70e7-d2fb-4cdb-8739-962d881155e0
+2025-01-15 19:00:39 - DEBUG - Found 3 unique images
+2025-01-15 19:00:39 - INFO - [30/274] Detail scraping new listing: https://www.immowelt.de/expose/acb6cd03-f8be-4df6-b377-bb7dc72973ca
+2025-01-15 19:00:39 - DEBUG - Found 3 unique images
+2025-01-15 19:00:39 - INFO - [31/274] Detail scraping new listing: https://www.immowelt.de/expose/f55d5112-7168-44af-94b6-5a4537d51d9c
+2025-01-15 19:00:40 - DEBUG - Found 3 unique images
+2025-01-15 19:00:40 - INFO - [32/274] Detail scraping new listing: https://www.immowelt.de/expose/eba6d52c-c9c1-4432-a1d6-78f277adcf14
+2025-01-15 19:00:41 - DEBUG - Found 4 unique images
+2025-01-15 19:00:41 - INFO - [33/274] Detail scraping new listing: https://www.immowelt.de/expose/89caf4ab-dc77-41fd-a710-d453a252e67d
+2025-01-15 19:00:41 - DEBUG - Found 3 unique images
+2025-01-15 19:00:41 - INFO - [34/274] Detail scraping new listing: https://www.immowelt.de/expose/d85bb086-2387-4c8b-b20b-2a1768071fed
+2025-01-15 19:00:42 - DEBUG - Found 3 unique images
+2025-01-15 19:00:42 - INFO - [35/274] Detail scraping new listing: https://www.immowelt.de/expose/b90339fa-d086-489d-99a4-d8d9481bdf5f
+2025-01-15 19:00:43 - DEBUG - Found 4 unique images
+2025-01-15 19:00:43 - INFO - [36/274] Detail scraping new listing: https://www.immowelt.de/expose/6540cbaf-708f-4099-8419-dc3c7e085e9a
+2025-01-15 19:00:43 - DEBUG - Found 3 unique images
+2025-01-15 19:00:43 - INFO - [37/274] Detail scraping new listing: https://www.immowelt.de/expose/ce511d54-5785-45bc-912a-dade49bffab0
+2025-01-15 19:00:44 - DEBUG - Found 4 unique images
+2025-01-15 19:00:44 - INFO - [38/274] Detail scraping new listing: https://www.immowelt.de/expose/7ee4f2fd-bb4a-46d8-825e-071d466f6e00
+2025-01-15 19:00:44 - DEBUG - Found 3 unique images
+2025-01-15 19:00:44 - INFO - [39/274] Detail scraping new listing: https://www.immowelt.de/expose/1f0c4ad3-07e7-4458-9362-6181fc2540d3
+2025-01-15 19:00:45 - DEBUG - Found 4 unique images
+2025-01-15 19:00:45 - INFO - [40/274] Detail scraping new listing: https://www.immowelt.de/expose/1799e4d9-03a3-4e67-bf84-8263c22033b2
+2025-01-15 19:00:46 - DEBUG - Found 4 unique images
+2025-01-15 19:00:46 - INFO - [41/274] Detail scraping new listing: https://www.immowelt.de/expose/365addb0-80ca-4131-abad-0c47bcbc92ca
+2025-01-15 19:00:46 - DEBUG - Found 2 unique images
+2025-01-15 19:00:46 - INFO - [42/274] Detail scraping new listing: https://www.immowelt.de/expose/0bfbe2ba-c7fe-4197-96f8-83974d276f63
+2025-01-15 19:00:47 - DEBUG - Found 3 unique images
+2025-01-15 19:00:47 - INFO - [43/274] Detail scraping new listing: https://www.immowelt.de/expose/78a668e2-1e0f-4f51-a369-40bbd3d6a9fa
+2025-01-15 19:00:48 - DEBUG - Found 4 unique images
+2025-01-15 19:00:48 - INFO - [44/274] Detail scraping new listing: https://www.immowelt.de/expose/758d94d0-589d-421e-b76e-8acb8b34e9e5
+2025-01-15 19:00:48 - DEBUG - Found 3 unique images
+2025-01-15 19:00:48 - INFO - [45/274] Detail scraping new listing: https://www.immowelt.de/expose/e44e91c7-918f-4f70-8060-f4327ffeac3d
+2025-01-15 19:00:49 - DEBUG - Found 4 unique images
+2025-01-15 19:00:49 - INFO - [46/274] Detail scraping new listing: https://www.immowelt.de/expose/71f4e0a7-7406-48e2-a4db-9b4b9fc2b091
+2025-01-15 19:00:50 - DEBUG - Found 3 unique images
+2025-01-15 19:00:50 - INFO - [47/274] Detail scraping new listing: https://www.immowelt.de/expose/254571a1-61e6-4933-8a98-218b3ae392fa
+2025-01-15 19:00:50 - DEBUG - Found 3 unique images
+2025-01-15 19:00:50 - INFO - [48/274] Detail scraping new listing: https://www.immowelt.de/expose/c0d62794-b4e6-4881-90dc-43204e4a7e09
+2025-01-15 19:00:51 - DEBUG - Found 4 unique images
+2025-01-15 19:00:51 - INFO - [49/274] Detail scraping new listing: https://www.immowelt.de/expose/352eb720-0063-475c-90ab-f00ec543c2e5
+2025-01-15 19:00:51 - DEBUG - Found 3 unique images
+2025-01-15 19:00:51 - INFO - [50/274] Detail scraping new listing: https://www.immowelt.de/expose/038e0be9-68d9-442b-9503-205d185a6eaf
+2025-01-15 19:00:52 - DEBUG - Found 4 unique images
+2025-01-15 19:00:52 - INFO - [51/274] Detail scraping new listing: https://www.immowelt.de/expose/c4fd27fc-d502-4266-ad3d-c1fe0e93d6b3
+2025-01-15 19:00:52 - DEBUG - Found 4 unique images
+2025-01-15 19:00:52 - INFO - [52/274] Detail scraping new listing: https://www.immowelt.de/expose/eeb262f1-f115-48f0-af07-ed9e55a6b81e
+2025-01-15 19:00:53 - DEBUG - Found 3 unique images
+2025-01-15 19:00:53 - INFO - [53/274] Detail scraping new listing: https://www.immowelt.de/expose/4b509df5-18c8-48bd-90fb-a4b89dc20b04
+2025-01-15 19:00:53 - DEBUG - Found 4 unique images
+2025-01-15 19:00:54 - INFO - [54/274] Detail scraping new listing: https://www.immowelt.de/expose/76bdb6a7-2c9c-4806-b6fe-479e781b5f1a
+2025-01-15 19:00:54 - DEBUG - Found 3 unique images
+2025-01-15 19:00:54 - INFO - [55/274] Detail scraping new listing: https://www.immowelt.de/expose/16a5edea-f8aa-4cee-abcd-f5e14cf8a58d
+2025-01-15 19:00:55 - DEBUG - Found 2 unique images
+2025-01-15 19:00:55 - INFO - [56/274] Detail scraping new listing: https://www.immowelt.de/expose/3d1316bf-435a-49a2-a2c6-3508d311ac76
+2025-01-15 19:00:55 - DEBUG - Found 2 unique images
+2025-01-15 19:00:55 - INFO - [57/274] Detail scraping new listing: https://www.immowelt.de/expose/d658c411-ee7f-4b9d-9b08-05ec0db3bddc
+2025-01-15 19:00:56 - DEBUG - Found 3 unique images
+2025-01-15 19:00:56 - INFO - [58/274] Detail scraping new listing: https://www.immowelt.de/expose/3e128694-6179-41a5-bc11-ebc203664bc8
+2025-01-15 19:00:57 - DEBUG - Found 4 unique images
+2025-01-15 19:00:57 - INFO - [59/274] Detail scraping new listing: https://www.immowelt.de/expose/de539078-35fa-42cc-a64d-f45e066da948
+2025-01-15 19:00:57 - DEBUG - Found 3 unique images
+2025-01-15 19:00:57 - INFO - [60/274] Detail scraping new listing: https://www.immowelt.de/expose/6b3dc699-6637-4ae5-9243-cdaaddd52ee6
+2025-01-15 19:00:58 - DEBUG - Found 3 unique images
+2025-01-15 19:00:58 - INFO - [61/274] Detail scraping new listing: https://www.immowelt.de/expose/b398081a-5730-48eb-b758-12675e715393
+2025-01-15 19:00:58 - DEBUG - Found 3 unique images
+2025-01-15 19:00:59 - INFO - [62/274] Detail scraping new listing: https://www.immowelt.de/expose/5bb65970-c076-49c3-8941-0fb81ee721c3
+2025-01-15 19:00:59 - DEBUG - Found 3 unique images
+2025-01-15 19:00:59 - INFO - [63/274] Detail scraping new listing: https://www.immowelt.de/expose/503ed434-f86e-4384-9815-e6030dbaca2d
+2025-01-15 19:01:00 - DEBUG - Found 3 unique images
+2025-01-15 19:01:00 - INFO - [64/274] Detail scraping new listing: https://www.immowelt.de/expose/913d732f-6750-4aeb-afa9-12bbeca328c3
+2025-01-15 19:01:01 - DEBUG - Found 4 unique images
+2025-01-15 19:01:01 - INFO - [65/274] Detail scraping new listing: https://www.immowelt.de/expose/1ab388bb-d0a9-4ba3-a1b5-d05e02017aa5
+2025-01-15 19:01:01 - DEBUG - Found 4 unique images
+2025-01-15 19:01:01 - INFO - [66/274] Detail scraping new listing: https://www.immowelt.de/expose/9e57dacd-2fa4-40e9-8deb-d77c4592606e
+2025-01-15 19:01:02 - DEBUG - Found 2 unique images
+2025-01-15 19:01:02 - INFO - [67/274] Detail scraping new listing: https://www.immowelt.de/expose/30c5e63c-ba13-40f6-a5fe-c579fc87dfa4
+2025-01-15 19:01:03 - DEBUG - Found 4 unique images
+2025-01-15 19:01:03 - INFO - [68/274] Detail scraping new listing: https://www.immowelt.de/expose/378a7050-017e-4633-97f8-85f88ff0c868
+2025-01-15 19:01:04 - DEBUG - Found 4 unique images
+2025-01-15 19:01:04 - INFO - [69/274] Detail scraping new listing: https://www.immowelt.de/expose/421eceec-575d-4dc2-87dd-b2b9041449a8
+2025-01-15 19:01:05 - DEBUG - Found 4 unique images
+2025-01-15 19:01:05 - INFO - [70/274] Detail scraping new listing: https://www.immowelt.de/expose/5ad0cd84-8a23-4c46-b504-a2884785a592
+2025-01-15 19:01:05 - DEBUG - Found 4 unique images
+2025-01-15 19:01:05 - INFO - [71/274] Detail scraping new listing: https://www.immowelt.de/expose/cffad671-729d-4bfa-94ef-6e8fb7c4dceb
+2025-01-15 19:01:06 - DEBUG - Found 3 unique images
+2025-01-15 19:01:06 - INFO - [72/274] Detail scraping new listing: https://www.immowelt.de/expose/7a01f6f0-b77e-4958-858a-d9fe8b4d67ae
+2025-01-15 19:01:07 - DEBUG - Found 3 unique images
+2025-01-15 19:01:07 - INFO - [73/274] Detail scraping new listing: https://www.immowelt.de/expose/0b2db881-9ccf-4fa0-ae64-a50869d552f0
+2025-01-15 19:01:07 - DEBUG - Found 3 unique images
+2025-01-15 19:01:07 - INFO - [74/274] Detail scraping new listing: https://www.immowelt.de/expose/54e175f0-0354-487c-a3fb-e9db47c3b631
+2025-01-15 19:01:08 - DEBUG - Found 4 unique images
+2025-01-15 19:01:08 - INFO - [75/274] Detail scraping new listing: https://www.immowelt.de/expose/b43a7dfa-fa63-431b-b245-3175224bef08
+2025-01-15 19:01:09 - DEBUG - Found 4 unique images
+2025-01-15 19:01:09 - INFO - [76/274] Detail scraping new listing: https://www.immowelt.de/expose/fbdb4b28-4d26-42e4-9b5a-e7deb35f4c77
+2025-01-15 19:01:09 - DEBUG - Found 3 unique images
+2025-01-15 19:01:09 - INFO - [77/274] Detail scraping new listing: https://www.immowelt.de/expose/b0a5ae5d-a388-4d3d-b7ab-ae67046c3ae9
+2025-01-15 19:01:10 - DEBUG - Found 3 unique images
+2025-01-15 19:01:10 - INFO - [78/274] Detail scraping new listing: https://www.immowelt.de/expose/a592ad1c-295a-4765-bb1c-2eef62b4826b
+2025-01-15 19:01:10 - DEBUG - Found 3 unique images
+2025-01-15 19:01:11 - INFO - [79/274] Detail scraping new listing: https://www.immowelt.de/expose/6fb4cb8f-5ad1-4e9c-8592-3f80ce686e9e
+2025-01-15 19:01:11 - DEBUG - Found 3 unique images
+2025-01-15 19:01:11 - INFO - [80/274] Detail scraping new listing: https://www.immowelt.de/expose/e7254e41-508e-4c44-84b7-1d76e3b406c8
+2025-01-15 19:01:12 - DEBUG - Found 4 unique images
+2025-01-15 19:01:12 - INFO - [81/274] Detail scraping new listing: https://www.immowelt.de/expose/63a92614-8ef3-4503-95a8-09b8b8d313fc
+2025-01-15 19:01:12 - DEBUG - Found 3 unique images
+2025-01-15 19:01:12 - INFO - [82/274] Detail scraping new listing: https://www.immowelt.de/expose/5c9947d6-3bd6-40f8-89e6-0b73826e0aee
+2025-01-15 19:01:13 - DEBUG - Found 4 unique images
+2025-01-15 19:01:13 - INFO - [83/274] Detail scraping new listing: https://www.immowelt.de/expose/f7fe148c-d387-4b4f-8750-5c8748c91b01
+2025-01-15 19:01:14 - DEBUG - Found 3 unique images
+2025-01-15 19:01:14 - INFO - [84/274] Detail scraping new listing: https://www.immowelt.de/expose/e01adbd9-cf8a-447f-9f5e-55d8d90ec614
+2025-01-15 19:01:14 - DEBUG - Found 4 unique images
+2025-01-15 19:01:14 - INFO - [85/274] Detail scraping new listing: https://www.immowelt.de/expose/2d0c3f33-8ea6-4c6b-9c66-a778d4b2f3c9
+2025-01-15 19:01:15 - DEBUG - Found 3 unique images
+2025-01-15 19:01:15 - INFO - [86/274] Detail scraping new listing: https://www.immowelt.de/expose/24146ae7-781d-4e3f-aeac-c77e1551aa8d
+2025-01-15 19:01:16 - DEBUG - Found 4 unique images
+2025-01-15 19:01:16 - INFO - [87/274] Detail scraping new listing: https://www.immowelt.de/expose/b3a9f560-0d3f-4287-856c-67fb2267b2e5
+2025-01-15 19:01:16 - DEBUG - Found 3 unique images
+2025-01-15 19:01:16 - INFO - [88/274] Detail scraping new listing: https://www.immowelt.de/expose/642332aa-1fe6-4831-b503-0370f7ae080c
+2025-01-15 19:01:17 - DEBUG - Found 3 unique images
+2025-01-15 19:01:17 - INFO - [89/274] Detail scraping new listing: https://www.immowelt.de/expose/a8f59ddb-9674-4d86-8e01-05b698f7a31b
+2025-01-15 19:01:17 - DEBUG - Found 3 unique images
+2025-01-15 19:01:17 - INFO - [90/274] Detail scraping new listing: https://www.immowelt.de/expose/04caffb2-5f02-4233-b022-b9ff5f8701c0
+2025-01-15 19:01:18 - DEBUG - Found 4 unique images
+2025-01-15 19:01:18 - INFO - [91/274] Detail scraping new listing: https://www.immowelt.de/expose/b7ee879c-1bd8-4400-8e95-ff8048fba622
+2025-01-15 19:01:18 - DEBUG - Found 3 unique images
+2025-01-15 19:01:18 - INFO - [92/274] Detail scraping new listing: https://www.immowelt.de/expose/a187a982-0424-42b2-86fc-a7e843a15467
+2025-01-15 19:01:19 - DEBUG - Found 3 unique images
+2025-01-15 19:01:19 - INFO - [93/274] Detail scraping new listing: https://www.immowelt.de/expose/798b2dbf-282f-43a0-a3f7-6b7cfeb50598
+2025-01-15 19:01:19 - DEBUG - Found 3 unique images
+2025-01-15 19:01:20 - INFO - [94/274] Detail scraping new listing: https://www.immowelt.de/expose/71c8fc4f-59c0-40d1-bcf5-9102ebed1f17
+2025-01-15 19:01:20 - DEBUG - Found 3 unique images
+2025-01-15 19:01:20 - INFO - [95/274] Detail scraping new listing: https://www.immowelt.de/expose/7069a846-7afa-471c-ace8-286870a3b1ea
+2025-01-15 19:01:21 - DEBUG - Found 4 unique images
+2025-01-15 19:01:21 - INFO - [96/274] Detail scraping new listing: https://www.immowelt.de/expose/380d94f5-b201-4e71-bf73-5d6480a9ea62
+2025-01-15 19:01:22 - DEBUG - Found 4 unique images
+2025-01-15 19:01:22 - INFO - [97/274] Detail scraping new listing: https://www.immowelt.de/expose/782ce41c-93e5-424a-9d1c-887e01c00034
+2025-01-15 19:01:22 - DEBUG - Found 3 unique images
+2025-01-15 19:01:22 - INFO - [98/274] Detail scraping new listing: https://www.immowelt.de/expose/b7fe57d8-326e-4ca1-86ac-b06eacbcdc59
+2025-01-15 19:01:23 - DEBUG - Found 3 unique images
+2025-01-15 19:01:23 - INFO - [99/274] Detail scraping new listing: https://www.immowelt.de/expose/280828fc-bdbc-4195-b835-58cc5fc6e977
+2025-01-15 19:01:24 - DEBUG - Found 3 unique images
+2025-01-15 19:01:24 - INFO - [100/274] Detail scraping new listing: https://www.immowelt.de/expose/54c869e6-79ca-4a37-99b3-a5f6812d801e
+2025-01-15 19:01:24 - DEBUG - Found 3 unique images
+2025-01-15 19:01:24 - INFO - [101/274] Detail scraping new listing: https://www.immowelt.de/expose/c13f9460-45fd-42bc-b1aa-af544fd56386
+2025-01-15 19:01:25 - DEBUG - Found 4 unique images
+2025-01-15 19:01:25 - INFO - [102/274] Detail scraping new listing: https://www.immowelt.de/expose/736c0b87-c314-4e32-a64c-f361d84fbd7e
+2025-01-15 19:01:25 - DEBUG - Found 3 unique images
+2025-01-15 19:01:25 - INFO - [103/274] Detail scraping new listing: https://www.immowelt.de/expose/760eb22c-7a47-4912-8bcd-23024fd55df0
+2025-01-15 19:01:26 - DEBUG - Found 4 unique images
+2025-01-15 19:01:26 - INFO - [104/274] Detail scraping new listing: https://www.immowelt.de/expose/c7b94a5f-2442-423e-a177-f0f6a129c2a2
+2025-01-15 19:01:26 - DEBUG - Found 4 unique images
+2025-01-15 19:01:27 - INFO - [105/274] Detail scraping new listing: https://www.immowelt.de/expose/d0c4a208-5939-4058-95a5-508985bafd41
+2025-01-15 19:01:27 - DEBUG - Found 3 unique images
+2025-01-15 19:01:27 - INFO - [106/274] Detail scraping new listing: https://www.immowelt.de/expose/55b0425f-50ba-495d-857d-cd6b1929f550
+2025-01-15 19:01:28 - DEBUG - Found 3 unique images
+2025-01-15 19:01:28 - INFO - [107/274] Detail scraping new listing: https://www.immowelt.de/expose/320cf643-d8c2-4f07-ac44-9655efe184fb
+2025-01-15 19:01:29 - DEBUG - Found 3 unique images
+2025-01-15 19:01:29 - INFO - [108/274] Detail scraping new listing: https://www.immowelt.de/expose/d89dd10b-c0c0-447b-936c-fb2714fc7ffc
+2025-01-15 19:01:29 - DEBUG - Found 3 unique images
+2025-01-15 19:01:29 - INFO - [109/274] Detail scraping new listing: https://www.immowelt.de/expose/7b065c7c-6a17-4b10-a2e4-8443a702d2a3
+2025-01-15 19:01:30 - DEBUG - Found 3 unique images
+2025-01-15 19:01:30 - INFO - [110/274] Detail scraping new listing: https://www.immowelt.de/expose/ec2d4250-6568-4841-99b8-2b2aba1fe4f4
+2025-01-15 19:01:30 - DEBUG - Found 3 unique images
+2025-01-15 19:01:30 - INFO - [111/274] Detail scraping new listing: https://www.immowelt.de/expose/fd023930-da31-41ec-afb0-907da44ba2de
+2025-01-15 19:01:31 - DEBUG - Found 4 unique images
+2025-01-15 19:01:31 - INFO - [112/274] Detail scraping new listing: https://www.immowelt.de/expose/e486d6a2-068e-46c9-96d6-320691acfe0a
+2025-01-15 19:01:31 - DEBUG - Found 3 unique images
+2025-01-15 19:01:32 - INFO - [113/274] Detail scraping new listing: https://www.immowelt.de/expose/9566e07d-a01f-4471-b334-62c46cd3d29e
+2025-01-15 19:01:32 - DEBUG - Found 3 unique images
+2025-01-15 19:01:32 - INFO - [114/274] Detail scraping new listing: https://www.immowelt.de/expose/c4c2b392-55ed-4995-b280-23e75f82be46
+2025-01-15 19:01:32 - DEBUG - Found 4 unique images
+2025-01-15 19:01:33 - INFO - [115/274] Detail scraping new listing: https://www.immowelt.de/expose/5c5ca1ca-a145-4112-9a15-35a484d62224
+2025-01-15 19:01:33 - DEBUG - Found 3 unique images
+2025-01-15 19:01:33 - INFO - [116/274] Detail scraping new listing: https://www.immowelt.de/expose/c2ec7159-dd46-4090-970a-a22ec6e6864a
+2025-01-15 19:01:34 - DEBUG - Found 3 unique images
+2025-01-15 19:01:34 - INFO - [117/274] Detail scraping new listing: https://www.immowelt.de/expose/0b12ea97-9be5-4da1-8466-3ccd16d9836e
+2025-01-15 19:01:34 - DEBUG - Found 4 unique images
+2025-01-15 19:01:34 - INFO - [118/274] Detail scraping new listing: https://www.immowelt.de/expose/a922305c-be58-4751-86ec-deb94dd0a97f
+2025-01-15 19:01:35 - DEBUG - Found 2 unique images
+2025-01-15 19:01:35 - INFO - [119/274] Detail scraping new listing: https://www.immowelt.de/expose/51df6d34-3cbe-4425-9cea-0f597252418a
+2025-01-15 19:01:35 - DEBUG - Found 4 unique images
+2025-01-15 19:01:35 - INFO - [120/274] Detail scraping new listing: https://www.immowelt.de/expose/b57b6ab6-6934-4036-82aa-b86a24d8be57
+2025-01-15 19:01:36 - DEBUG - Found 3 unique images
+2025-01-15 19:01:36 - INFO - [121/274] Detail scraping new listing: https://www.immowelt.de/expose/e64bbab2-fe39-4c86-b9ab-7b3f1bac9ec7
+2025-01-15 19:01:37 - DEBUG - Found 4 unique images
+2025-01-15 19:01:37 - INFO - [122/274] Detail scraping new listing: https://www.immowelt.de/expose/fc545c14-4cc2-4e52-a20d-95885d53194c
+2025-01-15 19:01:37 - DEBUG - Found 3 unique images
+2025-01-15 19:01:37 - INFO - [123/274] Detail scraping new listing: https://www.immowelt.de/expose/3c440ffa-529c-4cfa-b22b-f7aa9bf1bfe7
+2025-01-15 19:01:38 - DEBUG - Found 4 unique images
+2025-01-15 19:01:38 - INFO - [124/274] Detail scraping new listing: https://www.immowelt.de/expose/bebd6c9d-6c72-4c96-8288-f4432c02a9a8
+2025-01-15 19:01:38 - DEBUG - Found 4 unique images
+2025-01-15 19:01:38 - INFO - [125/274] Detail scraping new listing: https://www.immowelt.de/expose/2be50492-7aae-44ce-9860-6720df32c669
+2025-01-15 19:01:39 - DEBUG - Found 3 unique images
+2025-01-15 19:01:39 - INFO - [126/274] Detail scraping new listing: https://www.immowelt.de/expose/8e662731-84fa-4fbb-881e-54840f44960e
+2025-01-15 19:01:39 - DEBUG - Found 3 unique images
+2025-01-15 19:01:39 - INFO - [127/274] Detail scraping new listing: https://www.immowelt.de/expose/6a26acd4-6c09-4200-aac0-4d8c3221f1a6
+2025-01-15 19:01:40 - DEBUG - Found 4 unique images
+2025-01-15 19:01:40 - INFO - [128/274] Detail scraping new listing: https://www.immowelt.de/expose/73322b2c-1c9b-495c-9575-82aa5c4d6c76
+2025-01-15 19:01:41 - DEBUG - Found 4 unique images
+2025-01-15 19:01:41 - INFO - [129/274] Detail scraping new listing: https://www.immowelt.de/expose/978d2a2f-86dd-4d36-9a1e-89ccbb446417
+2025-01-15 19:01:41 - DEBUG - Found 3 unique images
+2025-01-15 19:01:41 - INFO - [130/274] Detail scraping new listing: https://www.immowelt.de/expose/7e2dc793-b8df-434e-a4bf-53593233f258
+2025-01-15 19:01:42 - DEBUG - Found 4 unique images
+2025-01-15 19:01:42 - INFO - [131/274] Detail scraping new listing: https://www.immowelt.de/expose/1d8704fc-c9fa-4052-b41b-393fbd11b3f6
+2025-01-15 19:01:42 - DEBUG - Found 3 unique images
+2025-01-15 19:01:42 - INFO - [132/274] Detail scraping new listing: https://www.immowelt.de/expose/e6a5bc82-eb5a-4bae-b87d-dab9314320ff
+2025-01-15 19:01:43 - DEBUG - Found 3 unique images
+2025-01-15 19:01:43 - INFO - [133/274] Detail scraping new listing: https://www.immowelt.de/expose/07800a4b-3253-43fc-9f96-2d2f82624d94
+2025-01-15 19:01:44 - DEBUG - Found 2 unique images
+2025-01-15 19:01:44 - INFO - [134/274] Detail scraping new listing: https://www.immowelt.de/expose/8dc2220d-d14f-4841-891e-598b9b59a096
+2025-01-15 19:01:44 - DEBUG - Found 3 unique images
+2025-01-15 19:01:44 - INFO - [135/274] Detail scraping new listing: https://www.immowelt.de/expose/bde91251-30e0-4aed-8151-c6f98dc599a1
+2025-01-15 19:01:45 - DEBUG - Found 4 unique images
+2025-01-15 19:01:45 - INFO - [136/274] Detail scraping new listing: https://www.immowelt.de/expose/acb86ca6-71a3-42ed-a75f-de6847d27024
+2025-01-15 19:01:45 - DEBUG - Found 4 unique images
+2025-01-15 19:01:46 - INFO - [137/274] Detail scraping new listing: https://www.immowelt.de/expose/87771d86-9a34-47ff-a6e3-3dfdf323e9df
+2025-01-15 19:01:46 - DEBUG - Found 3 unique images
+2025-01-15 19:01:46 - INFO - [138/274] Detail scraping new listing: https://www.immowelt.de/expose/d7d1a774-010e-44aa-bcd0-fce91db76010
+2025-01-15 19:01:47 - DEBUG - Found 3 unique images
+2025-01-15 19:01:47 - INFO - [139/274] Detail scraping new listing: https://www.immowelt.de/expose/b372d5e3-cad3-4093-94c6-c51d6e75a21a
+2025-01-15 19:01:48 - DEBUG - Found 4 unique images
+2025-01-15 19:01:48 - INFO - [140/274] Detail scraping new listing: https://www.immowelt.de/expose/9a9aa207-d432-440b-a613-eb4c0dfa55dc
+2025-01-15 19:01:48 - DEBUG - Found 4 unique images
+2025-01-15 19:01:48 - INFO - [141/274] Detail scraping new listing: https://www.immowelt.de/expose/62549a83-7e4e-431a-be7b-2454b5215a0e
+2025-01-15 19:01:49 - DEBUG - Found 3 unique images
+2025-01-15 19:01:49 - INFO - [142/274] Detail scraping new listing: https://www.immowelt.de/expose/d8a74b7b-c5a6-4b4d-a925-9d2bd88a6d1b
+2025-01-15 19:01:50 - DEBUG - Found 4 unique images
+2025-01-15 19:01:50 - INFO - [143/274] Detail scraping new listing: https://www.immowelt.de/expose/33d20ae0-dad8-4f56-aa2e-51c8cfaa04a7
+2025-01-15 19:01:50 - DEBUG - Found 3 unique images
+2025-01-15 19:01:50 - INFO - [144/274] Detail scraping new listing: https://www.immowelt.de/expose/c227ca63-965e-4985-9b5b-1bb023932094
+2025-01-15 19:01:51 - DEBUG - Found 4 unique images
+2025-01-15 19:01:51 - INFO - [145/274] Detail scraping new listing: https://www.immowelt.de/expose/e0043216-0bcb-4325-a50b-9cd5458e1487
+2025-01-15 19:01:52 - DEBUG - Found 3 unique images
+2025-01-15 19:01:52 - INFO - [146/274] Detail scraping new listing: https://www.immowelt.de/expose/674808ae-75f5-4ba4-923c-7d593cfd3709
+2025-01-15 19:01:52 - DEBUG - Found 3 unique images
+2025-01-15 19:01:52 - INFO - [147/274] Detail scraping new listing: https://www.immowelt.de/expose/38388d2d-da38-4e92-9b12-ef2b85b29730
+2025-01-15 19:01:53 - DEBUG - Found 3 unique images
+2025-01-15 19:01:53 - INFO - [148/274] Detail scraping new listing: https://www.immowelt.de/expose/83d6a7bf-4822-40c4-87cf-4463a5baa7a1
+2025-01-15 19:01:54 - DEBUG - Found 3 unique images
+2025-01-15 19:01:54 - INFO - [149/274] Detail scraping new listing: https://www.immowelt.de/expose/9996b64f-66f9-455e-afc1-8865d0eba28d
+2025-01-15 19:01:54 - DEBUG - Found 4 unique images
+2025-01-15 19:01:55 - INFO - [150/274] Detail scraping new listing: https://www.immowelt.de/expose/514630af-0e14-49ef-af44-64ddd8db0891
+2025-01-15 19:01:55 - DEBUG - Found 4 unique images
+2025-01-15 19:01:55 - INFO - [151/274] Detail scraping new listing: https://www.immowelt.de/expose/07f5cab4-dae2-4076-b2f7-93698d7eac8e
+2025-01-15 19:01:56 - DEBUG - Found 4 unique images
+2025-01-15 19:01:56 - INFO - [152/274] Detail scraping new listing: https://www.immowelt.de/expose/e599192d-b300-4f4e-86fd-27b317ec0b56
+2025-01-15 19:01:56 - DEBUG - Found 3 unique images
+2025-01-15 19:01:56 - INFO - [153/274] Detail scraping new listing: https://www.immowelt.de/expose/3e455928-eb05-4b69-99d5-963795347eca
+2025-01-15 19:01:57 - DEBUG - Found 3 unique images
+2025-01-15 19:01:57 - INFO - [154/274] Detail scraping new listing: https://www.immowelt.de/expose/242397f1-4841-4e4a-9c72-b9066e63d80e
+2025-01-15 19:01:57 - DEBUG - Found 4 unique images
+2025-01-15 19:01:57 - INFO - [155/274] Detail scraping new listing: https://www.immowelt.de/expose/92f195f5-0415-4417-9fb6-6b58485c5582
+2025-01-15 19:01:58 - DEBUG - Found 3 unique images
+2025-01-15 19:01:58 - INFO - [156/274] Detail scraping new listing: https://www.immowelt.de/expose/87c60f63-369a-4b6d-a53f-d7b68e11ea5b
+2025-01-15 19:01:59 - DEBUG - Found 4 unique images
+2025-01-15 19:01:59 - INFO - [157/274] Detail scraping new listing: https://www.immowelt.de/expose/96b2882a-e2c6-40ca-8841-b097ef97722e
+2025-01-15 19:01:59 - DEBUG - Found 4 unique images
+2025-01-15 19:01:59 - INFO - [158/274] Detail scraping new listing: https://www.immowelt.de/expose/22eee013-e2f6-42d9-ac2f-060a6529f5b7
+2025-01-15 19:02:00 - DEBUG - Found 3 unique images
+2025-01-15 19:02:00 - INFO - [159/274] Detail scraping new listing: https://www.immowelt.de/expose/7f1682e5-0c13-4a93-bb2c-e2c078d5d367
+2025-01-15 19:02:01 - DEBUG - Found 3 unique images
+2025-01-15 19:02:01 - INFO - [160/274] Detail scraping new listing: https://www.immowelt.de/expose/49c4f095-3e8b-43c1-a959-08ec667c2ea0
+2025-01-15 19:02:01 - DEBUG - Found 3 unique images
+2025-01-15 19:02:01 - INFO - [161/274] Detail scraping new listing: https://www.immowelt.de/expose/a0f08916-a6ea-4496-ad2a-cf41858470bc
+2025-01-15 19:02:02 - DEBUG - Found 3 unique images
+2025-01-15 19:02:02 - INFO - [162/274] Detail scraping new listing: https://www.immowelt.de/expose/f3b847fc-7c69-4672-8916-8e97f0dcc4a4
+2025-01-15 19:02:03 - DEBUG - Found 4 unique images
+2025-01-15 19:02:03 - INFO - [163/274] Detail scraping new listing: https://www.immowelt.de/expose/e42b8796-5f65-4ad4-b71a-409e550e5b74
+2025-01-15 19:02:03 - DEBUG - Found 3 unique images
+2025-01-15 19:02:03 - INFO - [164/274] Detail scraping new listing: https://www.immowelt.de/expose/4520645a-af27-49ae-ba1a-80cd0a6df416
+2025-01-15 19:02:04 - DEBUG - Found 3 unique images
+2025-01-15 19:02:04 - INFO - [165/274] Detail scraping new listing: https://www.immowelt.de/expose/0c272ffd-89f0-4f74-946f-81d823b7a9c9
+2025-01-15 19:02:04 - DEBUG - Found 3 unique images
+2025-01-15 19:02:05 - INFO - [166/274] Detail scraping new listing: https://www.immowelt.de/expose/5c288ca8-6284-42a0-a49c-9186064915f9
+2025-01-15 19:02:05 - DEBUG - Found 4 unique images
+2025-01-15 19:02:05 - INFO - [167/274] Detail scraping new listing: https://www.immowelt.de/expose/a5d4612c-14b9-416e-bd78-17ab71517064
+2025-01-15 19:02:06 - DEBUG - Found 3 unique images
+2025-01-15 19:02:06 - INFO - [168/274] Detail scraping new listing: https://www.immowelt.de/expose/57757122-3b87-455a-af89-440d18e40e0b
+2025-01-15 19:02:06 - DEBUG - Found 3 unique images
+2025-01-15 19:02:06 - INFO - [169/274] Detail scraping new listing: https://www.immowelt.de/expose/e0ecbfd8-c0cf-483d-b98d-cc51517e7265
+2025-01-15 19:02:07 - DEBUG - Found 3 unique images
+2025-01-15 19:02:07 - INFO - [170/274] Detail scraping new listing: https://www.immowelt.de/expose/8ea7485d-177a-481e-9d13-80cb3306808f
+2025-01-15 19:02:07 - DEBUG - Found 3 unique images
+2025-01-15 19:02:07 - INFO - [171/274] Detail scraping new listing: https://www.immowelt.de/expose/2f0d8af0-6c6f-422f-ac8b-352f2defda43
+2025-01-15 19:02:08 - DEBUG - Found 3 unique images
+2025-01-15 19:02:08 - INFO - [172/274] Detail scraping new listing: https://www.immowelt.de/expose/89b7f36c-0af2-476d-b66a-d8741b2579d3
+2025-01-15 19:02:09 - DEBUG - Found 3 unique images
+2025-01-15 19:02:09 - INFO - [173/274] Detail scraping new listing: https://www.immowelt.de/expose/8162b835-8f3e-412b-87e3-99657ad8e2a6
+2025-01-15 19:02:09 - DEBUG - Found 2 unique images
+2025-01-15 19:02:09 - INFO - [174/274] Detail scraping new listing: https://www.immowelt.de/expose/de5800b4-e095-44ae-82d7-bb6fc7f23047
+2025-01-15 19:02:10 - DEBUG - Found 3 unique images
+2025-01-15 19:02:10 - INFO - [175/274] Detail scraping new listing: https://www.immowelt.de/expose/6d99f7b9-08b0-4762-9a54-cb85660d1963
+2025-01-15 19:02:10 - DEBUG - Found 4 unique images
+2025-01-15 19:02:10 - INFO - [176/274] Detail scraping new listing: https://www.immowelt.de/expose/a85071c2-2e17-4ff6-8af1-be1a5366275c
+2025-01-15 19:02:11 - DEBUG - Found 3 unique images
+2025-01-15 19:02:11 - INFO - [177/274] Detail scraping new listing: https://www.immowelt.de/expose/49757864-f9c8-493f-873a-d01870a29cc8
+2025-01-15 19:02:11 - DEBUG - Found 2 unique images
+2025-01-15 19:02:11 - INFO - [178/274] Detail scraping new listing: https://www.immowelt.de/expose/85d66591-8692-42dd-bcd9-b453151bf76a
+2025-01-15 19:02:12 - DEBUG - Found 4 unique images
+2025-01-15 19:02:12 - INFO - [179/274] Detail scraping new listing: https://www.immowelt.de/expose/dc9046de-2b02-4dbe-b658-1da39c20fa1e
+2025-01-15 19:02:13 - DEBUG - Found 3 unique images
+2025-01-15 19:02:13 - INFO - [180/274] Detail scraping new listing: https://www.immowelt.de/expose/486cb8f2-ac1c-4bcd-843f-9bdb568f2181
+2025-01-15 19:02:13 - DEBUG - Found 3 unique images
+2025-01-15 19:02:13 - INFO - [181/274] Detail scraping new listing: https://www.immowelt.de/expose/b6f2fc67-d87a-402f-81f9-fbfdfd320ecb
+2025-01-15 19:02:14 - DEBUG - Found 3 unique images
+2025-01-15 19:02:14 - INFO - [182/274] Detail scraping new listing: https://www.immowelt.de/expose/84368bae-3c4b-47ca-b5e0-cd0c9242e6a1
+2025-01-15 19:02:14 - DEBUG - Found 3 unique images
+2025-01-15 19:02:15 - INFO - [183/274] Detail scraping new listing: https://www.immowelt.de/expose/c4dbf39a-3d8e-4d66-ab6e-9a776c05b1d6
+2025-01-15 19:02:15 - DEBUG - Found 3 unique images
+2025-01-15 19:02:15 - INFO - [184/274] Detail scraping new listing: https://www.immowelt.de/expose/6c2aee45-d831-47f7-b244-3cc5b4537b82
+2025-01-15 19:02:16 - DEBUG - Found 3 unique images
+2025-01-15 19:02:16 - INFO - [185/274] Detail scraping new listing: https://www.immowelt.de/expose/c5725248-39f5-452c-81a3-1d8e49ec595f
+2025-01-15 19:02:16 - DEBUG - Found 3 unique images
+2025-01-15 19:02:17 - INFO - [186/274] Detail scraping new listing: https://www.immowelt.de/expose/692370c7-7b10-47f5-a0d7-e42e46d8eb2d
+2025-01-15 19:02:17 - DEBUG - Found 3 unique images
+2025-01-15 19:02:17 - INFO - [187/274] Detail scraping new listing: https://www.immowelt.de/expose/1456a8f6-29b9-4db1-a226-d7e65c043c65
+2025-01-15 19:02:18 - DEBUG - Found 3 unique images
+2025-01-15 19:02:18 - INFO - [188/274] Detail scraping new listing: https://www.immowelt.de/expose/212297bb-107f-44d0-903b-eb28eee497ef
+2025-01-15 19:02:18 - DEBUG - Found 3 unique images
+2025-01-15 19:02:18 - INFO - [189/274] Detail scraping new listing: https://www.immowelt.de/expose/fa863819-d9ea-4528-8c26-f7f0937dbb0f
+2025-01-15 19:02:19 - DEBUG - Found 4 unique images
+2025-01-15 19:02:19 - INFO - [190/274] Detail scraping new listing: https://www.immowelt.de/expose/ea9e6145-adee-4950-9910-59afbfd8a056
+2025-01-15 19:02:19 - DEBUG - Found 3 unique images
+2025-01-15 19:02:20 - INFO - [191/274] Detail scraping new listing: https://www.immowelt.de/expose/1e2af554-4f90-4893-ac64-edc9924d17b8
+2025-01-15 19:02:20 - DEBUG - Found 4 unique images
+2025-01-15 19:02:20 - INFO - [192/274] Detail scraping new listing: https://www.immowelt.de/expose/a1d9ad8b-ebd1-4e97-8778-72d0662250f2
+2025-01-15 19:02:21 - DEBUG - Found 3 unique images
+2025-01-15 19:02:21 - INFO - [193/274] Detail scraping new listing: https://www.immowelt.de/expose/8c276644-c166-48d6-9dbc-4a7b094de4dd
+2025-01-15 19:02:21 - DEBUG - Found 3 unique images
+2025-01-15 19:02:21 - INFO - [194/274] Detail scraping new listing: https://www.immowelt.de/expose/5d0632b9-be93-482a-a6fa-f7e9c6054d28
+2025-01-15 19:02:22 - DEBUG - Found 3 unique images
+2025-01-15 19:02:22 - INFO - [195/274] Detail scraping new listing: https://www.immowelt.de/expose/b00fa817-f83a-423b-935b-449db90aa84b
+2025-01-15 19:02:22 - DEBUG - Found 3 unique images
+2025-01-15 19:02:23 - INFO - [196/274] Detail scraping new listing: https://www.immowelt.de/expose/ce7ab085-fe91-4ba3-bbee-3b96ef4506cd
+2025-01-15 19:02:23 - DEBUG - Found 4 unique images
+2025-01-15 19:02:23 - INFO - [197/274] Detail scraping new listing: https://www.immowelt.de/expose/b912f05f-5e94-467b-8456-37ec1993748d
+2025-01-15 19:02:24 - DEBUG - Found 4 unique images
+2025-01-15 19:02:24 - INFO - [198/274] Detail scraping new listing: https://www.immowelt.de/expose/f9c898a1-c590-46a8-a240-95aa94a74379
+2025-01-15 19:02:24 - DEBUG - Found 4 unique images
+2025-01-15 19:02:24 - INFO - [199/274] Detail scraping new listing: https://www.immowelt.de/expose/fb9eb6e9-3b47-471d-a171-07d865af553a
+2025-01-15 19:02:25 - DEBUG - Found 4 unique images
+2025-01-15 19:02:25 - INFO - [200/274] Detail scraping new listing: https://www.immowelt.de/expose/7ff461f7-fb86-4151-aa2d-eb4e5868925d
+2025-01-15 19:02:25 - DEBUG - Found 3 unique images
+2025-01-15 19:02:25 - INFO - [201/274] Detail scraping new listing: https://www.immowelt.de/expose/d2a9f9d9-46c7-4ba1-b30b-20d7e69529b2
+2025-01-15 19:02:26 - DEBUG - Found 2 unique images
+2025-01-15 19:02:26 - INFO - [202/274] Detail scraping new listing: https://www.immowelt.de/expose/57865c58-caaa-4dc0-bcb7-4aefa10f03b0
+2025-01-15 19:02:26 - DEBUG - Found 4 unique images
+2025-01-15 19:02:27 - INFO - [203/274] Detail scraping new listing: https://www.immowelt.de/expose/45f1886c-8279-4f63-9a5e-d994ca5ab026
+2025-01-15 19:02:27 - DEBUG - Found 3 unique images
+2025-01-15 19:02:27 - INFO - [204/274] Detail scraping new listing: https://www.immowelt.de/expose/028810d4-5120-424c-9a2e-4d1d06f652b5
+2025-01-15 19:02:28 - DEBUG - Found 4 unique images
+2025-01-15 19:02:28 - INFO - [205/274] Detail scraping new listing: https://www.immowelt.de/expose/e1ad8233-8185-467b-bbd1-a14e97f06dcf
+2025-01-15 19:02:28 - DEBUG - Found 3 unique images
+2025-01-15 19:02:28 - INFO - [206/274] Detail scraping new listing: https://www.immowelt.de/expose/0cd17de4-3ed8-409d-a5bf-4b7d01a6c93e
+2025-01-15 19:02:29 - DEBUG - Found 2 unique images
+2025-01-15 19:02:29 - INFO - [207/274] Detail scraping new listing: https://www.immowelt.de/expose/57172013-78f7-4975-9e2e-24154a3fbf47
+2025-01-15 19:02:29 - DEBUG - Found 3 unique images
+2025-01-15 19:02:29 - INFO - [208/274] Detail scraping new listing: https://www.immowelt.de/expose/09e47811-de32-461b-94e9-03ca6df22faf
+2025-01-15 19:02:30 - DEBUG - Found 3 unique images
+2025-01-15 19:02:30 - INFO - [209/274] Detail scraping new listing: https://www.immowelt.de/expose/4b03a33f-ce48-40ee-a108-b4659ba6089c
+2025-01-15 19:02:30 - DEBUG - Found 4 unique images
+2025-01-15 19:02:31 - INFO - [210/274] Detail scraping new listing: https://www.immowelt.de/expose/2b240290-61d4-4c3e-9ce9-0e598bc82047
+2025-01-15 19:02:31 - DEBUG - Found 4 unique images
+2025-01-15 19:02:31 - INFO - [211/274] Detail scraping new listing: https://www.immowelt.de/expose/cd5eb487-5e12-4ac9-bb39-056b7bcf4f34
+2025-01-15 19:02:32 - DEBUG - Found 3 unique images
+2025-01-15 19:02:32 - INFO - [212/274] Detail scraping new listing: https://www.immowelt.de/expose/3b41f774-e927-48df-a2ef-8ab76b77b914
+2025-01-15 19:02:32 - DEBUG - Found 3 unique images
+2025-01-15 19:02:33 - INFO - [213/274] Detail scraping new listing: https://www.immowelt.de/expose/1e9dd8d6-1f2c-460e-919d-f473c21129ee
+2025-01-15 19:02:33 - DEBUG - Found 2 unique images
+2025-01-15 19:02:33 - INFO - [214/274] Detail scraping new listing: https://www.immowelt.de/expose/f555c1a0-5a5a-447d-8fb9-7b62ca5eaabb
+2025-01-15 19:02:34 - DEBUG - Found 3 unique images
+2025-01-15 19:02:35 - INFO - [215/274] Detail scraping new listing: https://www.immowelt.de/expose/ea07999d-34c3-48c9-8787-0af007862939
+2025-01-15 19:02:35 - DEBUG - Found 3 unique images
+2025-01-15 19:02:35 - INFO - [216/274] Detail scraping new listing: https://www.immowelt.de/expose/4ea009a2-01c1-451c-b481-21fc9736a86b
+2025-01-15 19:02:35 - DEBUG - Found 3 unique images
+2025-01-15 19:02:36 - INFO - [217/274] Detail scraping new listing: https://www.immowelt.de/expose/a1fd63ce-bf85-4f94-ad36-edbe39643bde
+2025-01-15 19:02:36 - DEBUG - Found 3 unique images
+2025-01-15 19:02:36 - INFO - [218/274] Detail scraping new listing: https://www.immowelt.de/expose/8cc056c1-01e1-4397-a94f-1d8853511c51
+2025-01-15 19:02:36 - DEBUG - Found 4 unique images
+2025-01-15 19:02:37 - INFO - [219/274] Detail scraping new listing: https://www.immowelt.de/expose/03ab4a55-f029-4215-be3f-c61601503e8b
+2025-01-15 19:02:37 - DEBUG - Found 3 unique images
+2025-01-15 19:02:37 - INFO - [220/274] Detail scraping new listing: https://www.immowelt.de/expose/0b5622e4-4146-4347-815d-e3f7d43d2b0e
+2025-01-15 19:02:38 - DEBUG - Found 4 unique images
+2025-01-15 19:02:38 - INFO - [221/274] Detail scraping new listing: https://www.immowelt.de/expose/8d0a1acf-424f-4676-8f6e-9b08dfbadb12
+2025-01-15 19:02:38 - DEBUG - Found 4 unique images
+2025-01-15 19:02:39 - INFO - [222/274] Detail scraping new listing: https://www.immowelt.de/expose/4c00f7f1-0856-4865-b6dc-fcab3bce1ab2
+2025-01-15 19:02:39 - DEBUG - Found 3 unique images
+2025-01-15 19:02:39 - INFO - [223/274] Detail scraping new listing: https://www.immowelt.de/expose/9ba9183b-5d50-4843-814e-ac2e56aac188
+2025-01-15 19:02:40 - DEBUG - Found 3 unique images
+2025-01-15 19:02:40 - INFO - [224/274] Detail scraping new listing: https://www.immowelt.de/expose/81f73bf2-a54c-491d-a17f-0e2ddb985417
+2025-01-15 19:02:40 - DEBUG - Found 4 unique images
+2025-01-15 19:02:40 - INFO - [225/274] Detail scraping new listing: https://www.immowelt.de/expose/e7bf92a5-8897-4732-b458-f1a2095917a3
+2025-01-15 19:02:41 - DEBUG - Found 2 unique images
+2025-01-15 19:02:41 - INFO - [226/274] Detail scraping new listing: https://www.immowelt.de/expose/e8f5c3bf-84a3-4457-83a2-085da8c91a56
+2025-01-15 19:02:41 - DEBUG - Found 2 unique images
+2025-01-15 19:02:41 - INFO - [227/274] Detail scraping new listing: https://www.immowelt.de/expose/72651dc1-ef8c-4330-bb81-27ec778d8c3a
+2025-01-15 19:02:42 - DEBUG - Found 3 unique images
+2025-01-15 19:02:42 - INFO - [228/274] Detail scraping new listing: https://www.immowelt.de/expose/fafbfbf4-e5ac-422e-a864-b2ae26e77841
+2025-01-15 19:02:43 - DEBUG - Found 3 unique images
+2025-01-15 19:02:43 - INFO - [229/274] Detail scraping new listing: https://www.immowelt.de/expose/3d6de256-92d6-4be1-90f8-0cf0bb44408c
+2025-01-15 19:02:43 - DEBUG - Found 3 unique images
+2025-01-15 19:02:43 - INFO - [230/274] Detail scraping new listing: https://www.immowelt.de/expose/14ced98d-d803-4570-81a9-457d4469d2f2
+2025-01-15 19:02:44 - DEBUG - Found 3 unique images
+2025-01-15 19:02:44 - INFO - [231/274] Detail scraping new listing: https://www.immowelt.de/expose/c69b4e19-83b2-4ab1-9f24-90bb8467f123
+2025-01-15 19:02:44 - DEBUG - Found 3 unique images
+2025-01-15 19:02:45 - INFO - [232/274] Detail scraping new listing: https://www.immowelt.de/expose/9eba5479-1368-4dad-b546-01014fb420c7
+2025-01-15 19:02:45 - DEBUG - Found 3 unique images
+2025-01-15 19:02:45 - INFO - [233/274] Detail scraping new listing: https://www.immowelt.de/expose/539a5bac-f0cf-40fd-bac7-3091f99ad0c3
+2025-01-15 19:02:45 - DEBUG - Found 4 unique images
+2025-01-15 19:02:46 - INFO - [234/274] Detail scraping new listing: https://www.immowelt.de/expose/1397dce6-021f-44f9-8da8-7e7ab1c24d2e
+2025-01-15 19:02:46 - DEBUG - Found 4 unique images
+2025-01-15 19:02:47 - INFO - [235/274] Detail scraping new listing: https://www.immowelt.de/expose/cc9133e0-4a5f-40c2-9f67-6578f7e8a13e
+2025-01-15 19:02:47 - DEBUG - Found 4 unique images
+2025-01-15 19:02:47 - INFO - [236/274] Detail scraping new listing: https://www.immowelt.de/expose/f469f945-5672-40ab-9784-01ab67a5ef77
+2025-01-15 19:02:48 - DEBUG - Found 4 unique images
+2025-01-15 19:02:48 - INFO - [237/274] Detail scraping new listing: https://www.immowelt.de/expose/6fa6af44-165b-4fa6-8e3f-1af3d2abfd72
+2025-01-15 19:02:48 - DEBUG - Found 3 unique images
+2025-01-15 19:02:48 - INFO - [238/274] Detail scraping new listing: https://www.immowelt.de/expose/cbe2869f-4124-42cf-90a6-ded7825d26d9
+2025-01-15 19:02:49 - DEBUG - Found 3 unique images
+2025-01-15 19:02:49 - INFO - [239/274] Detail scraping new listing: https://www.immowelt.de/expose/cf1b96aa-30a4-4058-9e11-9adb39dbfbb7
+2025-01-15 19:02:49 - DEBUG - Found 4 unique images
+2025-01-15 19:02:49 - INFO - [240/274] Detail scraping new listing: https://www.immowelt.de/expose/d03ca1df-7c38-426d-9147-fb0e8b1627d4
+2025-01-15 19:02:50 - DEBUG - Found 3 unique images
+2025-01-15 19:02:50 - INFO - [241/274] Detail scraping new listing: https://www.immowelt.de/expose/abacdf29-a18a-43dc-847b-7dd14e14ba59
+2025-01-15 19:02:51 - DEBUG - Found 4 unique images
+2025-01-15 19:02:51 - INFO - [242/274] Detail scraping new listing: https://www.immowelt.de/expose/1ab77cc3-3811-4b40-88b5-1a02f8f1ce4b
+2025-01-15 19:02:51 - DEBUG - Found 3 unique images
+2025-01-15 19:02:51 - INFO - [243/274] Detail scraping new listing: https://www.immowelt.de/expose/edb44580-9541-46ea-bd66-fdb460a6ffe1
+2025-01-15 19:02:52 - DEBUG - Found 3 unique images
+2025-01-15 19:02:52 - INFO - [244/274] Detail scraping new listing: https://www.immowelt.de/expose/37f68542-02f8-4f36-91df-d1f5aa0e26b5
+2025-01-15 19:02:52 - DEBUG - Found 3 unique images
+2025-01-15 19:02:53 - INFO - [245/274] Detail scraping new listing: https://www.immowelt.de/expose/a350da9b-e629-4a87-8c2c-fec3f6b58ec0
+2025-01-15 19:02:53 - DEBUG - Found 4 unique images
+2025-01-15 19:02:53 - INFO - [246/274] Detail scraping new listing: https://www.immowelt.de/expose/88f9bdff-880a-4325-97c7-82d0b7e077d9
+2025-01-15 19:02:54 - DEBUG - Found 3 unique images
+2025-01-15 19:02:54 - INFO - [247/274] Detail scraping new listing: https://www.immowelt.de/expose/4d2f6d4d-455a-4f0a-9f39-470b925fa770
+2025-01-15 19:02:54 - DEBUG - Found 4 unique images
+2025-01-15 19:02:54 - INFO - [248/274] Detail scraping new listing: https://www.immowelt.de/expose/73755e26-1c59-4259-a56c-cdecac137349
+2025-01-15 19:02:55 - DEBUG - Found 3 unique images
+2025-01-15 19:02:55 - INFO - [249/274] Detail scraping new listing: https://www.immowelt.de/expose/330317d0-9f39-40a4-bf17-1ce1fe4e8d47
+2025-01-15 19:02:55 - DEBUG - Found 3 unique images
+2025-01-15 19:02:55 - INFO - [250/274] Detail scraping new listing: https://www.immowelt.de/expose/a411cd8c-f6f9-485f-8728-5861c76f119d
+2025-01-15 19:02:56 - DEBUG - Found 3 unique images
+2025-01-15 19:02:56 - INFO - [251/274] Detail scraping new listing: https://www.immowelt.de/expose/a8e17ea0-76e4-4aab-9ed0-957b8d6b5187
+2025-01-15 19:02:56 - DEBUG - Found 4 unique images
+2025-01-15 19:02:57 - INFO - [252/274] Detail scraping new listing: https://www.immowelt.de/expose/37c5bbb4-623a-402e-aab3-68c7cb8193fd
+2025-01-15 19:02:57 - DEBUG - Found 4 unique images
+2025-01-15 19:02:57 - INFO - [253/274] Detail scraping new listing: https://www.immowelt.de/expose/e023a2ae-3bf4-4920-af46-bd6e9857fad7
+2025-01-15 19:02:57 - DEBUG - Found 3 unique images
+2025-01-15 19:02:58 - INFO - [254/274] Detail scraping new listing: https://www.immowelt.de/expose/4fc421cd-76ac-45e1-95ba-ceeb6050f56a
+2025-01-15 19:02:58 - DEBUG - Found 4 unique images
+2025-01-15 19:02:58 - INFO - [255/274] Detail scraping new listing: https://www.immowelt.de/expose/5935ae2b-6c33-4cc6-8e17-ca5639edc738
+2025-01-15 19:02:59 - DEBUG - Found 3 unique images
+2025-01-15 19:02:59 - INFO - [256/274] Detail scraping new listing: https://www.immowelt.de/expose/c6199d04-1878-4f9c-97c3-c01764e9a504
+2025-01-15 19:02:59 - DEBUG - Found 3 unique images
+2025-01-15 19:02:59 - INFO - [257/274] Detail scraping new listing: https://www.immowelt.de/expose/39b6690f-f2c9-4b6e-8d87-aa4870929f9e
+2025-01-15 19:03:00 - DEBUG - Found 3 unique images
+2025-01-15 19:03:00 - INFO - [258/274] Detail scraping new listing: https://www.immowelt.de/expose/d769fca0-80c3-483d-a168-a3aef7a1472a
+2025-01-15 19:03:00 - DEBUG - Found 3 unique images
+2025-01-15 19:03:00 - INFO - [259/274] Detail scraping new listing: https://www.immowelt.de/expose/91eab6a3-8ece-416f-a6a2-b83acf8d3475
+2025-01-15 19:03:01 - DEBUG - Found 4 unique images
+2025-01-15 19:03:01 - INFO - [260/274] Detail scraping new listing: https://www.immowelt.de/expose/fef88b67-93fe-4c98-b3f0-9c6eafa174d7
+2025-01-15 19:03:02 - DEBUG - Found 3 unique images
+2025-01-15 19:03:02 - INFO - [261/274] Detail scraping new listing: https://www.immowelt.de/expose/f8789489-ec73-4f5f-b1fe-0662c8e4b85d
+2025-01-15 19:03:02 - DEBUG - Found 3 unique images
+2025-01-15 19:03:02 - INFO - [262/274] Detail scraping new listing: https://www.immowelt.de/expose/e56a6c1f-b93b-47da-8396-a4d2e36a6020
+2025-01-15 19:03:03 - DEBUG - Found 3 unique images
+2025-01-15 19:03:03 - INFO - [263/274] Detail scraping new listing: https://www.immowelt.de/expose/00093aeb-9c8e-40a8-8d48-8018620d270e
+2025-01-15 19:03:03 - DEBUG - Found 3 unique images
+2025-01-15 19:03:04 - INFO - [264/274] Detail scraping new listing: https://www.immowelt.de/expose/f144a1d7-46af-41dc-a450-cd56e9a37ca7
+2025-01-15 19:03:04 - DEBUG - Found 3 unique images
+2025-01-15 19:03:04 - INFO - [265/274] Detail scraping new listing: https://www.immowelt.de/expose/8b492311-2d35-41a1-939b-cebd02da15bc
+2025-01-15 19:03:05 - DEBUG - Found 4 unique images
+2025-01-15 19:03:05 - INFO - [266/274] Detail scraping new listing: https://www.immowelt.de/expose/80be0694-dd56-43f4-9fb0-ca0971b39690
+2025-01-15 19:03:05 - DEBUG - Found 3 unique images
+2025-01-15 19:03:05 - INFO - [267/274] Detail scraping new listing: https://www.immowelt.de/expose/4fae22da-18e5-462e-b44f-2fd57fe14dd4
+2025-01-15 19:03:06 - DEBUG - Found 4 unique images
+2025-01-15 19:03:06 - INFO - [268/274] Detail scraping new listing: https://www.immowelt.de/expose/27f0cccd-d4c1-443a-a66b-1aeed1e3a720
+2025-01-15 19:03:06 - DEBUG - Found 3 unique images
+2025-01-15 19:03:07 - INFO - [269/274] Detail scraping new listing: https://www.immowelt.de/expose/ab2938ef-2a09-45ec-8e9b-4747c7fe7506
+2025-01-15 19:03:07 - DEBUG - Found 3 unique images
+2025-01-15 19:03:07 - INFO - [270/274] Detail scraping new listing: https://www.immowelt.de/expose/fa2d1b5c-d328-4af9-a0b6-437a2ab3bdca
+2025-01-15 19:03:08 - DEBUG - Found 4 unique images
+2025-01-15 19:03:08 - INFO - [271/274] Detail scraping new listing: https://www.immowelt.de/expose/64ce957c-f4b5-495b-9351-bb22edcec45e
+2025-01-15 19:03:08 - DEBUG - Found 3 unique images
+2025-01-15 19:03:08 - INFO - [272/274] Detail scraping new listing: https://www.immowelt.de/expose/ff7007e2-3ada-4229-b5ab-002d1b7d237d
+2025-01-15 19:03:09 - DEBUG - Found 3 unique images
+2025-01-15 19:03:09 - INFO - [273/274] Detail scraping new listing: https://www.immowelt.de/expose/1cf64a6f-d63f-4d30-9be6-9a42e316226c
+2025-01-15 19:03:10 - DEBUG - Found 3 unique images
+2025-01-15 19:03:10 - INFO - [274/274] Detail scraping new listing: https://www.immowelt.de/expose/8df5e047-0912-4a6b-b363-5a97ab5a0e91
+2025-01-15 19:03:10 - DEBUG - Found 4 unique images
+2025-01-15 19:03:10 - INFO - Saving results...
+2025-01-15 19:03:10 - INFO - Saved 6009 records to /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-15 19:03:10 - INFO - 
+Final Statistics:
+2025-01-15 19:03:10 - INFO - Total listings: 6009
+2025-01-15 19:03:10 - INFO - Active listings: 5089
+2025-01-15 19:03:10 - INFO - Closed listings: 920
+2025-01-15 19:03:10 - INFO - New listings today: 274
+2025-01-15 19:03:10 - INFO - Listings closed today: 353
+2025-01-15 19:03:10 - INFO - Average Preis_cleaned: 418178.39
+2025-01-15 19:03:10 - INFO - Average Wohnfläche: 212.59
+2025-01-15 19:03:10 - INFO - Average Preis_pro_qm: 3957.51
+2025-01-15 19:03:10 - INFO - Script completed successfully!
