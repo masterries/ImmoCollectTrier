@@ -12,7 +12,7 @@ class Config:
     os.makedirs(DATA_DIR, exist_ok=True)
     
     # Database files
-    DEFAULT_DB_FILE = os.path.join(DATA_DIR, 'miete_trier50km_detailed2.csv')
+    DEFAULT_DB_FILE = os.path.join(DATA_DIR, 'miete_trier50km_detailed2_pic.csv')
     BACKUP_DIR = os.path.join(DATA_DIR, 'backups')
     CHECKPOINT_DIR = os.path.join(DATA_DIR, 'checkpoints')
     

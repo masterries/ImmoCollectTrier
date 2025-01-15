@@ -5,6 +5,9 @@ from datetime import datetime
 import time
 import argparse
 import pandas as pd
+import requests
+from urllib.parse import urljoin
+import urllib.parse
 
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -15,6 +18,20 @@ from lib.database import DatabaseHandler
 from lib.data_processor import DataProcessor
 from lib.config import Config
 
+
+
+def get_file_extension(url):
+    """Get the correct file extension from the image URL."""
+    # Extract the path from the URL
+    path = urllib.parse.urlparse(url).path
+    
+    # Get the original extension
+    ext = os.path.splitext(path)[1].lower()
+    
+    # If no extension or not a common image extension, default to .jpg
+    valid_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.webp'}
+    return ext if ext in valid_extensions else '.jpg'
+
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Immowelt Scraper')
     parser.add_argument('--backup', action='store_true', 
@@ -24,7 +41,35 @@ def parse_arguments():
                         help='Output file name (relative to data directory or absolute path)')
     parser.add_argument('--fix-data', action='store_true',
                         help='Fix and standardize the data format')
+    parser.add_argument('--image-dir', type=str,
+                        default='images',
+                        help='Directory to store scraped images')
     return parser.parse_args()
+
+def ensure_dir(directory):
+    """Ensure that a directory exists, creating it if necessary."""
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+def download_image(url, image_dir, listing_id):
+    """Download and save an image from URL with correct extension."""
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            # Get the proper file extension
+            ext = get_file_extension(url)
+            
+            # Create filename with correct extension
+            filename = f"{listing_id}_{int(time.time())}{ext}"
+            filepath = os.path.join(image_dir, filename)
+            
+            with open(filepath, 'wb') as f:
+                f.write(response.content)
+            
+            return filename
+    except Exception as e:
+        print(f"Failed to download image {url}: {str(e)}")
+    return None
 
 def main():
     # Initialize logger
@@ -34,6 +79,10 @@ def main():
     try:
         # Parse command line arguments
         args = parse_arguments()
+
+        # Ensure image directory exists
+        image_dir = os.path.join(Config.DATA_DIR, args.image_dir)
+        ensure_dir(image_dir)
 
         # Initialize components
         scraper = WebScraper()
@@ -57,7 +106,7 @@ def main():
             )
             return 0
 
-        # Load existing data (empty if file does not exist)
+        # Load existing data
         existing_df = db_handler.load_existing_data()
 
         # Scrape current listings
@@ -76,46 +125,47 @@ def main():
         logger.info("Processing scraped data...")
         new_df = data_processor.process_new_data(df_current)
 
-        # DEBUG logging to confirm new_df structure
-        logger.info(f"DEBUG: new_df is type: {type(new_df)}")
-        if isinstance(new_df, pd.DataFrame):
-            logger.info(f"DEBUG: new_df shape: {new_df.shape}")
-            logger.info(f"DEBUG: new_df columns: {list(new_df.columns)}")
-        else:
-            logger.info("DEBUG: new_df is None or not a DataFrame!")
+        # Add images column if it doesn't exist
+        if 'Images' not in new_df.columns:
+            new_df['Images'] = ''
 
-        # Check if this is the very first run (database file does not exist)
+        # First run handling
         if not os.path.exists(db_handler.filename):
             logger.info("First run - creating new database...")
-
-            # Mark all listings as created today
             new_df['created_date'] = datetime.now().strftime('%Y-%m-%d')
 
-            # Since no existing data, all are "new" listings
-            # => Scrape detail pages for all of them
-            logger.info(f"Scraping detail pages for all {len(new_df)} listings on the first run...")
+            logger.info(f"Scraping detail pages for all {len(new_df)} listings...")
             for i, (idx, row) in enumerate(new_df.iterrows(), start=1):
                 link = row['Link']
                 logger.info(f"[{i}/{len(new_df)}] Detail scraping: {link}")
+                
                 details = scraper.get_detail_page_info(link)
                 if details:
                     new_df.at[idx, 'Features'] = '; '.join(details['features'])
                     new_df.at[idx, 'Vollständige_Adresse'] = details['full_address']
                     new_df.at[idx, 'Latitude'] = details['latitude']
                     new_df.at[idx, 'Longitude'] = details['longitude']
+                    
+                    # Handle images
+                    image_urls = details.get('image_urls', [])
+                    if image_urls:
+                        downloaded_images = []
+                        for img_url in image_urls:
+                            filename = download_image(img_url, image_dir, idx)
+                            if filename:
+                                downloaded_images.append(filename)
+                        new_df.at[idx, 'Images'] = ';'.join(downloaded_images)
                 else:
                     logger.warning(f"Could not retrieve details for: {link}")
                 time.sleep(0.5)
 
-            # Save the database after populating detail info
             db_handler.save_data(new_df)
             logger.info("Initial database created successfully!")
             return 0
 
-        # Otherwise, if we do have existing data, proceed with comparison
+        # Handle existing database updates
         comparison = db_handler.compare_listings(existing_df, new_df)
 
-        # Process new listings if any found (fetch GPS, features, etc.)
         if comparison['new_listings']:
             logger.info(f"Processing {len(comparison['new_listings'])} new listings...")
             new_links = list(comparison['new_listings'])
@@ -129,11 +179,21 @@ def main():
                     new_df.at[idx, 'Vollständige_Adresse'] = details['full_address']
                     new_df.at[idx, 'Latitude'] = details['latitude']
                     new_df.at[idx, 'Longitude'] = details['longitude']
+                    
+                    # Handle images for new listings
+                    image_urls = details.get('image_urls', [])
+                    if image_urls:
+                        downloaded_images = []
+                        for img_url in image_urls:
+                            filename = download_image(img_url, image_dir, idx)
+                            if filename:
+                                downloaded_images.append(filename)
+                        new_df.at[idx, 'Images'] = ';'.join(downloaded_images)
                 else:
                     logger.warning(f"Could not retrieve details for: {link}")
                 time.sleep(0.1)
         
-        # Update database (mark closed listings, etc.)
+        # Update database
         merged_df = db_handler.update_database(existing_df, new_df, comparison)
         
         # Save results

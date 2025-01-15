@@ -4,13 +4,40 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import re
-import urllib.parse  # Add this import at the top of your file
+import urllib.parse
 from urllib.parse import urljoin, unquote
-from urllib.parse import urljoin
 import random
 from .logger import get_logger
 from .config import Config
 logger = get_logger()
+
+def clean_image_url(url):
+    """Clean the image URL to get the original version without size parameters."""
+    # Remove size parameters (w= and h=)
+    url = re.sub(r'[?&]w=\d+', '', url)
+    url = re.sub(r'[?&]h=\d+', '', url)
+    
+    # Extract the base URL and query parameters
+    parsed = urllib.parse.urlparse(url)
+    params = urllib.parse.parse_qs(parsed.query)
+    
+    # Keep only the ci_seal parameter if it exists
+    cleaned_params = {}
+    if 'ci_seal' in params:
+        cleaned_params['ci_seal'] = params['ci_seal'][0]
+    
+    # Reconstruct the URL
+    cleaned_url = urllib.parse.urlunparse((
+        parsed.scheme,
+        parsed.netloc,
+        parsed.path,
+        parsed.params,
+        urllib.parse.urlencode(cleaned_params),
+        parsed.fragment
+    ))
+    
+    return cleaned_url
+
 
 def calculate_polygon_centroid(coordinates):
     """Calculate the centroid of a polygon from coordinates."""
@@ -48,6 +75,8 @@ class WebScraper:
                 else:
                     logger.error(f"Failed to get HTML after {retries} attempts: {url}")
                     return None
+
+
     def get_detail_page_info(self, url):
         html = self._make_request(url)
         if not html:
@@ -55,6 +84,7 @@ class WebScraper:
 
         soup = BeautifulSoup(html, 'html.parser')
         
+        # Extract features
         features = []
         features_section = soup.find("section", {"data-testid": "aviv.CDP.Sections.Features"})
         if features_section:
@@ -64,43 +94,35 @@ class WebScraper:
                 if feature_text:
                     features.append(feature_text.text.strip())
 
-        latitude = longitude = None
+        # Extract images
+        image_urls = self.extract_images(soup)
 
+        # Extract coordinates
+        latitude = longitude = None
         map_button = soup.find("button", {"aria-label": "Adresse auf Karte ansehen"})
         if map_button and map_button.find("img"):
             img_src = map_button.find("img")["src"]
-            logger.debug(f"Map image source: {img_src}")  # Log map image source
+            logger.debug(f"Map image source: {img_src}")
             if "geojson" in img_src:
                 geojson_match = re.search(r'geojson\((.*?)\)', img_src)
                 if geojson_match:
                     geojson_string = geojson_match.group(1)
-                    if geojson_string:  # Ensure the string is not empty
+                    if geojson_string:
                         try:
-                            # Decode the URL-encoded GeoJSON string
                             decoded_geojson_string = unquote(geojson_string)
-                            logger.debug(f"Decoded GeoJSON string: {decoded_geojson_string}")  # Log decoded GeoJSON
-                            
-                            # Parse the decoded string as JSON
                             geojson_data = json.loads(decoded_geojson_string)
-                            logger.debug(f"Parsed GeoJSON data: {geojson_data}")  # Log parsed GeoJSON
                             
                             geometry_type = geojson_data.get("geometry", {}).get("type")
                             if geometry_type == "Point":
                                 point_coords = geojson_data["geometry"]["coordinates"]
-                                logger.debug(f"Point coordinates: {point_coords}")  # Log point coordinates
                                 longitude, latitude = point_coords[0], point_coords[1]
                                 logger.info(f"Extracted Point coordinates as longitude={longitude}, latitude={latitude}")
                             elif geometry_type == "Polygon":
                                 polygon_coords = geojson_data["geometry"]["coordinates"][0]
-                                logger.debug(f"Polygon coordinates: {polygon_coords}")  # Log polygon coordinates
                                 longitude, latitude = calculate_polygon_centroid(polygon_coords)
                                 logger.info(f"Calculated centroid as longitude={longitude}, latitude={latitude}")
-                        except json.JSONDecodeError as e:
-                            logger.error(f"Error decoding GeoJSON: {str(e)}, {decoded_geojson_string}")
-                        except KeyError as e:
-                            logger.error(f"Missing expected keys in GeoJSON: {str(e)}")
-                    else:
-                        logger.error("GeoJSON string is empty or invalid.")
+                        except (json.JSONDecodeError, KeyError) as e:
+                            logger.error(f"Error processing GeoJSON: {str(e)}")
             else:
                 coordinates_match = re.search(r'/(-?\d+\.\d+),(-?\d+\.\d+),', img_src)
                 if coordinates_match:
@@ -108,6 +130,7 @@ class WebScraper:
                     latitude = float(coordinates_match.group(2))
                     logger.info(f"Extracted coordinates: longitude={longitude}, latitude={latitude}")
 
+        # Extract address
         address_div = soup.find("div", {"data-testid": "aviv.CDP.Location.Address"})
         full_address = address_div.text.strip() if address_div else "Keine Adresse gefunden"
 
@@ -115,26 +138,9 @@ class WebScraper:
             "features": features,
             "full_address": full_address,
             "latitude": latitude,
-            "longitude": longitude
+            "longitude": longitude,
+            "image_urls": image_urls
         }
-
-
-
-
-    def get_total_pages(self, html):
-        """Extract total number of pages from search results"""
-        try:
-            soup = BeautifulSoup(html, "html.parser")
-            pagination = soup.find("nav", {"aria-label": "pagination navigation"})
-            if not pagination:
-                return 1
-            pages = pagination.find_all("button", {"aria-label": lambda x: x and x.startswith("zu seite")})
-            if pages:
-                return int(pages[-1].text.strip())
-            return 1
-        except Exception as e:
-            logger.error(f"Error determining total pages: {str(e)}")
-            return 1
 
     def extract_listing_data(self, listing):
         """Extract data from a single listing item"""
@@ -162,13 +168,26 @@ class WebScraper:
                 link = urljoin(self.base_url, href)
             else:
                 link = "Keine Info"
+
+            # Extract preview image
+            preview_image = None
+            picture_elem = listing.find("picture")
+            if picture_elem:
+                source = picture_elem.find("source")
+                if source and source.get("srcset"):
+                    preview_image = source["srcset"].split(",")[0].split()[0]
+                else:
+                    img = picture_elem.find("img")
+                    if img and img.get("src"):
+                        preview_image = img["src"]
             
             return {
                 'Link': link,
                 'Preis': price,
                 'Beschreibung': description,
                 'Details': details,
-                'Adresse': address
+                'Adresse': address,
+                'Vorschaubild': preview_image
             }
         except Exception as e:
             logger.error(f"Error extracting listing data: {str(e)}")
@@ -190,6 +209,20 @@ class WebScraper:
 
         return listings
 
+    def get_total_pages(self, html):
+        """Extract total number of pages from search results"""
+        try:
+            soup = BeautifulSoup(html, "html.parser")
+            pagination = soup.find("nav", {"aria-label": "pagination navigation"})
+            if not pagination:
+                return 1
+            pages = pagination.find_all("button", {"aria-label": lambda x: x and x.startswith("zu seite")})
+            if pages:
+                return int(pages[-1].text.strip())
+            return 1
+        except Exception as e:
+            logger.error(f"Error determining total pages: {str(e)}")
+            return 1
 
     def scrape_all_listings(self, base_url=None):
         """Scrape all listings from all pages"""
@@ -226,3 +259,78 @@ class WebScraper:
 
         logger.info(f"Completed scraping. Total listings found: {len(all_listings)}")
         return all_listings
+    
+    def clean_image_url(url):
+        """Clean the image URL to get the original version without size parameters."""
+        # Remove size parameters (w= and h=)
+        url = re.sub(r'[?&]w=\d+', '', url)
+        url = re.sub(r'[?&]h=\d+', '', url)
+        
+        # Extract the base URL and query parameters
+        parsed = urllib.parse.urlparse(url)
+        params = urllib.parse.parse_qs(parsed.query)
+        
+        # Keep only the ci_seal parameter if it exists
+        cleaned_params = {}
+        if 'ci_seal' in params:
+            cleaned_params['ci_seal'] = params['ci_seal'][0]
+        
+        # Reconstruct the URL
+        cleaned_url = urllib.parse.urlunparse((
+            parsed.scheme,
+            parsed.netloc,
+            parsed.path,
+            parsed.params,
+            urllib.parse.urlencode(cleaned_params),
+            parsed.fragment
+        ))
+        
+        return cleaned_url
+
+    def get_file_extension(url):
+        """Get the correct file extension from the image URL."""
+        # Extract the path from the URL
+        path = urllib.parse.urlparse(url).path
+        
+        # Get the original extension
+        ext = os.path.splitext(path)[1].lower()
+        
+        # If no extension or not a common image extension, default to .jpg
+        valid_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.webp'}
+        return ext if ext in valid_extensions else '.jpg'
+
+    def extract_images(self, soup):
+        """Extract image URLs from the detail page."""
+        images = []
+        try:
+            # Find all picture elements
+            picture_elements = soup.find_all("picture")
+            for picture in picture_elements:
+                # Check source elements first
+                sources = picture.find_all("source")
+                for source in sources:
+                    srcset = source.get("srcset")
+                    if srcset:
+                        # Extract URLs from srcset
+                        urls = [url.strip().split()[0] for url in srcset.split(",")]
+                        if urls:
+                            # Clean the URL and add to images list
+                            cleaned_url = clean_image_url(urls[0])
+                            if cleaned_url:
+                                images.append(cleaned_url)
+                
+                # Check img element as fallback
+                img = picture.find("img")
+                if img and img.get("src"):
+                    cleaned_url = clean_image_url(img["src"])
+                    if cleaned_url:
+                        images.append(cleaned_url)
+
+            # Remove duplicates while preserving order
+            images = list(dict.fromkeys(images))
+            logger.debug(f"Found {len(images)} unique images")
+            return images
+
+        except Exception as e:
+            logger.error(f"Error extracting images: {str(e)}")
+            return []
