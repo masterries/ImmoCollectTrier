@@ -1,104 +1,216 @@
-// src/pages/PropertyListPage.tsx
-import React, { useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { useFilters } from '../contexts/FilterContext';
-import Layout from '../components/Layout';
-import PropertyFilters from '../components/PropertyFilters';
-import PropertyList from '../components/PropertyList';
+// src/components/PropertyList.tsx
+import React, { useMemo } from "react";
+import { useFilters } from "../contexts/FilterContext";
+import { calculateDistance } from "../utils/geo";
+import ImageGallery from "../components/ImageGallery";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { MapPin, Euro, Maximize2, Home, Calendar } from "lucide-react";
+import type { PropertyData } from "../types";
 
-interface Props {
-  data: any[];
+interface PropertyCardProps {
+  property: PropertyData;
 }
 
-const PropertyListPage: React.FC<Props> = ({ data }) => {
-  const { filters, setFilters } = useFilters();
-  const [searchParams, setSearchParams] = useSearchParams();
+const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
+  // Parse the Images string into an array
+  const images = property.Images ? property.Images.split(";").filter(Boolean) : [];
 
-  // Update URL when filters change
-  useEffect(() => {
-    const params = new URLSearchParams();
-    
-    // Add non-default filters to URL
-    if (filters.propertyType !== 'all') {
-      params.set('type', filters.propertyType);
-    }
-    
-    if (filters.priceRange[0] !== 0 || filters.priceRange[1] !== 1000000) {
-      params.set('priceMin', filters.priceRange[0].toString());
-      params.set('priceMax', filters.priceRange[1].toString());
-    }
-    
-    if (filters.dateRange.start) {
-      params.set('dateStart', filters.dateRange.start);
-    }
-    if (filters.dateRange.end) {
-      params.set('dateEnd', filters.dateRange.end);
-    }
-    
-    if (!filters.listingStatus.active !== !filters.listingStatus.closed) {
-      params.set('status', filters.listingStatus.active ? 'active' : 'closed');
-    }
-    
-    if (filters.mapLocation.lat !== 49.7592 || 
-        filters.mapLocation.lng !== 6.6417 || 
-        filters.mapLocation.radiusKm !== 50) {
-      params.set('lat', filters.mapLocation.lat.toString());
-      params.set('lng', filters.mapLocation.lng.toString());
-      params.set('radius', filters.mapLocation.radiusKm.toString());
-    }
-    
-    setSearchParams(params);
-  }, [filters, setSearchParams]);
+  const formatDate = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString("de-DE", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  };
 
-  // Initialize filters from URL on load
-  useEffect(() => {
-    const type = searchParams.get('type');
-    const priceMin = searchParams.get('priceMin');
-    const priceMax = searchParams.get('priceMax');
-    const dateStart = searchParams.get('dateStart');
-    const dateEnd = searchParams.get('dateEnd');
-    const status = searchParams.get('status');
-    const lat = searchParams.get('lat');
-    const lng = searchParams.get('lng');
-    const radius = searchParams.get('radius');
-
-    setFilters(prev => ({
-      ...prev,
-      propertyType: type || 'all',
-      priceRange: [
-        priceMin ? parseInt(priceMin) : prev.priceRange[0],
-        priceMax ? parseInt(priceMax) : prev.priceRange[1]
-      ],
-      dateRange: {
-        start: dateStart || null,
-        end: dateEnd || null
-      },
-      listingStatus: status ? {
-        active: status === 'active',
-        closed: status === 'closed'
-      } : prev.listingStatus,
-      mapLocation: {
-        lat: lat ? parseFloat(lat) : prev.mapLocation.lat,
-        lng: lng ? parseFloat(lng) : prev.mapLocation.lng,
-        radiusKm: radius ? parseFloat(radius) : prev.mapLocation.radiusKm
-      }
-    }));
-  }, [searchParams, setFilters]);
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat("de-DE", {
+      style: "currency",
+      currency: "EUR",
+      maximumFractionDigits: 0,
+    }).format(price);
+  };
 
   return (
-    <Layout>
-      <div className="space-y-8">
-        <PropertyFilters propertyTypes={[...new Set(data.map(item => item.Beschreibung?.split(' ')[0]))]} ranges={{
-          price: { min: 0, max: 1000000 },
-          pricePerSqm: { min: 0, max: 5000 },
-          livingSpace: { min: 0, max: 500 },
-          plotSize: { min: 0, max: 2000 },
-          rooms: { min: 0, max: 10 }
-        }} />
-        <PropertyList data={data} />
-      </div>
-    </Layout>
+    <Card className="overflow-hidden">
+      {/* Image Gallery */}
+      {(images.length > 0 || property.Vorschaubild) && (
+        <div className="w-full h-48">
+          <ImageGallery images={images} previewImage={property.Vorschaubild} />
+        </div>
+      )}
+
+      <CardHeader>
+        <div className="flex justify-between items-start">
+          <div>
+            <CardTitle className="text-xl font-bold">
+              {formatPrice(property.Preis_cleaned)}
+            </CardTitle>
+            <CardDescription>{property.Beschreibung}</CardDescription>
+          </div>
+          {property.closed_date && (
+            <Badge variant="destructive">Closed</Badge>
+          )}
+        </div>
+      </CardHeader>
+
+      <CardContent>
+        <div className="space-y-4">
+          {/* Key Details */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex items-center gap-2">
+              <Home className="w-4 h-4 text-gray-500" />
+              <span>{property.Zimmer} Rooms</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Maximize2 className="w-4 h-4 text-gray-500" />
+              <span>{property.Wohnfläche} m²</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Euro className="w-4 h-4 text-gray-500" />
+              <span>{Math.round(property.Preis_pro_qm)} €/m²</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Calendar className="w-4 h-4 text-gray-500" />
+              <span>{formatDate(property.created_date)}</span>
+            </div>
+          </div>
+
+          {/* Address */}
+          {property.Vollständige_Adresse && (
+            <div className="flex items-center gap-2 text-gray-600">
+              <MapPin className="w-4 h-4" />
+              <span>{property.Vollständige_Adresse}</span>
+            </div>
+          )}
+
+          {/* Features */}
+          {property.Features && (
+            <div className="flex flex-wrap gap-2">
+              {property.Features.split(";").map((feature, index) => (
+                <Badge key={index} variant="secondary">
+                  {feature.trim()}
+                </Badge>
+              ))}
+            </div>
+          )}
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 
-export default PropertyListPage;
+const PropertyList: React.FC<{ data: PropertyData[] }> = ({ data }) => {
+  const { filters } = useFilters();
+
+  const filteredData = useMemo(() => {
+    return data.filter((item) => {
+      // Property type filter
+      if (
+        filters.propertyType !== "all" &&
+        !item.Beschreibung?.startsWith(filters.propertyType)
+      ) {
+        return false;
+      }
+
+      // Price filters
+      if (
+        item.Preis_cleaned < filters.priceRange[0] ||
+        item.Preis_cleaned > filters.priceRange[1]
+      ) {
+        return false;
+      }
+
+      // Price per sqm filter
+      if (
+        item.Preis_pro_qm < filters.pricePerSqmRange[0] ||
+        item.Preis_pro_qm > filters.pricePerSqmRange[1]
+      ) {
+        return false;
+      }
+
+      // Living space filter
+      if (
+        item.Wohnfläche < filters.livingSpaceRange[0] ||
+        item.Wohnfläche > filters.livingSpaceRange[1]
+      ) {
+        return false;
+      }
+
+      // Rooms filter
+      if (
+        item.Zimmer < filters.roomsRange[0] ||
+        item.Zimmer > filters.roomsRange[1]
+      ) {
+        return false;
+      }
+
+      // Geo filter
+      if (filters.mapLocation && item.Latitude && item.Longitude) {
+        const distance = calculateDistance(
+          filters.mapLocation.lat,
+          filters.mapLocation.lng,
+          item.Latitude,
+          item.Longitude
+        );
+        if (distance > filters.mapLocation.radiusKm) {
+          return false;
+        }
+      }
+
+      // Listing status and date filter
+      const hasClosedDate = !!item.closed_date;
+
+      if (
+        !filters.listingStatus.active &&
+        !filters.listingStatus.closed
+      ) {
+        return false;
+      }
+      if (!filters.listingStatus.active && !hasClosedDate) {
+        return false;
+      }
+      if (!filters.listingStatus.closed && hasClosedDate) {
+        return false;
+      }
+
+      // Date range filter
+      if (filters.dateRange.start || filters.dateRange.end) {
+        const itemDate = new Date(
+          hasClosedDate ? item.closed_date : item.created_date
+        );
+        if (
+          filters.dateRange.start &&
+          itemDate < new Date(filters.dateRange.start)
+        ) {
+          return false;
+        }
+        if (
+          filters.dateRange.end &&
+          itemDate > new Date(filters.dateRange.end)
+        ) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [data, filters]);
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {filteredData.map((property, index) => (
+        <PropertyCard key={index} property={property} />
+      ))}
+    </div>
+  );
+};
+
+export default PropertyList;

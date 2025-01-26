@@ -8,6 +8,8 @@ export interface PropertyData {
     Beschreibung: string;
     Latitude: number;  // Updated field name
     Longitude: number;  // Updated field name
+    Vorschaubild?: string; // Preview image
+    Images?: string; // Semicolon-separated list of image URLs
   }
   
   export interface MapLocation {

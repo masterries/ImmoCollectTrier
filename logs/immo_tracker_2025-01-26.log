@@ -1,0 +1,801 @@
+2025-01-26 14:58:08 - INFO - Starting Immowelt Scraper...
+2025-01-26 14:58:08 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-26 14:58:08 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-26 14:58:08 - INFO - Loaded 6615 existing records
+2025-01-26 14:58:08 - INFO - Starting web scraping...
+2025-01-26 14:58:08 - INFO - Starting to scrape all listings...
+2025-01-26 14:58:09 - INFO - Found 172 pages to scrape
+2025-01-26 14:58:09 - INFO - Scraping page 1/172
+2025-01-26 14:58:09 - INFO - Found 30 listings on page 1
+2025-01-26 14:58:09 - INFO - Scraping page 2/172
+2025-01-26 14:58:10 - INFO - Found 30 listings on page 2
+2025-01-26 14:58:10 - INFO - Scraping page 3/172
+2025-01-26 14:58:11 - INFO - Found 30 listings on page 3
+2025-01-26 14:58:11 - INFO - Scraping page 4/172
+2025-01-26 14:58:12 - INFO - Found 30 listings on page 4
+2025-01-26 14:58:12 - INFO - Scraping page 5/172
+2025-01-26 14:58:13 - INFO - Found 30 listings on page 5
+2025-01-26 14:58:13 - INFO - Scraping page 6/172
+2025-01-26 14:58:13 - INFO - Found 30 listings on page 6
+2025-01-26 14:58:13 - INFO - Scraping page 7/172
+2025-01-26 14:58:14 - INFO - Found 30 listings on page 7
+2025-01-26 14:58:14 - INFO - Scraping page 8/172
+2025-01-26 14:58:15 - INFO - Found 30 listings on page 8
+2025-01-26 14:58:15 - INFO - Scraping page 9/172
+2025-01-26 14:58:16 - INFO - Found 30 listings on page 9
+2025-01-26 14:58:16 - INFO - Scraping page 10/172
+2025-01-26 14:58:17 - INFO - Found 30 listings on page 10
+2025-01-26 14:58:17 - INFO - Scraping page 11/172
+2025-01-26 14:58:17 - INFO - Found 30 listings on page 11
+2025-01-26 14:58:17 - INFO - Scraping page 12/172
+2025-01-26 14:58:18 - INFO - Found 30 listings on page 12
+2025-01-26 14:58:18 - INFO - Scraping page 13/172
+2025-01-26 14:58:19 - INFO - Found 30 listings on page 13
+2025-01-26 14:58:19 - INFO - Scraping page 14/172
+2025-01-26 14:58:20 - INFO - Found 30 listings on page 14
+2025-01-26 14:58:20 - INFO - Scraping page 15/172
+2025-01-26 14:58:21 - INFO - Found 30 listings on page 15
+2025-01-26 14:58:21 - INFO - Scraping page 16/172
+2025-01-26 14:58:21 - INFO - Found 30 listings on page 16
+2025-01-26 14:58:21 - INFO - Scraping page 17/172
+2025-01-26 14:58:22 - INFO - Found 30 listings on page 17
+2025-01-26 14:58:22 - INFO - Scraping page 18/172
+2025-01-26 14:58:23 - INFO - Found 30 listings on page 18
+2025-01-26 14:58:23 - INFO - Scraping page 19/172
+2025-01-26 14:58:24 - INFO - Found 30 listings on page 19
+2025-01-26 14:58:24 - INFO - Scraping page 20/172
+2025-01-26 14:58:25 - INFO - Found 30 listings on page 20
+2025-01-26 14:58:25 - INFO - Scraping page 21/172
+2025-01-26 14:58:26 - INFO - Found 30 listings on page 21
+2025-01-26 14:58:26 - INFO - Scraping page 22/172
+2025-01-26 14:58:26 - INFO - Found 30 listings on page 22
+2025-01-26 14:58:26 - INFO - Scraping page 23/172
+2025-01-26 14:58:27 - INFO - Found 30 listings on page 23
+2025-01-26 14:58:27 - INFO - Scraping page 24/172
+2025-01-26 14:58:28 - INFO - Found 30 listings on page 24
+2025-01-26 14:58:28 - INFO - Scraping page 25/172
+2025-01-26 14:58:29 - INFO - Found 30 listings on page 25
+2025-01-26 14:58:29 - INFO - Scraping page 26/172
+2025-01-26 14:58:29 - INFO - Found 30 listings on page 26
+2025-01-26 14:58:29 - INFO - Scraping page 27/172
+2025-01-26 14:58:30 - INFO - Found 30 listings on page 27
+2025-01-26 14:58:30 - INFO - Scraping page 28/172
+2025-01-26 14:58:31 - INFO - Found 30 listings on page 28
+2025-01-26 14:58:31 - INFO - Scraping page 29/172
+2025-01-26 14:58:32 - INFO - Found 30 listings on page 29
+2025-01-26 14:58:32 - INFO - Scraping page 30/172
+2025-01-26 14:58:33 - INFO - Found 30 listings on page 30
+2025-01-26 14:58:33 - INFO - Scraping page 31/172
+2025-01-26 14:58:33 - INFO - Found 30 listings on page 31
+2025-01-26 14:58:33 - INFO - Scraping page 32/172
+2025-01-26 14:58:34 - INFO - Found 30 listings on page 32
+2025-01-26 14:58:34 - INFO - Scraping page 33/172
+2025-01-26 14:58:35 - INFO - Found 30 listings on page 33
+2025-01-26 14:58:35 - INFO - Scraping page 34/172
+2025-01-26 14:58:36 - INFO - Found 30 listings on page 34
+2025-01-26 14:58:36 - INFO - Scraping page 35/172
+2025-01-26 14:58:36 - INFO - Found 30 listings on page 35
+2025-01-26 14:58:36 - INFO - Scraping page 36/172
+2025-01-26 14:58:37 - INFO - Found 30 listings on page 36
+2025-01-26 14:58:37 - INFO - Scraping page 37/172
+2025-01-26 14:58:38 - INFO - Found 30 listings on page 37
+2025-01-26 14:58:38 - INFO - Scraping page 38/172
+2025-01-26 14:58:39 - INFO - Found 30 listings on page 38
+2025-01-26 14:58:39 - INFO - Scraping page 39/172
+2025-01-26 14:58:39 - INFO - Found 30 listings on page 39
+2025-01-26 14:58:39 - INFO - Scraping page 40/172
+2025-01-26 14:58:40 - INFO - Found 30 listings on page 40
+2025-01-26 14:58:40 - INFO - Scraping page 41/172
+2025-01-26 14:58:41 - INFO - Found 30 listings on page 41
+2025-01-26 14:58:41 - INFO - Scraping page 42/172
+2025-01-26 14:58:42 - INFO - Found 30 listings on page 42
+2025-01-26 14:58:42 - INFO - Scraping page 43/172
+2025-01-26 14:58:42 - INFO - Found 30 listings on page 43
+2025-01-26 14:58:42 - INFO - Scraping page 44/172
+2025-01-26 14:58:43 - INFO - Found 30 listings on page 44
+2025-01-26 14:58:43 - INFO - Scraping page 45/172
+2025-01-26 14:58:44 - INFO - Found 30 listings on page 45
+2025-01-26 14:58:44 - INFO - Scraping page 46/172
+2025-01-26 14:58:45 - INFO - Found 30 listings on page 46
+2025-01-26 14:58:45 - INFO - Scraping page 47/172
+2025-01-26 14:58:46 - INFO - Found 30 listings on page 47
+2025-01-26 14:58:46 - INFO - Scraping page 48/172
+2025-01-26 14:58:46 - INFO - Found 30 listings on page 48
+2025-01-26 14:58:46 - INFO - Scraping page 49/172
+2025-01-26 14:58:47 - INFO - Found 30 listings on page 49
+2025-01-26 14:58:47 - INFO - Scraping page 50/172
+2025-01-26 14:58:48 - INFO - Found 30 listings on page 50
+2025-01-26 14:58:48 - INFO - Scraping page 51/172
+2025-01-26 14:58:49 - INFO - Found 30 listings on page 51
+2025-01-26 14:58:49 - INFO - Scraping page 52/172
+2025-01-26 14:58:50 - INFO - Found 30 listings on page 52
+2025-01-26 14:58:50 - INFO - Scraping page 53/172
+2025-01-26 14:58:50 - INFO - Found 30 listings on page 53
+2025-01-26 14:58:50 - INFO - Scraping page 54/172
+2025-01-26 14:58:51 - INFO - Found 30 listings on page 54
+2025-01-26 14:58:51 - INFO - Scraping page 55/172
+2025-01-26 14:58:52 - INFO - Found 30 listings on page 55
+2025-01-26 14:58:52 - INFO - Scraping page 56/172
+2025-01-26 14:58:53 - INFO - Found 30 listings on page 56
+2025-01-26 14:58:53 - INFO - Scraping page 57/172
+2025-01-26 14:58:53 - INFO - Found 30 listings on page 57
+2025-01-26 14:58:53 - INFO - Scraping page 58/172
+2025-01-26 14:58:54 - INFO - Found 30 listings on page 58
+2025-01-26 14:58:54 - INFO - Scraping page 59/172
+2025-01-26 14:58:55 - INFO - Found 30 listings on page 59
+2025-01-26 14:58:55 - INFO - Scraping page 60/172
+2025-01-26 14:58:56 - INFO - Found 30 listings on page 60
+2025-01-26 14:58:56 - INFO - Scraping page 61/172
+2025-01-26 14:58:57 - INFO - Found 30 listings on page 61
+2025-01-26 14:58:57 - INFO - Scraping page 62/172
+2025-01-26 14:58:58 - INFO - Found 30 listings on page 62
+2025-01-26 14:58:58 - INFO - Scraping page 63/172
+2025-01-26 14:58:58 - INFO - Found 30 listings on page 63
+2025-01-26 14:58:58 - INFO - Scraping page 64/172
+2025-01-26 14:58:59 - INFO - Found 30 listings on page 64
+2025-01-26 14:58:59 - INFO - Scraping page 65/172
+2025-01-26 14:59:00 - INFO - Found 30 listings on page 65
+2025-01-26 14:59:00 - INFO - Scraping page 66/172
+2025-01-26 14:59:01 - INFO - Found 30 listings on page 66
+2025-01-26 14:59:01 - INFO - Scraping page 67/172
+2025-01-26 14:59:01 - INFO - Found 30 listings on page 67
+2025-01-26 14:59:01 - INFO - Scraping page 68/172
+2025-01-26 14:59:02 - INFO - Found 30 listings on page 68
+2025-01-26 14:59:02 - INFO - Scraping page 69/172
+2025-01-26 14:59:03 - INFO - Found 30 listings on page 69
+2025-01-26 14:59:03 - INFO - Scraping page 70/172
+2025-01-26 14:59:03 - INFO - Found 30 listings on page 70
+2025-01-26 14:59:03 - INFO - Scraping page 71/172
+2025-01-26 14:59:04 - INFO - Found 30 listings on page 71
+2025-01-26 14:59:04 - INFO - Scraping page 72/172
+2025-01-26 14:59:05 - INFO - Found 30 listings on page 72
+2025-01-26 14:59:05 - INFO - Scraping page 73/172
+2025-01-26 14:59:06 - INFO - Found 30 listings on page 73
+2025-01-26 14:59:06 - INFO - Scraping page 74/172
+2025-01-26 14:59:07 - INFO - Found 30 listings on page 74
+2025-01-26 14:59:07 - INFO - Scraping page 75/172
+2025-01-26 14:59:07 - INFO - Found 30 listings on page 75
+2025-01-26 14:59:07 - INFO - Scraping page 76/172
+2025-01-26 14:59:08 - INFO - Found 30 listings on page 76
+2025-01-26 14:59:08 - INFO - Scraping page 77/172
+2025-01-26 14:59:09 - INFO - Found 30 listings on page 77
+2025-01-26 14:59:09 - INFO - Scraping page 78/172
+2025-01-26 14:59:10 - INFO - Found 30 listings on page 78
+2025-01-26 14:59:10 - INFO - Scraping page 79/172
+2025-01-26 14:59:10 - INFO - Found 30 listings on page 79
+2025-01-26 14:59:10 - INFO - Scraping page 80/172
+2025-01-26 14:59:11 - INFO - Found 30 listings on page 80
+2025-01-26 14:59:11 - INFO - Scraping page 81/172
+2025-01-26 14:59:12 - INFO - Found 30 listings on page 81
+2025-01-26 14:59:12 - INFO - Scraping page 82/172
+2025-01-26 14:59:12 - INFO - Found 30 listings on page 82
+2025-01-26 14:59:12 - INFO - Scraping page 83/172
+2025-01-26 14:59:13 - INFO - Found 30 listings on page 83
+2025-01-26 14:59:13 - INFO - Scraping page 84/172
+2025-01-26 14:59:14 - INFO - Found 30 listings on page 84
+2025-01-26 14:59:14 - INFO - Scraping page 85/172
+2025-01-26 14:59:15 - INFO - Found 30 listings on page 85
+2025-01-26 14:59:15 - INFO - Scraping page 86/172
+2025-01-26 14:59:16 - INFO - Found 30 listings on page 86
+2025-01-26 14:59:16 - INFO - Scraping page 87/172
+2025-01-26 14:59:16 - INFO - Found 30 listings on page 87
+2025-01-26 14:59:16 - INFO - Scraping page 88/172
+2025-01-26 14:59:17 - INFO - Found 30 listings on page 88
+2025-01-26 14:59:17 - INFO - Scraping page 89/172
+2025-01-26 14:59:18 - INFO - Found 30 listings on page 89
+2025-01-26 14:59:18 - INFO - Scraping page 90/172
+2025-01-26 14:59:19 - INFO - Found 30 listings on page 90
+2025-01-26 14:59:19 - INFO - Scraping page 91/172
+2025-01-26 14:59:19 - INFO - Found 30 listings on page 91
+2025-01-26 14:59:19 - INFO - Scraping page 92/172
+2025-01-26 14:59:20 - INFO - Found 30 listings on page 92
+2025-01-26 14:59:20 - INFO - Scraping page 93/172
+2025-01-26 14:59:21 - INFO - Found 30 listings on page 93
+2025-01-26 14:59:21 - INFO - Scraping page 94/172
+2025-01-26 14:59:22 - INFO - Found 30 listings on page 94
+2025-01-26 14:59:22 - INFO - Scraping page 95/172
+2025-01-26 14:59:22 - INFO - Found 30 listings on page 95
+2025-01-26 14:59:22 - INFO - Scraping page 96/172
+2025-01-26 14:59:23 - INFO - Found 30 listings on page 96
+2025-01-26 14:59:23 - INFO - Scraping page 97/172
+2025-01-26 14:59:24 - INFO - Found 30 listings on page 97
+2025-01-26 14:59:24 - INFO - Scraping page 98/172
+2025-01-26 14:59:25 - INFO - Found 30 listings on page 98
+2025-01-26 14:59:25 - INFO - Scraping page 99/172
+2025-01-26 14:59:25 - INFO - Found 30 listings on page 99
+2025-01-26 14:59:25 - INFO - Scraping page 100/172
+2025-01-26 14:59:26 - INFO - Found 30 listings on page 100
+2025-01-26 14:59:26 - INFO - Scraping page 101/172
+2025-01-26 14:59:27 - INFO - Found 30 listings on page 101
+2025-01-26 14:59:27 - INFO - Scraping page 102/172
+2025-01-26 14:59:28 - INFO - Found 30 listings on page 102
+2025-01-26 14:59:28 - INFO - Scraping page 103/172
+2025-01-26 14:59:28 - INFO - Found 30 listings on page 103
+2025-01-26 14:59:28 - INFO - Scraping page 104/172
+2025-01-26 14:59:29 - INFO - Found 30 listings on page 104
+2025-01-26 14:59:29 - INFO - Scraping page 105/172
+2025-01-26 14:59:30 - INFO - Found 30 listings on page 105
+2025-01-26 14:59:30 - INFO - Scraping page 106/172
+2025-01-26 14:59:31 - INFO - Found 30 listings on page 106
+2025-01-26 14:59:31 - INFO - Scraping page 107/172
+2025-01-26 14:59:31 - INFO - Found 30 listings on page 107
+2025-01-26 14:59:31 - INFO - Scraping page 108/172
+2025-01-26 14:59:32 - INFO - Found 30 listings on page 108
+2025-01-26 14:59:32 - INFO - Scraping page 109/172
+2025-01-26 14:59:33 - INFO - Found 30 listings on page 109
+2025-01-26 14:59:33 - INFO - Scraping page 110/172
+2025-01-26 14:59:34 - INFO - Found 30 listings on page 110
+2025-01-26 14:59:34 - INFO - Scraping page 111/172
+2025-01-26 14:59:34 - INFO - Found 30 listings on page 111
+2025-01-26 14:59:34 - INFO - Scraping page 112/172
+2025-01-26 14:59:35 - INFO - Found 30 listings on page 112
+2025-01-26 14:59:35 - INFO - Scraping page 113/172
+2025-01-26 14:59:36 - INFO - Found 30 listings on page 113
+2025-01-26 14:59:36 - INFO - Scraping page 114/172
+2025-01-26 14:59:37 - INFO - Found 30 listings on page 114
+2025-01-26 14:59:37 - INFO - Scraping page 115/172
+2025-01-26 14:59:37 - INFO - Found 30 listings on page 115
+2025-01-26 14:59:37 - INFO - Scraping page 116/172
+2025-01-26 14:59:38 - INFO - Found 30 listings on page 116
+2025-01-26 14:59:38 - INFO - Scraping page 117/172
+2025-01-26 14:59:39 - INFO - Found 30 listings on page 117
+2025-01-26 14:59:39 - INFO - Scraping page 118/172
+2025-01-26 14:59:40 - INFO - Found 30 listings on page 118
+2025-01-26 14:59:40 - INFO - Scraping page 119/172
+2025-01-26 14:59:41 - INFO - Found 30 listings on page 119
+2025-01-26 14:59:41 - INFO - Scraping page 120/172
+2025-01-26 14:59:42 - INFO - Found 30 listings on page 120
+2025-01-26 14:59:42 - INFO - Scraping page 121/172
+2025-01-26 14:59:42 - INFO - Found 30 listings on page 121
+2025-01-26 14:59:42 - INFO - Scraping page 122/172
+2025-01-26 14:59:43 - INFO - Found 30 listings on page 122
+2025-01-26 14:59:43 - INFO - Scraping page 123/172
+2025-01-26 14:59:45 - INFO - Found 30 listings on page 123
+2025-01-26 14:59:45 - INFO - Scraping page 124/172
+2025-01-26 14:59:45 - INFO - Found 30 listings on page 124
+2025-01-26 14:59:45 - INFO - Scraping page 125/172
+2025-01-26 14:59:46 - INFO - Found 30 listings on page 125
+2025-01-26 14:59:46 - INFO - Scraping page 126/172
+2025-01-26 14:59:47 - INFO - Found 30 listings on page 126
+2025-01-26 14:59:47 - INFO - Scraping page 127/172
+2025-01-26 14:59:48 - INFO - Found 30 listings on page 127
+2025-01-26 14:59:48 - INFO - Scraping page 128/172
+2025-01-26 14:59:48 - INFO - Found 30 listings on page 128
+2025-01-26 14:59:48 - INFO - Scraping page 129/172
+2025-01-26 14:59:49 - INFO - Found 30 listings on page 129
+2025-01-26 14:59:49 - INFO - Scraping page 130/172
+2025-01-26 14:59:50 - INFO - Found 30 listings on page 130
+2025-01-26 14:59:50 - INFO - Scraping page 131/172
+2025-01-26 14:59:51 - INFO - Found 30 listings on page 131
+2025-01-26 14:59:51 - INFO - Scraping page 132/172
+2025-01-26 14:59:51 - INFO - Found 30 listings on page 132
+2025-01-26 14:59:51 - INFO - Scraping page 133/172
+2025-01-26 14:59:52 - INFO - Found 30 listings on page 133
+2025-01-26 14:59:52 - INFO - Scraping page 134/172
+2025-01-26 14:59:53 - INFO - Found 30 listings on page 134
+2025-01-26 14:59:53 - INFO - Scraping page 135/172
+2025-01-26 14:59:54 - INFO - Found 30 listings on page 135
+2025-01-26 14:59:54 - INFO - Scraping page 136/172
+2025-01-26 14:59:54 - INFO - Found 30 listings on page 136
+2025-01-26 14:59:54 - INFO - Scraping page 137/172
+2025-01-26 14:59:55 - INFO - Found 30 listings on page 137
+2025-01-26 14:59:55 - INFO - Scraping page 138/172
+2025-01-26 14:59:56 - INFO - Found 30 listings on page 138
+2025-01-26 14:59:56 - INFO - Scraping page 139/172
+2025-01-26 14:59:57 - INFO - Found 30 listings on page 139
+2025-01-26 14:59:57 - INFO - Scraping page 140/172
+2025-01-26 14:59:57 - INFO - Found 30 listings on page 140
+2025-01-26 14:59:57 - INFO - Scraping page 141/172
+2025-01-26 14:59:58 - INFO - Found 30 listings on page 141
+2025-01-26 14:59:58 - INFO - Scraping page 142/172
+2025-01-26 14:59:59 - INFO - Found 30 listings on page 142
+2025-01-26 14:59:59 - INFO - Scraping page 143/172
+2025-01-26 15:00:00 - INFO - Found 30 listings on page 143
+2025-01-26 15:00:00 - INFO - Scraping page 144/172
+2025-01-26 15:00:01 - INFO - Found 30 listings on page 144
+2025-01-26 15:00:01 - INFO - Scraping page 145/172
+2025-01-26 15:00:02 - INFO - Found 30 listings on page 145
+2025-01-26 15:00:02 - INFO - Scraping page 146/172
+2025-01-26 15:00:03 - INFO - Found 30 listings on page 146
+2025-01-26 15:00:03 - INFO - Scraping page 147/172
+2025-01-26 15:00:04 - INFO - Found 30 listings on page 147
+2025-01-26 15:00:04 - INFO - Scraping page 148/172
+2025-01-26 15:00:05 - INFO - Found 30 listings on page 148
+2025-01-26 15:00:05 - INFO - Scraping page 149/172
+2025-01-26 15:00:05 - INFO - Found 30 listings on page 149
+2025-01-26 15:00:05 - INFO - Scraping page 150/172
+2025-01-26 15:00:06 - INFO - Found 30 listings on page 150
+2025-01-26 15:00:06 - INFO - Scraping page 151/172
+2025-01-26 15:00:07 - INFO - Found 30 listings on page 151
+2025-01-26 15:00:07 - INFO - Scraping page 152/172
+2025-01-26 15:00:08 - INFO - Found 30 listings on page 152
+2025-01-26 15:00:08 - INFO - Scraping page 153/172
+2025-01-26 15:00:08 - INFO - Found 30 listings on page 153
+2025-01-26 15:00:08 - INFO - Scraping page 154/172
+2025-01-26 15:00:09 - INFO - Found 30 listings on page 154
+2025-01-26 15:00:09 - INFO - Scraping page 155/172
+2025-01-26 15:00:10 - INFO - Found 30 listings on page 155
+2025-01-26 15:00:10 - INFO - Scraping page 156/172
+2025-01-26 15:00:10 - INFO - Found 30 listings on page 156
+2025-01-26 15:00:10 - INFO - Scraping page 157/172
+2025-01-26 15:00:11 - INFO - Found 30 listings on page 157
+2025-01-26 15:00:11 - INFO - Scraping page 158/172
+2025-01-26 15:00:12 - INFO - Found 30 listings on page 158
+2025-01-26 15:00:12 - INFO - Scraping page 159/172
+2025-01-26 15:00:13 - INFO - Found 30 listings on page 159
+2025-01-26 15:00:13 - INFO - Scraping page 160/172
+2025-01-26 15:00:14 - INFO - Found 30 listings on page 160
+2025-01-26 15:00:14 - INFO - Scraping page 161/172
+2025-01-26 15:00:14 - INFO - Found 30 listings on page 161
+2025-01-26 15:00:14 - INFO - Scraping page 162/172
+2025-01-26 15:00:15 - INFO - Found 30 listings on page 162
+2025-01-26 15:00:15 - INFO - Scraping page 163/172
+2025-01-26 15:00:16 - INFO - Found 30 listings on page 163
+2025-01-26 15:00:16 - INFO - Scraping page 164/172
+2025-01-26 15:00:17 - INFO - Found 30 listings on page 164
+2025-01-26 15:00:17 - INFO - Scraping page 165/172
+2025-01-26 15:00:17 - INFO - Found 30 listings on page 165
+2025-01-26 15:00:17 - INFO - Scraping page 166/172
+2025-01-26 15:00:18 - INFO - Found 30 listings on page 166
+2025-01-26 15:00:18 - INFO - Scraping page 167/172
+2025-01-26 15:00:19 - INFO - Found 30 listings on page 167
+2025-01-26 15:00:19 - INFO - Scraping page 168/172
+2025-01-26 15:00:20 - INFO - Found 30 listings on page 168
+2025-01-26 15:00:20 - INFO - Scraping page 169/172
+2025-01-26 15:00:21 - INFO - Found 30 listings on page 169
+2025-01-26 15:00:21 - INFO - Scraping page 170/172
+2025-01-26 15:00:21 - INFO - Found 30 listings on page 170
+2025-01-26 15:00:21 - INFO - Scraping page 171/172
+2025-01-26 15:00:22 - INFO - Found 30 listings on page 171
+2025-01-26 15:00:22 - INFO - Scraping page 172/172
+2025-01-26 15:00:23 - INFO - Found 8 listings on page 172
+2025-01-26 15:00:23 - INFO - Completed scraping. Total listings found: 5138
+2025-01-26 15:00:23 - INFO - Converting listings to DataFrame...
+2025-01-26 15:00:23 - INFO - Processing scraped data...
+2025-01-26 15:00:23 - INFO - Processing new data...
+2025-01-26 15:00:23 - DEBUG - Added missing column: Features
+2025-01-26 15:00:23 - DEBUG - Added missing column: Vollständige_Adresse
+2025-01-26 15:00:23 - DEBUG - Added missing column: Latitude
+2025-01-26 15:00:23 - DEBUG - Added missing column: Longitude
+2025-01-26 15:00:23 - DEBUG - Added missing column: created_date
+2025-01-26 15:00:23 - DEBUG - Added missing column: closed_date
+2025-01-26 15:00:23 - DEBUG - Added missing column: Preis_cleaned
+2025-01-26 15:00:23 - DEBUG - Added missing column: Wohnfläche
+2025-01-26 15:00:23 - DEBUG - Added missing column: Grundstücksfläche
+2025-01-26 15:00:23 - DEBUG - Added missing column: Zimmer
+2025-01-26 15:00:23 - DEBUG - Added missing column: Preis_pro_qm
+2025-01-26 15:00:23 - INFO - Cleaning data...
+2025-01-26 15:00:23 - INFO - Data processing completed successfully
+2025-01-26 15:00:23 - INFO - Comparison results:
+2025-01-26 15:00:23 - INFO - - New listings: 2
+2025-01-26 15:00:23 - INFO - - Closed listings: 1463
+2025-01-26 15:00:23 - INFO - - Unchanged listings: 5034
+2025-01-26 15:00:23 - INFO - Processing 2 new listings...
+2025-01-26 15:00:23 - INFO - [1/2] Detail scraping new listing: https://www.immowelt.de/expose/70d223b8-f7a3-44bf-b521-592cb55fc170
+2025-01-26 15:00:24 - DEBUG - Found 0 unique images
+2025-01-26 15:00:24 - INFO - [2/2] Detail scraping new listing: https://www.immowelt.de/expose/11ee70ce-cd2e-4285-b6c4-4c43ac939c15
+2025-01-26 15:00:24 - DEBUG - Found 0 unique images
+2025-01-26 15:00:24 - INFO - Saving results...
+2025-01-26 15:00:25 - INFO - Saved 6617 records to /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-26 15:00:25 - INFO - 
+Final Statistics:
+2025-01-26 15:00:25 - INFO - Total listings: 6617
+2025-01-26 15:00:25 - INFO - Active listings: 4830
+2025-01-26 15:00:25 - INFO - Closed listings: 1787
+2025-01-26 15:00:25 - INFO - New listings today: 15
+2025-01-26 15:00:25 - INFO - Listings closed today: 29
+2025-01-26 15:00:25 - INFO - Average Preis_cleaned: 418260.06
+2025-01-26 15:00:25 - INFO - Average Wohnfläche: 211.53
+2025-01-26 15:00:25 - INFO - Average Preis_pro_qm: 3968.22
+2025-01-26 15:00:25 - INFO - Script completed successfully!
+2025-01-26 15:05:25 - INFO - Starting Immowelt Scraper...
+2025-01-26 15:05:25 - DEBUG - Database file will be stored at: /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-26 15:05:25 - INFO - Loading existing data from /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-26 15:05:25 - INFO - Loaded 6591 existing records
+2025-01-26 15:05:25 - INFO - Starting web scraping...
+2025-01-26 15:05:25 - INFO - Starting to scrape all listings...
+2025-01-26 15:05:26 - INFO - Found 172 pages to scrape
+2025-01-26 15:05:26 - INFO - Scraping page 1/172
+2025-01-26 15:05:26 - INFO - Found 30 listings on page 1
+2025-01-26 15:05:26 - INFO - Scraping page 2/172
+2025-01-26 15:05:27 - INFO - Found 30 listings on page 2
+2025-01-26 15:05:27 - INFO - Scraping page 3/172
+2025-01-26 15:05:28 - INFO - Found 30 listings on page 3
+2025-01-26 15:05:28 - INFO - Scraping page 4/172
+2025-01-26 15:05:28 - INFO - Found 30 listings on page 4
+2025-01-26 15:05:28 - INFO - Scraping page 5/172
+2025-01-26 15:05:29 - INFO - Found 30 listings on page 5
+2025-01-26 15:05:29 - INFO - Scraping page 6/172
+2025-01-26 15:05:30 - INFO - Found 30 listings on page 6
+2025-01-26 15:05:30 - INFO - Scraping page 7/172
+2025-01-26 15:05:31 - INFO - Found 30 listings on page 7
+2025-01-26 15:05:31 - INFO - Scraping page 8/172
+2025-01-26 15:05:32 - INFO - Found 30 listings on page 8
+2025-01-26 15:05:32 - INFO - Scraping page 9/172
+2025-01-26 15:05:33 - INFO - Found 30 listings on page 9
+2025-01-26 15:05:33 - INFO - Scraping page 10/172
+2025-01-26 15:05:33 - INFO - Found 30 listings on page 10
+2025-01-26 15:05:33 - INFO - Scraping page 11/172
+2025-01-26 15:05:34 - INFO - Found 30 listings on page 11
+2025-01-26 15:05:34 - INFO - Scraping page 12/172
+2025-01-26 15:05:35 - INFO - Found 30 listings on page 12
+2025-01-26 15:05:35 - INFO - Scraping page 13/172
+2025-01-26 15:05:36 - INFO - Found 30 listings on page 13
+2025-01-26 15:05:36 - INFO - Scraping page 14/172
+2025-01-26 15:05:37 - INFO - Found 30 listings on page 14
+2025-01-26 15:05:37 - INFO - Scraping page 15/172
+2025-01-26 15:05:38 - INFO - Found 30 listings on page 15
+2025-01-26 15:05:38 - INFO - Scraping page 16/172
+2025-01-26 15:05:38 - INFO - Found 30 listings on page 16
+2025-01-26 15:05:38 - INFO - Scraping page 17/172
+2025-01-26 15:05:39 - INFO - Found 30 listings on page 17
+2025-01-26 15:05:39 - INFO - Scraping page 18/172
+2025-01-26 15:05:40 - INFO - Found 30 listings on page 18
+2025-01-26 15:05:40 - INFO - Scraping page 19/172
+2025-01-26 15:05:41 - INFO - Found 30 listings on page 19
+2025-01-26 15:05:41 - INFO - Scraping page 20/172
+2025-01-26 15:05:41 - INFO - Found 30 listings on page 20
+2025-01-26 15:05:41 - INFO - Scraping page 21/172
+2025-01-26 15:05:42 - INFO - Found 30 listings on page 21
+2025-01-26 15:05:42 - INFO - Scraping page 22/172
+2025-01-26 15:05:43 - INFO - Found 30 listings on page 22
+2025-01-26 15:05:43 - INFO - Scraping page 23/172
+2025-01-26 15:05:44 - INFO - Found 30 listings on page 23
+2025-01-26 15:05:44 - INFO - Scraping page 24/172
+2025-01-26 15:05:45 - INFO - Found 30 listings on page 24
+2025-01-26 15:05:45 - INFO - Scraping page 25/172
+2025-01-26 15:05:45 - INFO - Found 30 listings on page 25
+2025-01-26 15:05:45 - INFO - Scraping page 26/172
+2025-01-26 15:05:46 - INFO - Found 30 listings on page 26
+2025-01-26 15:05:46 - INFO - Scraping page 27/172
+2025-01-26 15:05:47 - INFO - Found 30 listings on page 27
+2025-01-26 15:05:47 - INFO - Scraping page 28/172
+2025-01-26 15:05:48 - INFO - Found 30 listings on page 28
+2025-01-26 15:05:48 - INFO - Scraping page 29/172
+2025-01-26 15:05:49 - INFO - Found 30 listings on page 29
+2025-01-26 15:05:49 - INFO - Scraping page 30/172
+2025-01-26 15:05:49 - INFO - Found 30 listings on page 30
+2025-01-26 15:05:49 - INFO - Scraping page 31/172
+2025-01-26 15:05:50 - INFO - Found 30 listings on page 31
+2025-01-26 15:05:50 - INFO - Scraping page 32/172
+2025-01-26 15:05:51 - INFO - Found 30 listings on page 32
+2025-01-26 15:05:51 - INFO - Scraping page 33/172
+2025-01-26 15:05:52 - INFO - Found 30 listings on page 33
+2025-01-26 15:05:52 - INFO - Scraping page 34/172
+2025-01-26 15:05:52 - INFO - Found 30 listings on page 34
+2025-01-26 15:05:52 - INFO - Scraping page 35/172
+2025-01-26 15:05:53 - INFO - Found 30 listings on page 35
+2025-01-26 15:05:53 - INFO - Scraping page 36/172
+2025-01-26 15:05:54 - INFO - Found 30 listings on page 36
+2025-01-26 15:05:54 - INFO - Scraping page 37/172
+2025-01-26 15:05:55 - INFO - Found 30 listings on page 37
+2025-01-26 15:05:55 - INFO - Scraping page 38/172
+2025-01-26 15:05:55 - INFO - Found 30 listings on page 38
+2025-01-26 15:05:55 - INFO - Scraping page 39/172
+2025-01-26 15:05:56 - INFO - Found 30 listings on page 39
+2025-01-26 15:05:56 - INFO - Scraping page 40/172
+2025-01-26 15:05:57 - INFO - Found 30 listings on page 40
+2025-01-26 15:05:57 - INFO - Scraping page 41/172
+2025-01-26 15:05:58 - INFO - Found 30 listings on page 41
+2025-01-26 15:05:58 - INFO - Scraping page 42/172
+2025-01-26 15:05:59 - INFO - Found 30 listings on page 42
+2025-01-26 15:05:59 - INFO - Scraping page 43/172
+2025-01-26 15:05:59 - INFO - Found 30 listings on page 43
+2025-01-26 15:05:59 - INFO - Scraping page 44/172
+2025-01-26 15:06:00 - INFO - Found 30 listings on page 44
+2025-01-26 15:06:00 - INFO - Scraping page 45/172
+2025-01-26 15:06:01 - INFO - Found 30 listings on page 45
+2025-01-26 15:06:01 - INFO - Scraping page 46/172
+2025-01-26 15:06:02 - INFO - Found 30 listings on page 46
+2025-01-26 15:06:02 - INFO - Scraping page 47/172
+2025-01-26 15:06:03 - INFO - Found 30 listings on page 47
+2025-01-26 15:06:03 - INFO - Scraping page 48/172
+2025-01-26 15:06:03 - INFO - Found 30 listings on page 48
+2025-01-26 15:06:03 - INFO - Scraping page 49/172
+2025-01-26 15:06:04 - INFO - Found 30 listings on page 49
+2025-01-26 15:06:04 - INFO - Scraping page 50/172
+2025-01-26 15:06:05 - INFO - Found 30 listings on page 50
+2025-01-26 15:06:05 - INFO - Scraping page 51/172
+2025-01-26 15:06:06 - INFO - Found 30 listings on page 51
+2025-01-26 15:06:06 - INFO - Scraping page 52/172
+2025-01-26 15:06:07 - INFO - Found 30 listings on page 52
+2025-01-26 15:06:07 - INFO - Scraping page 53/172
+2025-01-26 15:06:07 - INFO - Found 30 listings on page 53
+2025-01-26 15:06:07 - INFO - Scraping page 54/172
+2025-01-26 15:06:08 - INFO - Found 30 listings on page 54
+2025-01-26 15:06:08 - INFO - Scraping page 55/172
+2025-01-26 15:06:09 - INFO - Found 30 listings on page 55
+2025-01-26 15:06:09 - INFO - Scraping page 56/172
+2025-01-26 15:06:10 - INFO - Found 30 listings on page 56
+2025-01-26 15:06:10 - INFO - Scraping page 57/172
+2025-01-26 15:06:11 - INFO - Found 30 listings on page 57
+2025-01-26 15:06:11 - INFO - Scraping page 58/172
+2025-01-26 15:06:11 - INFO - Found 30 listings on page 58
+2025-01-26 15:06:11 - INFO - Scraping page 59/172
+2025-01-26 15:06:12 - INFO - Found 30 listings on page 59
+2025-01-26 15:06:12 - INFO - Scraping page 60/172
+2025-01-26 15:06:13 - INFO - Found 30 listings on page 60
+2025-01-26 15:06:13 - INFO - Scraping page 61/172
+2025-01-26 15:06:14 - INFO - Found 30 listings on page 61
+2025-01-26 15:06:14 - INFO - Scraping page 62/172
+2025-01-26 15:06:15 - INFO - Found 30 listings on page 62
+2025-01-26 15:06:15 - INFO - Scraping page 63/172
+2025-01-26 15:06:15 - INFO - Found 30 listings on page 63
+2025-01-26 15:06:15 - INFO - Scraping page 64/172
+2025-01-26 15:06:16 - INFO - Found 30 listings on page 64
+2025-01-26 15:06:16 - INFO - Scraping page 65/172
+2025-01-26 15:06:17 - INFO - Found 30 listings on page 65
+2025-01-26 15:06:17 - INFO - Scraping page 66/172
+2025-01-26 15:06:18 - INFO - Found 30 listings on page 66
+2025-01-26 15:06:18 - INFO - Scraping page 67/172
+2025-01-26 15:06:18 - INFO - Found 30 listings on page 67
+2025-01-26 15:06:18 - INFO - Scraping page 68/172
+2025-01-26 15:06:19 - INFO - Found 30 listings on page 68
+2025-01-26 15:06:19 - INFO - Scraping page 69/172
+2025-01-26 15:06:20 - INFO - Found 30 listings on page 69
+2025-01-26 15:06:20 - INFO - Scraping page 70/172
+2025-01-26 15:06:20 - INFO - Found 30 listings on page 70
+2025-01-26 15:06:20 - INFO - Scraping page 71/172
+2025-01-26 15:06:21 - INFO - Found 30 listings on page 71
+2025-01-26 15:06:21 - INFO - Scraping page 72/172
+2025-01-26 15:06:22 - INFO - Found 30 listings on page 72
+2025-01-26 15:06:22 - INFO - Scraping page 73/172
+2025-01-26 15:06:23 - INFO - Found 30 listings on page 73
+2025-01-26 15:06:23 - INFO - Scraping page 74/172
+2025-01-26 15:06:23 - INFO - Found 30 listings on page 74
+2025-01-26 15:06:23 - INFO - Scraping page 75/172
+2025-01-26 15:06:24 - INFO - Found 30 listings on page 75
+2025-01-26 15:06:24 - INFO - Scraping page 76/172
+2025-01-26 15:06:25 - INFO - Found 30 listings on page 76
+2025-01-26 15:06:25 - INFO - Scraping page 77/172
+2025-01-26 15:06:26 - INFO - Found 30 listings on page 77
+2025-01-26 15:06:26 - INFO - Scraping page 78/172
+2025-01-26 15:06:27 - INFO - Found 30 listings on page 78
+2025-01-26 15:06:27 - INFO - Scraping page 79/172
+2025-01-26 15:06:27 - INFO - Found 30 listings on page 79
+2025-01-26 15:06:27 - INFO - Scraping page 80/172
+2025-01-26 15:06:28 - INFO - Found 30 listings on page 80
+2025-01-26 15:06:28 - INFO - Scraping page 81/172
+2025-01-26 15:06:29 - INFO - Found 30 listings on page 81
+2025-01-26 15:06:29 - INFO - Scraping page 82/172
+2025-01-26 15:06:29 - INFO - Found 30 listings on page 82
+2025-01-26 15:06:29 - INFO - Scraping page 83/172
+2025-01-26 15:06:30 - INFO - Found 30 listings on page 83
+2025-01-26 15:06:30 - INFO - Scraping page 84/172
+2025-01-26 15:06:31 - INFO - Found 30 listings on page 84
+2025-01-26 15:06:31 - INFO - Scraping page 85/172
+2025-01-26 15:06:32 - INFO - Found 30 listings on page 85
+2025-01-26 15:06:32 - INFO - Scraping page 86/172
+2025-01-26 15:06:33 - INFO - Found 30 listings on page 86
+2025-01-26 15:06:33 - INFO - Scraping page 87/172
+2025-01-26 15:06:33 - INFO - Found 30 listings on page 87
+2025-01-26 15:06:33 - INFO - Scraping page 88/172
+2025-01-26 15:06:34 - INFO - Found 30 listings on page 88
+2025-01-26 15:06:34 - INFO - Scraping page 89/172
+2025-01-26 15:06:35 - INFO - Found 30 listings on page 89
+2025-01-26 15:06:35 - INFO - Scraping page 90/172
+2025-01-26 15:06:36 - INFO - Found 30 listings on page 90
+2025-01-26 15:06:36 - INFO - Scraping page 91/172
+2025-01-26 15:06:36 - INFO - Found 30 listings on page 91
+2025-01-26 15:06:36 - INFO - Scraping page 92/172
+2025-01-26 15:06:37 - INFO - Found 30 listings on page 92
+2025-01-26 15:06:37 - INFO - Scraping page 93/172
+2025-01-26 15:06:38 - INFO - Found 30 listings on page 93
+2025-01-26 15:06:38 - INFO - Scraping page 94/172
+2025-01-26 15:06:39 - INFO - Found 30 listings on page 94
+2025-01-26 15:06:39 - INFO - Scraping page 95/172
+2025-01-26 15:06:40 - INFO - Found 30 listings on page 95
+2025-01-26 15:06:40 - INFO - Scraping page 96/172
+2025-01-26 15:06:40 - INFO - Found 30 listings on page 96
+2025-01-26 15:06:40 - INFO - Scraping page 97/172
+2025-01-26 15:06:41 - INFO - Found 30 listings on page 97
+2025-01-26 15:06:41 - INFO - Scraping page 98/172
+2025-01-26 15:06:42 - INFO - Found 30 listings on page 98
+2025-01-26 15:06:42 - INFO - Scraping page 99/172
+2025-01-26 15:06:43 - INFO - Found 30 listings on page 99
+2025-01-26 15:06:43 - INFO - Scraping page 100/172
+2025-01-26 15:06:43 - INFO - Found 30 listings on page 100
+2025-01-26 15:06:43 - INFO - Scraping page 101/172
+2025-01-26 15:06:44 - INFO - Found 30 listings on page 101
+2025-01-26 15:06:44 - INFO - Scraping page 102/172
+2025-01-26 15:06:45 - INFO - Found 30 listings on page 102
+2025-01-26 15:06:45 - INFO - Scraping page 103/172
+2025-01-26 15:06:46 - INFO - Found 30 listings on page 103
+2025-01-26 15:06:46 - INFO - Scraping page 104/172
+2025-01-26 15:06:46 - INFO - Found 30 listings on page 104
+2025-01-26 15:06:46 - INFO - Scraping page 105/172
+2025-01-26 15:06:47 - INFO - Found 30 listings on page 105
+2025-01-26 15:06:47 - INFO - Scraping page 106/172
+2025-01-26 15:06:48 - INFO - Found 30 listings on page 106
+2025-01-26 15:06:48 - INFO - Scraping page 107/172
+2025-01-26 15:06:48 - INFO - Found 30 listings on page 107
+2025-01-26 15:06:48 - INFO - Scraping page 108/172
+2025-01-26 15:06:49 - INFO - Found 30 listings on page 108
+2025-01-26 15:06:49 - INFO - Scraping page 109/172
+2025-01-26 15:06:50 - INFO - Found 30 listings on page 109
+2025-01-26 15:06:50 - INFO - Scraping page 110/172
+2025-01-26 15:06:51 - INFO - Found 30 listings on page 110
+2025-01-26 15:06:51 - INFO - Scraping page 111/172
+2025-01-26 15:06:51 - INFO - Found 30 listings on page 111
+2025-01-26 15:06:51 - INFO - Scraping page 112/172
+2025-01-26 15:06:52 - INFO - Found 30 listings on page 112
+2025-01-26 15:06:52 - INFO - Scraping page 113/172
+2025-01-26 15:06:53 - INFO - Found 30 listings on page 113
+2025-01-26 15:06:53 - INFO - Scraping page 114/172
+2025-01-26 15:06:54 - INFO - Found 30 listings on page 114
+2025-01-26 15:06:54 - INFO - Scraping page 115/172
+2025-01-26 15:06:55 - INFO - Found 30 listings on page 115
+2025-01-26 15:06:55 - INFO - Scraping page 116/172
+2025-01-26 15:06:55 - INFO - Found 30 listings on page 116
+2025-01-26 15:06:55 - INFO - Scraping page 117/172
+2025-01-26 15:06:56 - INFO - Found 30 listings on page 117
+2025-01-26 15:06:56 - INFO - Scraping page 118/172
+2025-01-26 15:06:57 - INFO - Found 30 listings on page 118
+2025-01-26 15:06:57 - INFO - Scraping page 119/172
+2025-01-26 15:06:58 - INFO - Found 30 listings on page 119
+2025-01-26 15:06:58 - INFO - Scraping page 120/172
+2025-01-26 15:06:58 - INFO - Found 30 listings on page 120
+2025-01-26 15:06:58 - INFO - Scraping page 121/172
+2025-01-26 15:06:59 - INFO - Found 30 listings on page 121
+2025-01-26 15:06:59 - INFO - Scraping page 122/172
+2025-01-26 15:07:00 - INFO - Found 30 listings on page 122
+2025-01-26 15:07:00 - INFO - Scraping page 123/172
+2025-01-26 15:07:01 - INFO - Found 30 listings on page 123
+2025-01-26 15:07:01 - INFO - Scraping page 124/172
+2025-01-26 15:07:02 - INFO - Found 30 listings on page 124
+2025-01-26 15:07:02 - INFO - Scraping page 125/172
+2025-01-26 15:07:02 - INFO - Found 30 listings on page 125
+2025-01-26 15:07:02 - INFO - Scraping page 126/172
+2025-01-26 15:07:03 - INFO - Found 30 listings on page 126
+2025-01-26 15:07:03 - INFO - Scraping page 127/172
+2025-01-26 15:07:04 - INFO - Found 30 listings on page 127
+2025-01-26 15:07:04 - INFO - Scraping page 128/172
+2025-01-26 15:07:05 - INFO - Found 30 listings on page 128
+2025-01-26 15:07:05 - INFO - Scraping page 129/172
+2025-01-26 15:07:06 - INFO - Found 30 listings on page 129
+2025-01-26 15:07:06 - INFO - Scraping page 130/172
+2025-01-26 15:07:06 - INFO - Found 30 listings on page 130
+2025-01-26 15:07:06 - INFO - Scraping page 131/172
+2025-01-26 15:07:07 - INFO - Found 30 listings on page 131
+2025-01-26 15:07:07 - INFO - Scraping page 132/172
+2025-01-26 15:07:08 - INFO - Found 30 listings on page 132
+2025-01-26 15:07:08 - INFO - Scraping page 133/172
+2025-01-26 15:07:09 - INFO - Found 30 listings on page 133
+2025-01-26 15:07:09 - INFO - Scraping page 134/172
+2025-01-26 15:07:09 - INFO - Found 30 listings on page 134
+2025-01-26 15:07:09 - INFO - Scraping page 135/172
+2025-01-26 15:07:10 - INFO - Found 30 listings on page 135
+2025-01-26 15:07:10 - INFO - Scraping page 136/172
+2025-01-26 15:07:11 - INFO - Found 30 listings on page 136
+2025-01-26 15:07:11 - INFO - Scraping page 137/172
+2025-01-26 15:07:12 - INFO - Found 30 listings on page 137
+2025-01-26 15:07:12 - INFO - Scraping page 138/172
+2025-01-26 15:07:13 - INFO - Found 30 listings on page 138
+2025-01-26 15:07:13 - INFO - Scraping page 139/172
+2025-01-26 15:07:13 - INFO - Found 30 listings on page 139
+2025-01-26 15:07:13 - INFO - Scraping page 140/172
+2025-01-26 15:07:14 - INFO - Found 30 listings on page 140
+2025-01-26 15:07:14 - INFO - Scraping page 141/172
+2025-01-26 15:07:15 - INFO - Found 30 listings on page 141
+2025-01-26 15:07:15 - INFO - Scraping page 142/172
+2025-01-26 15:07:16 - INFO - Found 30 listings on page 142
+2025-01-26 15:07:16 - INFO - Scraping page 143/172
+2025-01-26 15:07:17 - INFO - Found 30 listings on page 143
+2025-01-26 15:07:17 - INFO - Scraping page 144/172
+2025-01-26 15:07:17 - INFO - Found 30 listings on page 144
+2025-01-26 15:07:17 - INFO - Scraping page 145/172
+2025-01-26 15:07:18 - INFO - Found 30 listings on page 145
+2025-01-26 15:07:18 - INFO - Scraping page 146/172
+2025-01-26 15:07:19 - INFO - Found 30 listings on page 146
+2025-01-26 15:07:19 - INFO - Scraping page 147/172
+2025-01-26 15:07:20 - INFO - Found 30 listings on page 147
+2025-01-26 15:07:20 - INFO - Scraping page 148/172
+2025-01-26 15:07:20 - INFO - Found 30 listings on page 148
+2025-01-26 15:07:20 - INFO - Scraping page 149/172
+2025-01-26 15:07:21 - INFO - Found 30 listings on page 149
+2025-01-26 15:07:21 - INFO - Scraping page 150/172
+2025-01-26 15:07:22 - INFO - Found 30 listings on page 150
+2025-01-26 15:07:22 - INFO - Scraping page 151/172
+2025-01-26 15:07:23 - INFO - Found 30 listings on page 151
+2025-01-26 15:07:23 - INFO - Scraping page 152/172
+2025-01-26 15:07:23 - INFO - Found 30 listings on page 152
+2025-01-26 15:07:23 - INFO - Scraping page 153/172
+2025-01-26 15:07:24 - INFO - Found 30 listings on page 153
+2025-01-26 15:07:24 - INFO - Scraping page 154/172
+2025-01-26 15:07:25 - INFO - Found 30 listings on page 154
+2025-01-26 15:07:25 - INFO - Scraping page 155/172
+2025-01-26 15:07:26 - INFO - Found 30 listings on page 155
+2025-01-26 15:07:26 - INFO - Scraping page 156/172
+2025-01-26 15:07:26 - INFO - Found 30 listings on page 156
+2025-01-26 15:07:26 - INFO - Scraping page 157/172
+2025-01-26 15:07:27 - INFO - Found 30 listings on page 157
+2025-01-26 15:07:27 - INFO - Scraping page 158/172
+2025-01-26 15:07:28 - INFO - Found 30 listings on page 158
+2025-01-26 15:07:28 - INFO - Scraping page 159/172
+2025-01-26 15:07:29 - INFO - Found 30 listings on page 159
+2025-01-26 15:07:29 - INFO - Scraping page 160/172
+2025-01-26 15:07:30 - INFO - Found 30 listings on page 160
+2025-01-26 15:07:30 - INFO - Scraping page 161/172
+2025-01-26 15:07:30 - INFO - Found 30 listings on page 161
+2025-01-26 15:07:30 - INFO - Scraping page 162/172
+2025-01-26 15:07:31 - INFO - Found 30 listings on page 162
+2025-01-26 15:07:31 - INFO - Scraping page 163/172
+2025-01-26 15:07:32 - INFO - Found 30 listings on page 163
+2025-01-26 15:07:32 - INFO - Scraping page 164/172
+2025-01-26 15:07:32 - INFO - Found 30 listings on page 164
+2025-01-26 15:07:32 - INFO - Scraping page 165/172
+2025-01-26 15:07:33 - INFO - Found 30 listings on page 165
+2025-01-26 15:07:33 - INFO - Scraping page 166/172
+2025-01-26 15:07:34 - INFO - Found 30 listings on page 166
+2025-01-26 15:07:34 - INFO - Scraping page 167/172
+2025-01-26 15:07:35 - INFO - Found 30 listings on page 167
+2025-01-26 15:07:35 - INFO - Scraping page 168/172
+2025-01-26 15:07:35 - INFO - Found 30 listings on page 168
+2025-01-26 15:07:35 - INFO - Scraping page 169/172
+2025-01-26 15:07:36 - INFO - Found 30 listings on page 169
+2025-01-26 15:07:36 - INFO - Scraping page 170/172
+2025-01-26 15:07:37 - INFO - Found 30 listings on page 170
+2025-01-26 15:07:37 - INFO - Scraping page 171/172
+2025-01-26 15:07:38 - INFO - Found 30 listings on page 171
+2025-01-26 15:07:38 - INFO - Scraping page 172/172
+2025-01-26 15:07:38 - INFO - Found 9 listings on page 172
+2025-01-26 15:07:38 - INFO - Completed scraping. Total listings found: 5139
+2025-01-26 15:07:38 - INFO - Converting listings to DataFrame...
+2025-01-26 15:07:38 - INFO - Processing scraped data...
+2025-01-26 15:07:38 - INFO - Processing new data...
+2025-01-26 15:07:38 - DEBUG - Added missing column: Features
+2025-01-26 15:07:38 - DEBUG - Added missing column: Vollständige_Adresse
+2025-01-26 15:07:38 - DEBUG - Added missing column: Latitude
+2025-01-26 15:07:38 - DEBUG - Added missing column: Longitude
+2025-01-26 15:07:38 - DEBUG - Added missing column: created_date
+2025-01-26 15:07:38 - DEBUG - Added missing column: closed_date
+2025-01-26 15:07:38 - DEBUG - Added missing column: Preis_cleaned
+2025-01-26 15:07:38 - DEBUG - Added missing column: Wohnfläche
+2025-01-26 15:07:38 - DEBUG - Added missing column: Grundstücksfläche
+2025-01-26 15:07:38 - DEBUG - Added missing column: Zimmer
+2025-01-26 15:07:38 - DEBUG - Added missing column: Preis_pro_qm
+2025-01-26 15:07:38 - INFO - Cleaning data...
+2025-01-26 15:07:38 - INFO - Data processing completed successfully
+2025-01-26 15:07:38 - INFO - Comparison results:
+2025-01-26 15:07:38 - INFO - - New listings: 25
+2025-01-26 15:07:38 - INFO - - Closed listings: 1460
+2025-01-26 15:07:38 - INFO - - Unchanged listings: 5013
+2025-01-26 15:07:38 - INFO - Processing 25 new listings...
+2025-01-26 15:07:38 - INFO - [1/25] Detail scraping new listing: https://www.immowelt.de/expose/6ac4593f-2ab6-4027-9ac6-18708eee65d2
+2025-01-26 15:07:39 - INFO - [2/25] Detail scraping new listing: https://www.immowelt.de/expose/8a4248a9-5b48-4e82-954f-0577a73f563e
+2025-01-26 15:07:40 - INFO - [3/25] Detail scraping new listing: https://www.immowelt.de/expose/ea433955-366b-4c74-9c25-e3c58c5c8e2d
+2025-01-26 15:07:40 - INFO - [4/25] Detail scraping new listing: https://www.immowelt.de/expose/4ade6980-e8cc-4620-826f-7d9c4781269b
+2025-01-26 15:07:41 - INFO - [5/25] Detail scraping new listing: https://www.immowelt.de/expose/a910e3e3-0393-4454-96c6-f69d486ac7d9
+2025-01-26 15:07:42 - INFO - [6/25] Detail scraping new listing: https://www.immowelt.de/expose/56e8180e-eee3-4f15-a3c8-b7d0a4ffc90b
+2025-01-26 15:07:42 - INFO - [7/25] Detail scraping new listing: https://www.immowelt.de/expose/f9b6e05b-e9f6-4cc9-98b5-6eb28bccd513
+2025-01-26 15:07:43 - INFO - [8/25] Detail scraping new listing: https://www.immowelt.de/expose/65247f71-0b18-4d92-a928-d8155e72249f
+2025-01-26 15:07:44 - INFO - [9/25] Detail scraping new listing: https://www.immowelt.de/expose/14d8151f-6737-45bb-a74a-5c4798653786
+2025-01-26 15:07:45 - INFO - [10/25] Detail scraping new listing: https://www.immowelt.de/expose/29f58600-811d-403c-9fe7-655778060589
+2025-01-26 15:07:45 - INFO - [11/25] Detail scraping new listing: https://www.immowelt.de/expose/35b16e70-48d4-4e1a-90c0-5d42b0298f76
+2025-01-26 15:07:46 - INFO - [12/25] Detail scraping new listing: https://www.immowelt.de/expose/70d223b8-f7a3-44bf-b521-592cb55fc170
+2025-01-26 15:07:47 - INFO - [13/25] Detail scraping new listing: https://www.immowelt.de/expose/4ec01fea-7fa8-48de-bd92-9e24fd21201f
+2025-01-26 15:07:48 - INFO - [14/25] Detail scraping new listing: https://www.immowelt.de/expose/6206564b-5998-4a27-8981-0aff10455f30
+2025-01-26 15:07:49 - INFO - [15/25] Detail scraping new listing: https://www.immowelt.de/expose/57f30ac3-aeb5-4113-8f95-02bc1e9b37ec
+2025-01-26 15:07:49 - INFO - [16/25] Detail scraping new listing: https://www.immowelt.de/expose/ac88cdff-1f0c-48d6-a3b0-f2fed69cd762
+2025-01-26 15:07:50 - INFO - [17/25] Detail scraping new listing: https://www.immowelt.de/expose/711ca0ea-ec92-4116-8d1a-b4c29476ec3f
+2025-01-26 15:07:51 - INFO - [18/25] Detail scraping new listing: https://www.immowelt.de/expose/11ee70ce-cd2e-4285-b6c4-4c43ac939c15
+2025-01-26 15:07:51 - INFO - [19/25] Detail scraping new listing: https://www.immowelt.de/expose/0e3632d1-ac50-468a-b557-bd649dd2d8ce
+2025-01-26 15:07:52 - INFO - [20/25] Detail scraping new listing: https://www.immowelt.de/expose/2068d26d-ac09-473e-a187-5195414868ff
+2025-01-26 15:07:52 - INFO - [21/25] Detail scraping new listing: https://www.immowelt.de/expose/8acc6f38-3966-4faf-bdd3-b58c6eeb4359
+2025-01-26 15:07:54 - INFO - [22/25] Detail scraping new listing: https://www.immowelt.de/expose/3a0dfa76-cf91-4d3d-ad23-51918e6b2df0
+2025-01-26 15:07:54 - INFO - [23/25] Detail scraping new listing: https://www.immowelt.de/expose/c36c41b9-3c44-4d96-a341-30b7c6eed1f0
+2025-01-26 15:07:55 - INFO - [24/25] Detail scraping new listing: https://www.immowelt.de/expose/14eb9760-2cc2-4f8d-be37-3ee23acd9e1d
+2025-01-26 15:07:55 - INFO - [25/25] Detail scraping new listing: https://www.immowelt.de/expose/ab9de836-ab1a-4597-89dc-aa2c323f2a39
+2025-01-26 15:07:56 - INFO - Saving results...
+2025-01-26 15:07:56 - INFO - Saved 6616 records to /workspaces/ImmoCollectTrier/data/miete_trier50km_detailed2.csv
+2025-01-26 15:07:56 - INFO - 
+Final Statistics:
+2025-01-26 15:07:56 - INFO - Total listings: 6616
+2025-01-26 15:07:56 - INFO - Active listings: 4830
+2025-01-26 15:07:56 - INFO - Closed listings: 1786
+2025-01-26 15:07:56 - INFO - New listings today: 25
+2025-01-26 15:07:56 - INFO - Listings closed today: 28
+2025-01-26 15:07:56 - INFO - Average Preis_cleaned: 418299.75
+2025-01-26 15:07:56 - INFO - Average Wohnfläche: 211.54
+2025-01-26 15:07:56 - INFO - Average Preis_pro_qm: 3968.62
+2025-01-26 15:07:56 - INFO - Script completed successfully!

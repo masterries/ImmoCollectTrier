@@ -12,21 +12,16 @@ from .config import Config
 logger = get_logger()
 
 def clean_image_url(url):
-    """Clean the image URL to get the original version without size parameters."""
-    # Remove size parameters (w= and h=)
-    url = re.sub(r'[?&]w=\d+', '', url)
-    url = re.sub(r'[?&]h=\d+', '', url)
-    
-    # Extract the base URL and query parameters
+    """Clean image URL and retain only ci_seal parameter if present"""
     parsed = urllib.parse.urlparse(url)
     params = urllib.parse.parse_qs(parsed.query)
     
-    # Keep only the ci_seal parameter if it exists
-    cleaned_params = {}
-    if 'ci_seal' in params:
-        cleaned_params['ci_seal'] = params['ci_seal'][0]
+    # Only process URLs with ci_seal
+    if 'ci_seal' not in params:
+        return None
     
-    # Reconstruct the URL
+    # Rebuild URL with only ci_seal
+    cleaned_params = {'ci_seal': params['ci_seal'][0]}
     cleaned_url = urllib.parse.urlunparse((
         parsed.scheme,
         parsed.netloc,
@@ -35,8 +30,9 @@ def clean_image_url(url):
         urllib.parse.urlencode(cleaned_params),
         parsed.fragment
     ))
-    
     return cleaned_url
+
+
 
 
 def calculate_polygon_centroid(coordinates):
@@ -300,37 +296,31 @@ class WebScraper:
         return ext if ext in valid_extensions else '.jpg'
 
     def extract_images(self, soup):
-        """Extract image URLs from the detail page."""
+        """Extract image URLs with valid ci_seal"""
         images = []
         try:
-            # Find all picture elements
             picture_elements = soup.find_all("picture")
             for picture in picture_elements:
-                # Check source elements first
+                # Process source elements
                 sources = picture.find_all("source")
                 for source in sources:
-                    srcset = source.get("srcset")
-                    if srcset:
-                        # Extract URLs from srcset
+                    if srcset := source.get("srcset"):
                         urls = [url.strip().split()[0] for url in srcset.split(",")]
                         if urls:
-                            # Clean the URL and add to images list
                             cleaned_url = clean_image_url(urls[0])
-                            if cleaned_url:
+                            if cleaned_url:  # Only add if seal exists
                                 images.append(cleaned_url)
                 
-                # Check img element as fallback
+                # Process img elements
                 img = picture.find("img")
-                if img and img.get("src"):
-                    cleaned_url = clean_image_url(img["src"])
+                if img and (src := img.get("src")):
+                    cleaned_url = clean_image_url(src)
                     if cleaned_url:
                         images.append(cleaned_url)
 
             # Remove duplicates while preserving order
-            images = list(dict.fromkeys(images))
-            logger.debug(f"Found {len(images)} unique images")
-            return images
-
+            return list(dict.fromkeys(images))
         except Exception as e:
-            logger.error(f"Error extracting images: {str(e)}")
+            logger.error(f"Image extraction error: {str(e)}")
             return []
+
