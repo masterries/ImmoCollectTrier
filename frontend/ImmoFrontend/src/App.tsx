@@ -8,63 +8,139 @@ import PropertyListPage from "./pages/PropertyListPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import type { PropertyData, DataRanges } from "./types";
 
-// In App.tsx, add this function before your App component:
-const analyzeImageData = (data: PropertyData[]) => {
-  // Count properties with images
-  const withImages = data.filter(p => p.Images || p.Vorschaubild);
-  const withoutImages = data.filter(p => !p.Images && !p.Vorschaubild);
+// Helper function to clean image URLs
+const cleanImageUrl = (url: string): string => {
+  if (!url) return '';
+  try {
+    const urlObj = new URL(url);
+    // Keep only the ci_seal parameter if it exists
+    const params = new URLSearchParams();
+    const ciSeal = urlObj.searchParams.get('ci_seal');
+    if (ciSeal) {
+      params.set('ci_seal', ciSeal);
+    }
+    // Reconstruct the URL with only necessary parameters
+    urlObj.search = params.toString();
+    return urlObj.toString();
+  } catch (e) {
+    console.warn('Invalid URL:', url);
+    return url;
+  }
+};
 
-  // Get 5 sample properties with images
-  const sampleWithImages = withImages.slice(0, 5);
-  // Get 2 sample properties without images
-  const sampleWithoutImages = withoutImages.slice(0, 2);
+// Function to process image data for each property
+const processImageData = (row: PropertyData): PropertyData => {
+  console.group('Processing Property Data');
+  console.log('Input row:', row);
+  
+  // Process preview image
+  const cleanedPreview = row.Vorschaubild ? cleanImageUrl(row.Vorschaubild.toString()) : '';
+  console.log('Cleaned preview:', cleanedPreview);
+
+  // Process image list
+  let cleanedImages: string[] = [];
+  if (typeof row.Images === 'string' && row.Images.trim()) {
+    console.log('Raw Images string:', row.Images);
+    // Split by semicolon and clean each URL
+    cleanedImages = row.Images.split(';')
+      .map(url => url.trim())
+      .filter(url => url) // Remove empty strings
+      .map(cleanImageUrl)
+      .filter(url => url.includes('ci_seal')); // Only keep URLs with seals
+    
+    console.log('Cleaned Images array:', cleanedImages);
+  }
+
+  // Create allImages array with both preview and regular images
+  const allImages = [
+    ...(cleanedPreview && cleanedPreview.includes('ci_seal') ? [cleanedPreview] : []),
+    ...cleanedImages
+  ];
+
+  console.log('Final allImages:', allImages);
+  console.groupEnd();
+
+  return {
+    ...row,
+    Vorschaubild: cleanedPreview,
+    Images: cleanedImages.join(';'),
+    allImages: allImages
+  };
+};
+
+
+// Analysis function for debugging
+const analyzeImageData = (data: PropertyData[]) => {
+  // Count properties with valid images
+  const withImages = data.filter(p => p.allImages && p.allImages.length > 0);
+  const withoutImages = data.filter(p => !p.allImages || p.allImages.length === 0);
 
   console.group('Image Data Analysis');
   console.log('Total properties:', data.length);
   console.log('Properties with images:', withImages.length);
   console.log('Properties without images:', withoutImages.length);
   
-  console.group('Sample Properties WITH Images');
-  sampleWithImages.forEach((prop, index) => {
+  // Log the last entry in detail
+  const lastEntry = data[data.length - 1];
+  console.group('Last Entry Detail Analysis');
+  console.log('Full last entry:', lastEntry);
+  console.log('Link:', lastEntry.Link);
+  console.log('Raw Images field:', lastEntry.Images);
+  console.log('Raw Vorschaubild field:', lastEntry.Vorschaubild);
+  console.log('Processed allImages:', lastEntry.allImages);
+  
+  // Try to parse the Images field manually
+  if (lastEntry.Images) {
+    console.log('Manual Image URL split:', lastEntry.Images.split(';'));
+  }
+  
+  // Check data types
+  console.log('Data types:', {
+    ImagesType: typeof lastEntry.Images,
+    VorschaubildType: typeof lastEntry.Vorschaubild,
+    ImagesIsNull: lastEntry.Images === null,
+    ImagesIsUndefined: lastEntry.Images === undefined,
+    VorschaubildIsNull: lastEntry.Vorschaubild === null,
+    VorschaubildIsUndefined: lastEntry.Vorschaubild === undefined
+  });
+  console.groupEnd();
+
+  // Log sample of processed entries
+  console.group('Sample Processed Entries');
+  withImages.slice(0, 5).forEach((prop, index) => {
     console.group(`Property ${index + 1}`);
+    console.log('Link:', prop.Link);
     console.log('Preview Image:', prop.Vorschaubild);
     console.log('Image List:', prop.Images);
+    console.log('All Images:', prop.allImages);
     console.log('Raw Image Data:', {
       Vorschaubild: prop.Vorschaubild,
       Images: prop.Images
-    });
-    console.log('Other Data:', {
-      Price: prop.Preis_cleaned,
-      Description: prop.Beschreibung,
-      Address: prop.Vollständige_Adresse
     });
     console.groupEnd();
   });
   console.groupEnd();
 
   console.group('Sample Properties WITHOUT Images');
-  sampleWithoutImages.forEach((prop, index) => {
-    console.log(`Property ${index + 1}:`, {
-      Price: prop.Preis_cleaned,
-      Description: prop.Beschreibung,
-      Address: prop.Vollständige_Adresse
+  withoutImages.slice(0, 2).forEach((prop, index) => {
+    console.group(`Property ${index + 1}`);
+    console.log('Link:', prop.Link);
+    console.log('Raw Image Data:', {
+      Vorschaubild: prop.Vorschaubild,
+      Images: prop.Images
     });
+    console.groupEnd();
   });
   console.groupEnd();
 
-  // Analyze image URL patterns
-  const imageUrlPatterns = withImages
-    .flatMap(p => {
-      const urls = [];
-      if (p.Vorschaubild) urls.push(p.Vorschaubild);
-      if (p.Images) urls.push(...p.Images.split(';'));
-      return urls;
-    })
-    .filter(Boolean)
-    .slice(0, 10);
-
-  console.group('Image URL Patterns');
-  console.log('Sample Image URLs:', imageUrlPatterns);
+  // Add raw data inspection
+  console.group('Raw Data Inspection');
+  console.log('CSV Headers:', Object.keys(data[0] || {}));
+  console.log('Sample Raw Image URLs (last entry):', {
+    raw: lastEntry.Images,
+    split: lastEntry.Images?.split(';'),
+    cleaned: lastEntry.Images?.split(';').map(cleanImageUrl)
+  });
   console.groupEnd();
 
   console.groupEnd();
@@ -89,12 +165,15 @@ function App() {
           "https://raw.githubusercontent.com/masterries/ImmoCollectTrier/refs/heads/main/data/miete_trier50km_detailed2.csv"
         );
         const text = await response.text();
+        
+        // Log a sample of the raw CSV text
+        console.log('Raw CSV sample:', text.slice(0, 500));
+
         const parsedData = Papa.parse(text, {
           header: true,
           dynamicTyping: true,
           skipEmptyLines: true,
           transform: (value, field) => {
-            // Convert German number format (comma as decimal separator) to English format
             if (
               typeof value === "string" &&
               (field === "Latitude" || field === "Longitude")
@@ -105,30 +184,38 @@ function App() {
           },
         });
 
+        // Log the first few rows of parsed data
+        console.log('First few rows of parsed data:', parsedData.data.slice(0, 3));
+
         const cleanedData = parsedData.data
-          .filter(
-            (row: PropertyData) =>
-              row.Preis_cleaned &&
-              !isNaN(row.Preis_cleaned) &&
-              row.Latitude &&
-              row.Longitude
+          .filter((row: PropertyData) =>
+            row.Preis_cleaned &&
+            !isNaN(row.Preis_cleaned) &&
+            row.Latitude &&
+            row.Longitude
           )
-          .map((row: PropertyData) => ({
-            ...row,
-            // Clean up image URLs
-            Images: row.Images?.trim() || "",
-            Vorschaubild: row.Vorschaubild?.trim() || "",
-            // Ensure latitude and longitude are proper numbers
-            Latitude:
-              typeof row.Latitude === "string"
+          .map((row: PropertyData) => {
+            // Log sample of raw data before processing
+            if (Math.random() < 0.01) {
+              console.log('Raw row data before processing:', {
+                Images: row.Images,
+                Vorschaubild: row.Vorschaubild
+              });
+            }
+            
+            return processImageData({
+              ...row,
+              Latitude: typeof row.Latitude === "string"
                 ? parseFloat(row.Latitude.replace(",", "."))
                 : row.Latitude,
-            Longitude:
-              typeof row.Longitude === "string"
+              Longitude: typeof row.Longitude === "string"
                 ? parseFloat(row.Longitude.replace(",", "."))
                 : row.Longitude,
-          }));
-          analyzeImageData(cleanedData);
+            });
+          });
+
+        // Log the first few processed items
+        console.log('First 3 processed items:', cleanedData.slice(0, 3));
 
         // Extract property types
         const types = [
@@ -175,6 +262,7 @@ function App() {
           },
         };
 
+        analyzeImageData(cleanedData);
         setData(cleanedData);
         setPropertyTypes(types);
         setRanges(newRanges);
@@ -183,8 +271,9 @@ function App() {
         console.error("Error fetching data:", error);
         console.error("Data processing failed. Please check:");
         console.error("- CSV format and accessibility");
-        console.error("- Coordinate field names (should be Lat and Lon)");
+        console.error("- Coordinate field names");
         console.error("- Number format handling");
+        console.error("Full error:", error);
         setLoading(false);
       }
     };

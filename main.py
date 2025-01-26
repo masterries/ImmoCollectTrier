@@ -37,7 +37,7 @@ def parse_arguments():
     parser.add_argument('--backup', action='store_true', 
                         help='Create a backup before running')
     parser.add_argument('--output', type=str, 
-                        default='miete_trier50km_detailed2.csv',
+                        default='miete_trier50km.sqlite',
                         help='Output file name (relative to data directory or absolute path)')
     parser.add_argument('--fix-data', action='store_true',
                         help='Fix and standardize the data format')

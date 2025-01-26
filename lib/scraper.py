@@ -12,16 +12,21 @@ from .config import Config
 logger = get_logger()
 
 def clean_image_url(url):
-    """Clean image URL and retain only ci_seal parameter if present"""
+    """Clean the image URL to get the original version without size parameters."""
+    # Remove size parameters (w= and h=)
+    url = re.sub(r'[?&]w=\d+', '', url)
+    url = re.sub(r'[?&]h=\d+', '', url)
+    
+    # Extract the base URL and query parameters
     parsed = urllib.parse.urlparse(url)
     params = urllib.parse.parse_qs(parsed.query)
     
-    # Only process URLs with ci_seal
-    if 'ci_seal' not in params:
-        return None
+    # Keep only the ci_seal parameter if it exists
+    cleaned_params = {}
+    if 'ci_seal' in params:
+        cleaned_params['ci_seal'] = params['ci_seal'][0]
     
-    # Rebuild URL with only ci_seal
-    cleaned_params = {'ci_seal': params['ci_seal'][0]}
+    # Reconstruct the URL
     cleaned_url = urllib.parse.urlunparse((
         parsed.scheme,
         parsed.netloc,
@@ -30,9 +35,8 @@ def clean_image_url(url):
         urllib.parse.urlencode(cleaned_params),
         parsed.fragment
     ))
+    
     return cleaned_url
-
-
 
 
 def calculate_polygon_centroid(coordinates):
@@ -57,6 +61,71 @@ class WebScraper:
         self.session.headers.update(self.headers)
         self.base_url = "https://www.immowelt.de"
 
+    def extract_coordinates_from_html(self, html_content):
+        """Extract coordinates from HTML content."""
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
+        # Find the img tag with the mapbox URL
+        map_img = soup.find('img', alt='Standort')
+        
+        if not map_img:
+            return None
+        
+        # Get the src attribute
+        src_url = map_img['src']
+        
+        # Find the geojson part in the URL
+        geojson_match = re.search(r'geojson\((.*?)\)/', src_url)
+        
+        if not geojson_match:
+            return None
+        
+        # Extract and decode the GeoJSON
+        geojson_encoded = geojson_match.group(1)
+        geojson_decoded = unquote(geojson_encoded)
+        
+        try:
+            # Parse the GeoJSON
+            geojson_data = json.loads(geojson_decoded)
+            coordinates = geojson_data['geometry']['coordinates']
+            
+            # Check the geometry type
+            geometry_type = geojson_data['geometry']['type']
+            
+            if geometry_type == 'Point':
+                # For Point type, coordinates are directly [longitude, latitude]
+                longitude, latitude = coordinates
+                return {
+                    'coordinates': [coordinates],  # Wrap in list for consistency
+                    'centroid': (longitude, latitude)
+                }
+            elif geometry_type == 'Polygon':
+                # For Polygon type, calculate centroid from polygon coordinates
+                coordinates = coordinates[0][:-1]  # Remove the closing point
+                sum_lon = sum(p[0] for p in coordinates)
+                sum_lat = sum(p[1] for p in coordinates)
+                centroid = (sum_lon/len(coordinates), sum_lat/len(coordinates))
+                return {
+                    'coordinates': coordinates,
+                    'centroid': centroid
+                }
+            else:
+                logger.warning(f"Unexpected geometry type: {geometry_type}")
+                return None
+                
+        except json.JSONDecodeError:
+            logger.error("Error decoding GeoJSON")
+            return None
+        except KeyError:
+            logger.error("Unexpected GeoJSON structure")
+            return None
+        except Exception as e:
+            logger.error(f"Error processing coordinates: {str(e)}")
+            return None
+
+
+
+
     def _make_request(self, url, retries=Config.RETRY_ATTEMPTS, delay=Config.REQUEST_DELAY):
         for attempt in range(retries):
             try:
@@ -71,7 +140,6 @@ class WebScraper:
                 else:
                     logger.error(f"Failed to get HTML after {retries} attempts: {url}")
                     return None
-
 
     def get_detail_page_info(self, url):
         html = self._make_request(url)
@@ -93,38 +161,30 @@ class WebScraper:
         # Extract images
         image_urls = self.extract_images(soup)
 
-        # Extract coordinates
-        latitude = longitude = None
-        map_button = soup.find("button", {"aria-label": "Adresse auf Karte ansehen"})
-        if map_button and map_button.find("img"):
-            img_src = map_button.find("img")["src"]
-            logger.debug(f"Map image source: {img_src}")
-            if "geojson" in img_src:
-                geojson_match = re.search(r'geojson\((.*?)\)', img_src)
-                if geojson_match:
-                    geojson_string = geojson_match.group(1)
-                    if geojson_string:
-                        try:
-                            decoded_geojson_string = unquote(geojson_string)
-                            geojson_data = json.loads(decoded_geojson_string)
-                            
-                            geometry_type = geojson_data.get("geometry", {}).get("type")
-                            if geometry_type == "Point":
-                                point_coords = geojson_data["geometry"]["coordinates"]
-                                longitude, latitude = point_coords[0], point_coords[1]
-                                logger.info(f"Extracted Point coordinates as longitude={longitude}, latitude={latitude}")
-                            elif geometry_type == "Polygon":
-                                polygon_coords = geojson_data["geometry"]["coordinates"][0]
-                                longitude, latitude = calculate_polygon_centroid(polygon_coords)
-                                logger.info(f"Calculated centroid as longitude={longitude}, latitude={latitude}")
-                        except (json.JSONDecodeError, KeyError) as e:
-                            logger.error(f"Error processing GeoJSON: {str(e)}")
-            else:
-                coordinates_match = re.search(r'/(-?\d+\.\d+),(-?\d+\.\d+),', img_src)
-                if coordinates_match:
-                    longitude = float(coordinates_match.group(1))
-                    latitude = float(coordinates_match.group(2))
-                    logger.info(f"Extracted coordinates: longitude={longitude}, latitude={latitude}")
+        # Extract coordinates using the new method
+        coordinates_data = self.extract_coordinates_from_html(html)
+        latitude = None
+        longitude = None
+        
+        if coordinates_data:
+            longitude, latitude = coordinates_data['centroid']
+            logger.info(f"Found coordinates from GeoJSON: lat={latitude}, lon={longitude}")
+        else:
+            # Fallback to the old method
+            try:
+                for script in soup.find_all("script"):
+                    if script.string and "coordinates" in str(script.string):
+                        coords_match = re.search(r'\[(\d+\.\d+),\s*(\d+\.\d+)\]', script.string)
+                        if coords_match:
+                            try:
+                                longitude = float(coords_match.group(1))
+                                latitude = float(coords_match.group(2))
+                                logger.info(f"Found coordinates from script: lat={latitude}, lon={longitude}")
+                                break
+                            except Exception as e:
+                                logger.error(f"Error extracting coordinates from script: {str(e)}")
+            except Exception as e:
+                logger.error(f"Error extracting coordinates: {str(e)}")
 
         # Extract address
         address_div = soup.find("div", {"data-testid": "aviv.CDP.Location.Address"})
@@ -138,6 +198,8 @@ class WebScraper:
             "image_urls": image_urls
         }
 
+
+    
     def extract_listing_data(self, listing):
         """Extract data from a single listing item"""
         try:
@@ -296,31 +358,37 @@ class WebScraper:
         return ext if ext in valid_extensions else '.jpg'
 
     def extract_images(self, soup):
-        """Extract image URLs with valid ci_seal"""
+        """Extract image URLs from the detail page."""
         images = []
         try:
+            # Find all picture elements
             picture_elements = soup.find_all("picture")
             for picture in picture_elements:
-                # Process source elements
+                # Check source elements first
                 sources = picture.find_all("source")
                 for source in sources:
-                    if srcset := source.get("srcset"):
+                    srcset = source.get("srcset")
+                    if srcset:
+                        # Extract URLs from srcset
                         urls = [url.strip().split()[0] for url in srcset.split(",")]
                         if urls:
+                            # Clean the URL and add to images list
                             cleaned_url = clean_image_url(urls[0])
-                            if cleaned_url:  # Only add if seal exists
+                            if cleaned_url:
                                 images.append(cleaned_url)
                 
-                # Process img elements
+                # Check img element as fallback
                 img = picture.find("img")
-                if img and (src := img.get("src")):
-                    cleaned_url = clean_image_url(src)
+                if img and img.get("src"):
+                    cleaned_url = clean_image_url(img["src"])
                     if cleaned_url:
                         images.append(cleaned_url)
 
             # Remove duplicates while preserving order
-            return list(dict.fromkeys(images))
-        except Exception as e:
-            logger.error(f"Image extraction error: {str(e)}")
-            return []
+            images = list(dict.fromkeys(images))
+            logger.debug(f"Found {len(images)} unique images")
+            return images
 
+        except Exception as e:
+            logger.error(f"Error extracting images: {str(e)}")
+            return []
