@@ -236,6 +236,6 @@ function App() {
     if (loading) {
         return (_jsx("div", { className: "min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center", children: _jsxs("div", { className: "flex flex-col items-center gap-4", children: [_jsx("div", { className: "w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin" }), _jsx("p", { className: "text-xl", children: "Loading property data..." })] }) }));
     }
-    return (_jsx(Router, { children: _jsx(FilterProvider, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(DashboardPage, { data: data, propertyTypes: propertyTypes, ranges: ranges }) }), _jsx(Route, { path: "/list", element: _jsx(PropertyListPage, { data: data }) }), _jsx(Route, { path: "/analytics", element: _jsx(AnalyticsPage, { data: data, propertyTypes: propertyTypes, ranges: ranges }) })] }) }) }));
+    return (_jsx(Router, { basename: "/ImmoCollectTrier", children: _jsx(FilterProvider, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(DashboardPage, { data: data, propertyTypes: propertyTypes, ranges: ranges }) }), _jsx(Route, { path: "/list", element: _jsx(PropertyListPage, { data: data }) }), _jsx(Route, { path: "/analytics", element: _jsx(AnalyticsPage, { data: data, propertyTypes: propertyTypes, ranges: ranges }) })] }) }) }));
 }
 export default App;
